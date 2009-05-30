@@ -12,5 +12,6 @@ skanlite (0.3-1) UNRELEASED; urgency=low
   * Maintainer: kde-extras & add myself to uploaders
   * Section: graphics, Update Vcs
   * Switch to debian/skanlite.manpages
+  * Switch to cdbs
 
- -- Mark Purcell <msp@debian.org>  Sat, 30 May 2009 12:27:29 +1000
+ -- Mark Purcell <msp@debian.org>  Sat, 30 May 2009 12:33:48 +1000
