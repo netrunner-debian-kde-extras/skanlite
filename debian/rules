@@ -68,7 +68,7 @@ binary-arch: install
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs 
-	dh_installman debian/skanlite.1
+	dh_installman
 	dh_installdocs
 	dh_lintian
 	dh_link
