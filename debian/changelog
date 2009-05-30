@@ -1,5 +1,7 @@
 skanlite (0.3-2) UNRELEASED; urgency=low
 
+  The »KDE team and mentors appreciation« release.
+
   [ Mark Purcell ]
   * NOT RELEASED YET
 
@@ -7,7 +9,7 @@ skanlite (0.3-2) UNRELEASED; urgency=low
   * debian/rules: Ensure minimal linking (some unneeded liking we can't get
     around otherwise): set »DEB_KDE_LINK_WITH_AS_NEEDED='yes'«.
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Sat, 30 May 2009 13:50:07 +0200
+ -- Kai Wasserbäch <debian@carbon-project.org>  Sat, 30 May 2009 14:02:19 +0200
 
 skanlite (0.3-1) unstable; urgency=low
 
