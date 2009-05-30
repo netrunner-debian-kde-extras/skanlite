@@ -1,0 +1,19 @@
+Source: skanlite
+Section: kde
+Priority: optional
+Maintainer: Kai Wasserbäch <debian@carbon-project.org>
+Build-Depends: debhelper (>= 7), cmake, pkg-kde-tools, libksane-dev, 
+ kdelibs5-dev (>= 4:4.2.0)
+Standards-Version: 3.8.1
+Vcs-Svn: svn://svn.carbon-project.org/deb-pkg/skanlite/trunk
+
+Package: skanlite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: kooka
+Description: KDE4 image scanner based on the KSane backend
+ Skanlite is a small and simple scanner application for KDE4 which allows easy
+ scanning of images with an attached scanner. Through the KSane backend it can
+ access a wide variety of different scanner models.
+ .
+ Skanlite can be considered the replacement of Kooka.
