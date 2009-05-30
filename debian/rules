@@ -5,6 +5,3 @@ DEB_KDE_LINK_WITH_AS_NEEDED='yes'
 
 include /usr/share/pkg-kde-tools/makefiles/1/cdbs/kde.mk
 include /usr/share/cdbs/1/rules/debhelper.mk
-
-install::
-	rm -f $(CURDIR)/debian/skanlite/usr/share/doc/kde4/HTML/*/skanlite/common
