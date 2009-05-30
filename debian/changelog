@@ -15,8 +15,9 @@ skanlite (0.3-2) UNRELEASED; urgency=low
       paper bag?)
   * debian/watch: make the KDE version part variable too, without getting into
     the way of version comparison.
+  * Added a German manpage. 
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Sat, 30 May 2009 19:18:11 +0200
+ -- Kai Wasserbäch <debian@carbon-project.org>  Sat, 30 May 2009 20:05:00 +0200
 
 skanlite (0.3-1) unstable; urgency=low
 
