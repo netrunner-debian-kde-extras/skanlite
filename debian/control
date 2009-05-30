@@ -1,12 +1,13 @@
 Source: skanlite
-Section: kde
+Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>, Kai Wasserbäch <debian@carbon-project.org>
 Build-Depends: debhelper (>= 7), cmake, pkg-kde-tools, libksane-dev, 
  kdelibs5-dev (>= 4:4.2.0)
 Standards-Version: 3.8.1
-Vcs-Svn: svn://svn.carbon-project.org/deb-pkg/skanlite/trunk
+Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/skanlite/trunk
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/skanlite/trunk?op=log
 
 Package: skanlite
 Architecture: any
