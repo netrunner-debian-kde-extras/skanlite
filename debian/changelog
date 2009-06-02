@@ -13,13 +13,14 @@ skanlite (0.3-2) UNRELEASED; urgency=low
       at all. I somehow made the mistake to assume, that the symlinked
       directory should be shipped by the package too. (Where is that brown
       paper bag?)
+    - Added »DEB_DH_ALWAYS_EXCLUDE« for some VCS files to be always excluded.
   * debian/watch: make the KDE version part variable too, without getting into
     the way of version comparison.
   * Added a German manpage. 
   * Corrected/Unified capitalisation of the program's name, it's officially
     »Skanlite«.
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Mon, 01 Jun 2009 00:08:06 +0200
+ -- Kai Wasserbäch <debian@carbon-project.org>  Tue, 02 Jun 2009 23:59:50 +0200
 
 skanlite (0.3-1) unstable; urgency=low
 
