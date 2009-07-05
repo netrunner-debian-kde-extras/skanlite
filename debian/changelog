@@ -13,7 +13,10 @@ skanlite (0.3-1) unstable; urgency=low
 
   [ Kai Wasserbäch ]
   * debian/control: Standards-Version is now 3.8.2, no changes needed.
-  * debian/copyright: use the KDE version of the GPL header.
+  * debian/copyright:
+    - Use the KDE version of the GPL header.
+    - doc{,-translations}: the documentation in these directories is licensed
+      under the GNU GFDL 1.2 with no non-DFSG compliant parts.
   * debian/rules:
     - Ensure minimal linking (some unneeded linking we can't get around
       otherwise): set »DEB_KDE_LINK_WITH_AS_NEEDED='yes'«.
@@ -33,4 +36,4 @@ skanlite (0.3-1) unstable; urgency=low
     (largest part are translations (mo) and they are not really independent, if
     I remember correctly (e.g. bit ordering).
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Sun, 05 Jul 2009 14:26:31 +0200
+ -- Kai Wasserbäch <debian@carbon-project.org>  Sun, 05 Jul 2009 22:42:44 +0200
