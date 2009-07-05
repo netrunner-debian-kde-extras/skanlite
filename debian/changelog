@@ -7,8 +7,10 @@ skanlite (0.3-3) UNRELEASED; urgency=low
 
   [ Kai Wasserbäch ]
   * debian/control: Standards-Version is now 3.8.2, no changes needed.
+  * debian/copyright: Address reason for rejection: use the KDE version of the
+    GPL header.
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Mon, 22 Jun 2009 17:38:23 +0200
+ -- Kai Wasserbäch <debian@carbon-project.org>  Sun, 05 Jul 2009 14:06:50 +0200
 
 skanlite (0.3-2) unstable; urgency=low
 
