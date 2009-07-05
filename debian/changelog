@@ -1,22 +1,21 @@
-skanlite (0.3-3) UNRELEASED; urgency=low
+skanlite (0.3-1) UNRELEASED; urgency=low
 
-  The »Article 5 Grundgesetz was murdered« release.
+  The combined »Article 5 Grundgesetz was murdered« and »KDE team and mentors
+  appreciation« release.
 
   [ Mark Purcell ]
   * NOT RELEASED YET
+  * debian/watch -> svn-upgrade
+  * Maintainer: kde-extras & add myself to uploaders
+  * Section: graphics, Update Vcs
+  * Switch to debian/skanlite.manpages
+  * Switch to cdbs
 
   [ Kai Wasserbäch ]
+  * Initial release (Closes: #530915)
   * debian/control: Standards-Version is now 3.8.2, no changes needed.
   * debian/copyright: Address reason for rejection: use the KDE version of the
     GPL header.
-
- -- Kai Wasserbäch <debian@carbon-project.org>  Sun, 05 Jul 2009 14:06:50 +0200
-
-skanlite (0.3-2) unstable; urgency=low
-
-  The »KDE team and mentors appreciation« release.
-
-  [ Kai Wasserbäch ]
   * debian/rules:
     - Ensure minimal linking (some unneeded liking we can't get around
       otherwise): set »DEB_KDE_LINK_WITH_AS_NEEDED='yes'«.
@@ -27,26 +26,13 @@ skanlite (0.3-2) unstable; urgency=low
     - Added »DEB_DH_ALWAYS_EXCLUDE« for some VCS files to be always excluded.
   * debian/watch: make the KDE version part variable too, without getting into
     the way of version comparison.
-  * Added a German manpage. 
+  * Manpages:
+    - Added an English manpage.
+    - Added a German manpage. 
   * Corrected/Unified capitalisation of the program's name, it's officially
     »Skanlite«.
-
- -- Mark Purcell <msp@debian.org>  Thu, 04 Jun 2009 07:44:59 +1000
-
-skanlite (0.3-1) unstable; urgency=low
-
-  [ Kai Wasserbäch ]
-  * Initial release (Closes: #530915)
   * Lintian override »skanlite: arch-dep-package-has-big-usr-share« added.
     (largest part are translations (mo) and they are not really independent, if
     I remember correctly (e.g. bit ordering).
-  * Add a manpage to the package. 
 
-  [ Mark Purcell ]
-  * debian/watch -> svn-upgrade
-  * Maintainer: kde-extras & add myself to uploaders
-  * Section: graphics, Update Vcs
-  * Switch to debian/skanlite.manpages
-  * Switch to cdbs
-
- -- Mark Purcell <msp@debian.org>  Sat, 30 May 2009 12:33:48 +1000
+ -- Kai Wasserbäch <debian@carbon-project.org>  Sun, 05 Jul 2009 14:26:31 +0200
