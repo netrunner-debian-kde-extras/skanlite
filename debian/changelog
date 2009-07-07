@@ -1,3 +1,11 @@
+skanlite (0.3-2) UNRELEASED; urgency=low
+
+  The »Cryptic Command« release.
+
+  * NOT RELEASED YET
+
+ -- Kai Wasserbäch <debian@carbon-project.org>  Tue, 07 Jul 2009 03:06:18 +0200
+
 skanlite (0.3-1) unstable; urgency=low
 
   * Initial release (Closes: #530915)
