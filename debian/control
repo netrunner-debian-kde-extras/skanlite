@@ -13,6 +13,7 @@ Package: skanlite
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: kooka
+Multi-Arch: foreign
 Description: image scanner for KDE 4 based on the KSane backend
  Skanlite is a small and simple scanner application for KDE 4 which allows easy
  scanning of images with an attached scanner. Through the KSane backend, it can
