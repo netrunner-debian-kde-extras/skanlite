@@ -3,9 +3,11 @@ skanlite (0.3-2) UNRELEASED; urgency=low
   The »Cryptic Command« release.
 
   * NOT RELEASED YET
-  * debian/control: Added »Multi-Arch: foreign« to control stanza.
+  * debian/control:
+    - Added »Multi-Arch: foreign« to control stanza.
+    - Standard-Version is now 3.8.3, no changes needed.
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Wed, 29 Jul 2009 17:07:50 +0200
+ -- Kai Wasserbäch <debian@carbon-project.org>  Wed, 26 Aug 2009 18:05:26 +0200
 
 skanlite (0.3-1) unstable; urgency=low
 
