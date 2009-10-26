@@ -5,5 +5,5 @@ version=3
 
 # Uncommment to examine a FTP server
 opts=pasv \
-    ftp://ftp.kde.org/pub/kde/stable/latest/src/extragear/skanlite-(.*)-kde(?:[\d\.]+)\.tar\.bz2 \
+    ftp://ftp.kde.org/pub/kde/stable/latest/src/extragear/skanlite-([\d\.]+-kde[\d\.]+)\.tar\.bz2 \
     debian svn-upgrade
