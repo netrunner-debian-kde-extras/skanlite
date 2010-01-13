@@ -3,8 +3,13 @@ skanlite (0.3-kde4.3.1-3) UNRELEASED; urgency=low
   The »Haunting Echoes« release.
 
   * debian/skanlite.de.1: Added a missing character.
+  * debian/patches:
+    - fix_ftbfs_gcc-4.5.patch:
+      + Added. (Closes: #565096)
+      + Fix Skanlite to build with stricter g++ 4.5 (not released yet).
+      + Thanks to Matthias Klose for the report.
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Fri, 08 Jan 2010 10:22:45 +0100
+ -- Kai Wasserbäch <debian@carbon-project.org>  Wed, 13 Jan 2010 11:46:29 +0100
 
 skanlite (0.3-kde4.3.1-2) unstable; urgency=low
 
