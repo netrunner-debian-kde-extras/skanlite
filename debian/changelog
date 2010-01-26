@@ -4,8 +4,9 @@ skanlite (0.3-kde4.3.1-4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET.
   * debian/skanlite.lintian.overrides: Removed, no longer needed.
+  * debian/watch: Rewritten. This gets us a permanently working watch file. 
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Sun, 17 Jan 2010 18:46:54 +0100
+ -- Kai Wasserbäch <debian@carbon-project.org>  Tue, 26 Jan 2010 18:21:06 +0100
 
 skanlite (0.3-kde4.3.1-3) unstable; urgency=low
 
