@@ -3,7 +3,7 @@
 # Compulsory line, this is a version 3 file
 version=3
 
-opts=downloadurlmangle=s/http\:\/\/dev\.carbon-project\.org\/debian\/skanlite\/\.\/dl\//ftp\:\/\/ftp\.kde\.org\/pub\/kde\/stable\// \
+opts=pasv,downloadurlmangle=s/http\:\/\/dev\.carbon-project\.org\/debian\/skanlite\/\.\/dl/ftp\:\/\/ftp\.kde\.org\/pub\/kde\/stable/ \
     http://dev.carbon-project.org/debian/skanlite/watch.html \
-    ./dl/(?:.*)/src/extragear/skanlite-([\d\.]+-kde[\d\.]+)\.tar.bz2 \
+    \./dl/(?:.*)/src/extragear/skanlite-([\d\.]+-kde[\d\.]+)\.tar\.bz2 \
     debian svn-upgrade
