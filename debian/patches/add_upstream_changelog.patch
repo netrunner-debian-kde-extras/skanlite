@@ -1,0 +1,466 @@
+Subject: Add upstream ChangeLog, found by Lintian. Created with svn2cl.
+Author: Kai Wasserbäch <debian@carbon-project.org>
+Last-Update: 2010-02-12
+Forwarded: no
+---
+ ChangeLog |  455 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 455 insertions(+)
+
+--- /dev/null
++++ b/ChangeLog
+@@ -0,0 +1,455 @@
++2010-01-25 20:45  sars
++
++	* [r1080192] Make sure to clean up on close.
++
++	  BUG:190946
++
++	  I'm quite confident that this commit fixes this bug.
++
++2010-01-25 10:41  scripty
++
++	* [r1079976] SVN_SILENT made messages (.desktop file)
++
++2010-01-13 20:49  sars
++
++	* [r1074306] Revert unneeded fix
++
++	  CCBUG:222542
++
++	  Sorry, I did not check what the original error was, shame on me :)
++
++	  Thanks Pino for fixing the original bug (and for pointing out my
++	  mistake)
++
++2010-01-13 19:23  sars
++
++	* [r1074275] Thanks for the patch, patch applied.
++
++	  BUG:222542
++
++2010-01-11 20:01  pino
++
++	* [r1073188] simplify constructor call
++
++2010-01-10 10:54  scripty
++
++	* [r1072547] SVN_SILENT made messages (.desktop file)
++
++2009-12-28 10:31  scripty
++
++	* [r1066910] SVN_SILENT made messages (.desktop file)
++
++2009-11-26 20:19  sars
++
++	* [r1054793] Add #ifdefs for libksane features that will be in 4.4 bur
++	  that are not in 4..3
++
++2009-11-18 11:38  scripty
++
++	* [r1050931] SVN_SILENT made messages (.desktop file)
++
++2009-10-26 11:04  scripty
++
++	* [r1040514] SVN_SILENT made messages (.desktop file)
++
++2009-10-08 21:06  aacid
++
++	* [r1032911] remove some executable bits
++
++2009-09-17 09:38  scripty
++
++	* [r1024802] SVN_SILENT made messages (.desktop file)
++
++2009-09-08 20:47  sars
++
++	* [r1021322] GUI: Reorganize the settings dialog and add the possibility
++	  to specify a preview resolution. Make the "save preview" image
++	  scalable. Use m_ prefix for class member variables.
++
++2009-08-07 09:30  scripty
++
++	* [r1008348] SVN_SILENT made messages (.desktop file)
++
++2009-08-04 09:00  scripty
++
++	* [r1006734] SVN_SILENT made messages (.desktop file)
++
++2009-08-03 20:09  sars
++
++	* [r1006486] update TODO
++
++2009-06-01 14:36  scripty
++
++	* [r976380] SVN_SILENT made messages (.desktop file)
++
++2009-05-09 20:46  sars
++
++	* [r965811] Add a "todo" file
++
++2009-05-04 14:39  scripty
++
++	* [r963336] SVN_SILENT made messages (.desktop file)
++
++2009-04-29 13:39  pino
++
++	* [r961040] set the icon name of a program in the correct way (changing
++	  the internal app name is a bad idea) CCMAIL: kristof.bal@gmail.com
++
++2009-04-29 11:23  kbal
++
++	* [r960960] use the nice 'scanner' icon
++
++2009-04-22 15:17  scripty
++
++	* [r957607] SVN_SILENT made messages (.desktop file)
++
++2009-03-23 11:03  coles
++
++	* [r943079] Exclamation point squishing.
++
++2009-03-17 13:39  sars
++
++	* [r940426] Bump the version number to indicate the new features
++
++2009-02-18 21:20  sars
++
++	* [r928077] Add "appending strerror(errno) to some error messages"
++	  (there could be some problems with translation tho...)
++
++	  Thanks Arseniy Lartsev for the patch!
++
++	  BUG: 178457
++
++2009-02-18 20:58  sars
++
++	* [r928068] Add a scan mode "Open the save dialog for the first image
++	  only" Sync the settings on settings dialog exit to ensure that the
++	  changes are saved. add copyright notice Arseniy Lartsev
++
++	  CCBUG: 177899
++
++2009-01-24 20:39  shaforo
++
++	* [r916207] set fine-grained categories for extragear apps. (in
++	  compliance with
++	  http://standards.freedesktop.org/menu-spec/menu-spec-1.0.html#category-registry)
++
++	  as the changes ain't controversial. I'm commiting them w/o
++	  approvement.
++
++	  CCMAIL:tomalbers@kde.nl CCMAIL:digikam-devel@kde.org
++	  CCMAIL:kile-devel@lists.sourceforge.net CCMAIL:kare.sars@iki.fi
++	  CCMAIL:jh@kolouch.net
++
++2009-01-21 13:43  scripty
++
++	* [r914654] SVN_SILENT made messages (.desktop file)
++
++2009-01-12 14:44  scripty
++
++	* [r910011] SVN_SILENT made messages (.desktop file)
++
++2009-01-03 16:34  scripty
++
++	* [r905063] SVN_SILENT made messages (.desktop file)
++
++2009-01-02 13:33  scripty
++
++	* [r904560] SVN_SILENT made messages (.desktop file)
++
++2008-12-23 13:01  scripty
++
++	* [r900712] SVN_SILENT made messages (.desktop file)
++
++2008-12-16 12:58  scripty
++
++	* [r897636] SVN_SILENT made messages (.desktop file)
++
++2008-12-12 12:38  scripty
++
++	* [r896069] SVN_SILENT made messages (.desktop file, second try)
++
++2008-11-26 14:05  scripty
++
++	* [r889325] SVN_SILENT made messages (.desktop file)
++
++2008-11-23 12:21  scripty
++
++	* [r888003] SVN_SILENT made messages (.desktop file)
++
++2008-10-26 12:39  scripty
++
++	* [r876069] SVN_SILENT made messages (.desktop file)
++
++2008-10-14 11:18  scripty
++
++	* [r871270] SVN_SILENT made messages (.desktop file)
++
++2008-09-23 11:32  sars
++
++	* [r863892] Fix the license (these files are not part of the libksane
++	  library...)
++
++2008-09-23 10:14  sars
++
++	* [r863836] Fix the license (these files are not part of the libksane
++	  library...)
++
++2008-09-20 12:08  scripty
++
++	* [r862932] SVN_SILENT made messages (.desktop file)
++
++2008-07-23 08:03  sars
++
++	* [r836873] change the version, because we now need the FindKSane.cmake
++	  installed from kdegraphics
++
++2008-07-23 08:00  sars
++
++	* [r836872] libksane is not optional for Skanlite -> remove the
++	  optional... remove the unused cmake dir
++
++2008-07-01 07:04  mlaurent
++
++	* [r826722] Remove temporary file
++
++2008-06-06 09:14  pino
++
++	* [r817550] remove all the FindKSane copies all around, and optionally
++	  use the FindKSane installed by kdegraphics >= 4.1 adapt to the syntax
++	  of that FindKSane
++
++2008-06-06 08:40  cgilles
++
++	* [r817534] this is more logic for the moment
++
++2008-06-06 07:51  cgilles
++
++	* [r817515] compile
++
++2008-05-27 11:31  mlaurent
++
++	* [r813302] Use INSTALL_TARGETS_DEFAULT_ARGS
++
++2008-05-02 08:07  cgilles
++
++	* [r803184] check KSAne from local cmake sub-dir
++
++2008-04-26 09:22  mlaurent
++
++	* [r801289] Move cmake file in specific project it's better when we want
++	  to checkout just project
++
++2008-04-25 06:38  mlaurent
++
++	* [r800893] Remove not necessary cmake variable
++
++2008-04-13 20:21  sars
++
++	* [r796588] Update credits
++
++2008-04-13 19:40  sars
++
++	* [r796571] Remove file name from currentDir -> fix auto file name for
++	  the save dialog.
++
++2008-04-09 17:02  sars
++
++	* [r795269] Move Skanlite to exrtagear/graphics/
++
++2008-04-09 10:23  scripty
++
++	* [r795145] SVN_SILENT made messages (.desktop file)
++
++2008-04-09 04:02  scripty
++
++	* [r795067] SVN_SILENT made messages (.desktop file, second try)
++
++2008-04-07 08:21  scripty
++
++	* [r794381] SVN_SILENT made messages (.desktop file, second try)
++
++2008-04-07 02:23  scripty
++
++	* [r794320] SVN_SILENT made messages (.desktop file)
++
++2008-04-05 17:50  annma
++
++	* [r793954] make Help button work
++
++2008-04-05 08:06  sars
++
++	* [r793784] Do not show the settings dialog on startup. Default save
++	  location is now $HOME. Rearange the settings dialog.
++
++2008-04-05 06:14  sars
++
++	* [r793776] Make it possible to build separately
++
++2008-04-05 03:53  scripty
++
++	* [r793768] SVN_SILENT made messages (.desktop file)
++
++2008-04-04 21:38  scripty
++
++	* [r793714] SVN_SILENT made messages (.desktop file)
++
++2008-04-03 16:41  sars
++
++	* [r793319] use toQImage() instead of makeQImage()
++
++2008-04-02 19:09  sars
++
++	* [r792988] catalog name not capitalized
++
++2008-04-02 19:00  sars
++
++	* [r792986] Set proper window title on the settings dialog and the
++	  scanner selection dialog.
++
++2008-04-02 16:34  annma
++
++	* [r792948] make description more useful, add copyright year
++
++2008-04-02 16:11  pino
++
++	* [r792945] - Categories is a list, so it must end with the list
++	  separator (';') - remove unuseful comment
++
++2008-04-02 16:00  sars
++
++	* [r792938] Glimpse is dead. Long live Skanlite.
++
++2008-04-02 15:39  sars
++
++	* [r792930] rename Glimpse to Skanlite
++
++2008-04-01 05:46  scripty
++
++	* [r792449] SVN_SILENT made messages (.desktop file)
++
++2008-04-01 02:07  scripty
++
++	* [r792426] SVN_SILENT made messages (.desktop file)
++
++2008-03-30 07:39  scripty
++
++	* [r791741] SVN_SILENT made messages (.desktop file)
++
++2008-03-30 03:18  scripty
++
++	* [r791712] SVN_SILENT made messages (.desktop file)
++
++2008-03-27 23:52  scripty
++
++	* [r791011] SVN_SILENT made messages (.desktop file)
++
++2008-03-27 20:15  scripty
++
++	* [r790912] SVN_SILENT made messages (.desktop file)
++
++2008-03-27 19:51  annma
++
++	* [r790893] improve doc a bit and fix a few typos
++
++2008-03-25 20:17  sars
++
++	* [r790078] rename FindKsane.cmake to FindKSane.cmake and the
++	  corresponding changes to the CMake files.
++
++2008-03-25 20:10  sars
++
++	* [r790071] -Add glimpse to the CMakeLists.txt to enable compilation.
++	  -Move the FindKsane.cmake module to cmake/modules/
++
++2008-03-25 17:43  sars
++
++	* [r789928] move glimpse to kdereview
++
++2008-03-25 09:27  annma
++
++	* [r789800] add a .desktop file. Kare, please can you review the entries
++	  I put there? If in doubt we'll ask people on IRC at some point! The
++	  desktop file allows you to have Glimpse in the K menu and also to find
++	  the doc.
++
++2008-03-19 20:30  sars
++
++	* [r787752] Only one connection from the showImageDialog to one of the
++	  save slots (canceling save produced one extra connect -> save dialog
++	  opened twice the next time)
++
++2008-03-17 20:56  sars
++
++	* [r786742] Fix Krazy2 warnings
++
++2008-03-16 16:53  mlaurent
++
++	* [r786303] SVN_SILENT: Minor fix
++
++2008-03-12 18:29  sars
++
++	* [r784886] Start using KDialog in stead of QDialog
++
++2008-02-24 21:36  sars
++
++	* [r778915] add credit
++
++2008-02-24 20:28  sars
++
++	* [r778891] If selectDevice() returns an empty string don't try to open
++	  an empty device.
++
++2008-02-24 20:24  sars
++
++	* [r778889] libksane does the insertCatalog() for translations
++
++2008-02-23 20:05  sars
++
++	* [r778514] Add a button to display the 'About' dialog.
++
++2008-02-23 19:05  sars
++
++	* [r778494] Fix e-mail address
++
++2008-02-03 12:12  sars
++
++	* [r770309] Use KDialog in stead of QDialog for the settings show
++	  settings dialog (if not disabled by config) before selecting scanner
++
++2008-01-30 19:24  sars
++
++	* [r768848] Enable translated libksane Enable setting image quality also
++	  for non-autosaved images
++
++2008-01-30 19:21  sars
++
++	* [r768845] rename pot file to glimpse.pot
++
++2008-01-16 20:25  ilic
++
++	* [r762329] Find .ui files too.
++
++2007-12-28 19:39  sars
++
++	* [r753939] Change the window title to be the scanner name + Glimpse
++
++2007-12-22 07:08  sars
++
++	* [r751542] Add icons to buttons and add i18n to strings (needs to be
++	  done for the .ui too somehow)
++
++2007-12-20 17:44  sars
++
++	* [r750951] Q_SLOTS in stead of "slot"
++
++2007-12-20 17:39  sars
++
++	* [r750950] -Update About data -Start using KConfigGroup in stead of
++	  QSettings
++
++2007-12-15 18:16  sars
++
++	* [r748852] This is the first commit of Glimpse a scanning application
++	  that uses libksane.
++
