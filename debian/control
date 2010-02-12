@@ -19,4 +19,4 @@ Description: image scanner for KDE 4 based on the KSane backend
  scanning of images with an attached scanner. Through the KSane backend, it can
  access a wide variety of different scanner models.
  .
- Skanlite can be considered the replacement of Kooka.
+ Skanlite can be considered to be the replacement of Kooka.
