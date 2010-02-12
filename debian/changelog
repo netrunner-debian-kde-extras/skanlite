@@ -1,8 +1,8 @@
-skanlite (0.4-kde4.4.0-1) UNRELEASED; urgency=low
+skanlite (0.4-kde4.4.0-1) unstable; urgency=low
 
+  [ Kai Wasserbäch ]
   The „Black Knight“ release.
 
-  * NOT RELEASED YET.
   * New upstream release
   * debian/skanlite.lintian-overrides: Removed, no longer needed.
   * debian/watch: Rewritten. This gets us a permanently working watch file. 
@@ -14,7 +14,10 @@ skanlite (0.4-kde4.4.0-1) UNRELEASED; urgency=low
     - add_upstream_changelog.patch: Added; found by Lintian; generated with
       svn2cl.
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Fri, 12 Feb 2010 18:36:03 +0100
+  [ Mark Purcell ]
+  * debian/rules add get-orig-source & print-version targets
+
+ -- Mark Purcell <msp@debian.org>  Sat, 13 Feb 2010 08:57:35 +1100
 
 skanlite (0.3-kde4.3.1-3) unstable; urgency=low
 
