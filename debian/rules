@@ -6,10 +6,11 @@ DEB_SOURCE_PACKAGE=skanlite
 DEBVERSION:=$(shell head -n 1 debian/changelog \
                     | sed -e 's/^[^(]*(\([^)]*\)).*/\1/')
 UPVERSION:=$(shell echo $(DEBVERSION) | sed -e 's/^.*://' -e 's/-[0-9.]*$$//' -e 's/.dfsg$$//')
+KDERELEASE:=$(shell echo $(UPVERSION) | sed -e 's/[0-9.]*-kde//')
 
 FILENAME = $(DEB_SOURCE_PACKAGE)_$(UPVERSION).orig.tar.gz
 UPFILENAME = $(DEB_SOURCE_PACKAGE)-$(UPVERSION).tar.bz2
-URL = ftp://ftp.kde.org/pub/kde/stable/4.4.0/src/extragear/$(UPFILENAME)
+URL = ftp://ftp.kde.org/pub/kde/stable/$(KDERELEASE)/src/extragear/$(UPFILENAME)
 
 
 override_dh_auto_configure:
