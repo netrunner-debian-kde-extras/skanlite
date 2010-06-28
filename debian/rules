@@ -8,7 +8,7 @@ DEBVERSION:=$(shell head -n 1 debian/changelog \
 UPVERSION:=$(shell echo $(DEBVERSION) | sed -e 's/^.*://' -e 's/-[0-9.]*$$//' -e 's/.dfsg$$//')
 KDERELEASE:=$(shell echo $(UPVERSION) | sed -e 's/[0-9.]*-kde//')
 
-FILENAME = $(DEB_SOURCE_PACKAGE)_$(UPVERSION).orig.tar.gz
+FILENAME = $(DEB_SOURCE_PACKAGE)_$(UPVERSION).orig.tar.bz2
 UPFILENAME = $(DEB_SOURCE_PACKAGE)-$(UPVERSION).tar.bz2
 URL = ftp://ftp.kde.org/pub/kde/stable/$(KDERELEASE)/src/extragear/$(UPFILENAME)
 
@@ -26,8 +26,6 @@ get-orig-source:
 	@@[ -d ../tarballs/. ]||mkdir -p ../tarballs
 	@@echo Downloading $(UPFILENAME) from $(URL) ...
 	@@wget -N -nv -T10 -t3 ../tarballs/$(UPFILENAME) $(URL)
-	@@echo Converting $(UPFILENAME) to $(FILENAME)
-	@@bzcat ../tarballs/$(UPFILENAME) | gzip -9 > ../tarballs/$(FILENAME)
 
 print-version:
 	@@echo DEB_SOURCE_PACKAGE: $(DEB_SOURCE_PACKAGE)
