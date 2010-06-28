@@ -6,7 +6,7 @@ Uploaders: Mark Purcell <msp@debian.org>, Kai Wasserbäch <debian@carbon-project
 DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 7.3.16), cmake, pkg-kde-tools (>= 0.9),
  libksane-dev, kdelibs5-dev (>= 4:4.2.0)
-Standards-Version: 3.8.4
+Standards-Version: 3.9.0
 Homepage: http://userbase.kde.org/Skanlite
 Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/skanlite/trunk
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/skanlite/trunk?op=log
