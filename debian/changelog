@@ -2,6 +2,7 @@ skanlite (0.4-kde4.4.0-3) UNRELEASED; urgency=low
 
   * debian/control: Bumped Standards-Version to 3.9.1, no further changes
     needed.
+  * debian/rules: Added --parallel to dh invocation.
 
  -- Kai Wasserbäch <debian@carbon-project.org>  Fri, 30 Jul 2010 16:04:35 +0200
 
