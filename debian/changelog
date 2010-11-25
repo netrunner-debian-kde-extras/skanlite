@@ -14,7 +14,9 @@ skanlite (0.5-1) UNRELEASED; urgency=low
       to Git.
   * debian/watch: Updated for new location on SF (custom rule as redirector
     doesn't work).
-  * debian/patches/add_upstream_changelog.patch: Updated.
+  * debian/patches:
+    - add_upstream_changelog.patch: Updated.
+    - fix_FTBFS_png.patch: Added.
   * debian/source.lintian-overrides: Added (consequence of the custom SF watch
     file).
 

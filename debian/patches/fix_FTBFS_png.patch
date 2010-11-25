@@ -1,0 +1,17 @@
+Subject: Fix FTBFS due to missing find_package(PNG REQUIRED)
+From: Kai Wasserbäch <debian@carbon-project.org>
+Last-Update: 2010-11-25
+---
+ CMakeLists.txt |    1 +
+ 1 file changed, 1 insertion(+)
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -5,6 +5,7 @@ include(KDE4Defaults)
+ include_directories (${KDE4_INCLUDES})
+ 
+ find_package(KSane REQUIRED)
++find_package(PNG REQUIRED)
+ 
+ set(skanlite_SRCS main.cpp skanlite.cpp ImageViewer.cpp KSaneImageSaver.cpp SaveLocation.cpp)
+ 

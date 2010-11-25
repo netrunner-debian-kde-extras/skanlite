@@ -1,1 +1,2 @@
 add_upstream_changelog.patch
+fix_FTBFS_png.patch
