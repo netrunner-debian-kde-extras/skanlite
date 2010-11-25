@@ -1,4 +1,4 @@
-skanlite (0.5-1) UNRELEASED; urgency=low
+skanlite (0.5-1) experimental; urgency=low
 
   The "Terra Eternal" release.
 
@@ -20,7 +20,7 @@ skanlite (0.5-1) UNRELEASED; urgency=low
   * debian/source.lintian-overrides: Added (consequence of the custom SF watch
     file).
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Thu, 25 Nov 2010 17:16:39 +0100
+ -- Kai Wasserbäch <debian@carbon-project.org>  Thu, 25 Nov 2010 18:39:10 +0100
 
 skanlite (0.4-kde4.4.0-2) unstable; urgency=low
 

@@ -1,6 +1,8 @@
 Subject: Fix FTBFS due to missing find_package(PNG REQUIRED)
 From: Kai Wasserbäch <debian@carbon-project.org>
 Last-Update: 2010-11-25
+Bug: https://bugs.kde.org/show_bug.cgi?id=257902
+Forwarded: https://bugs.kde.org/attachment.cgi?id=53732
 ---
  CMakeLists.txt |    1 +
  1 file changed, 1 insertion(+)
