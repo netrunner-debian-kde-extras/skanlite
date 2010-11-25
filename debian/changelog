@@ -7,7 +7,10 @@ skanlite (0.5-1) UNRELEASED; urgency=low
     - Bumped Standards-Version to 3.9.1, no further changes needed.
     - Updated Homepage field.
   * debian/rules: Added --parallel to dh invocation.
-  * debian/source/options: Added to ensure BZip2 compression.
+  * debian/source:
+    - options: Added to ensure BZip2 compression.
+    - local-options: Added with "unapply-patches" in preparation for migration
+      to Git.
   * debian/watch: Updated for new location on SF (custom rule as redirector
     doesn't work).
   * debian/patches/add_upstream_changelog.patch: Updated.
