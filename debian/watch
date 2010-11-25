@@ -3,7 +3,7 @@
 # Compulsory line, this is a version 3 file
 version=3
 
-opts=filenamemangle=s/.*\/(.*)\/download/$1/,downloadurlmangle=s/http\:\/\/sourceforge\.net\/projects\/sanewidget\/files/http\:\/\/downloads\.sourceforge\.net\/project\/sanewidget\/Skanlite/ \
+opts=filenamemangle=s/.*\/(.*)\/download/$1/,downloadurlmangle=s/http\:\/\/sourceforge\.net\/projects\/sanewidget\/files/http\:\/\/downloads\.sourceforge\.net\/project\/sanewidget/ \
     http://sourceforge.net/projects/sanewidget/files/ \
     (?:.*)/skanlite-([\d\.]+)\.tar.bz2/download \
     debian svn-update
