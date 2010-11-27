@@ -21,3 +21,15 @@ Description: image scanner for KDE 4 based on the KSane backend
  access a wide variety of different scanner models.
  .
  Skanlite can be considered to be the replacement of Kooka.
+
+Package: skanlite-dbg
+Architecture: any
+Depends: skanlite (= ${binary:Version}), ${misc:Depends}
+Section: debug
+Priority: extra
+Description: Skanlite's debugging symbols
+ Skanlite is a small and simple scanner application for KDE 4 which allows easy
+ scanning of images with an attached scanner. Through the KSane backend, it can
+ access a wide variety of different scanner models.
+ .
+ This package contains the debugging symbols.
