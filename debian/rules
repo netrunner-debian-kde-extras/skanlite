@@ -18,6 +18,9 @@ override_dh_auto_configure:
 					-DCMAKE_MODULE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed" \
 					-DCMAKE_EXE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed"
 
+override_dh_install:
+	        dh_install --parallel --list-missing
+
 %:
 	dh --parallel --with kde $@
 
