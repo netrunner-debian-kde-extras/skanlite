@@ -2,17 +2,6 @@
 
 DH_ALWAYS_EXCLUDE:=CVS:.svn:.svnignore:.hg:.hgignore
 
-DEB_SOURCE_PACKAGE=skanlite
-DEBVERSION:=$(shell head -n 1 debian/changelog \
-                    | sed -e 's/^[^(]*(\([^)]*\)).*/\1/')
-UPVERSION:=$(shell echo $(DEBVERSION) | sed -e 's/^.*://' -e 's/-[0-9.]*$$//' -e 's/.dfsg$$//')
-KDERELEASE:=$(shell echo $(UPVERSION) | sed -e 's/[0-9.]*-kde//')
-
-FILENAME = $(DEB_SOURCE_PACKAGE)_$(UPVERSION).orig.tar.bz2
-UPFILENAME = $(DEB_SOURCE_PACKAGE)-$(UPVERSION).tar.bz2
-URL = ftp://ftp.kde.org/pub/kde/stable/$(KDERELEASE)/src/extragear/$(UPFILENAME)
-
-
 override_dh_auto_configure:
 	        dh_auto_configure -Skde -- -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed" \
 					-DCMAKE_MODULE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed" \
@@ -23,19 +12,3 @@ override_dh_install:
 
 %:
 	dh --parallel --dbg-package=skanlite-dbg --with kde $@
-
-get-orig-source:
-	@@dh_testdir
-	@@[ -d ../tarballs/. ]||mkdir -p ../tarballs
-	@@echo Downloading $(UPFILENAME) from $(URL) ...
-	@@wget -N -nv -T10 -t3 ../tarballs/$(UPFILENAME) $(URL)
-
-print-version:
-	@@echo DEB_SOURCE_PACKAGE: $(DEB_SOURCE_PACKAGE)
-	@@echo DEB_VERSION: $(DEB_VERSION)
-	@@echo DEB_NO_EPOCH_VERSION: $(DEB_NOEPOCH_VERSION)
-	@@echo DEB_UPSTREAM_VERSION: $(DEB_UPSTREAM_VERSION)
-	@@echo DEBVERSION: $(DEBVERSION)
-	@@echo FILENAME: $(FILENAME)
-	@@echo URL: $(URL)
-
