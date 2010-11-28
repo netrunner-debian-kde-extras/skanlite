@@ -1,0 +1,310 @@
+# translation of skanlite.po to Swedish
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stefan Asserhäll <stefan.asserhall@comhem.se>, 2007, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: skanlite\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"PO-Revision-Date: 2010-07-08 23:27+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ImageViewer.cpp:59
+msgid "Zoom In"
+msgstr "Zooma in"
+
+#: ImageViewer.cpp:62
+msgid "Zoom Out"
+msgstr "Zooma ut"
+
+#: ImageViewer.cpp:65
+msgid "Zoom to Actual size"
+msgstr "Zooma till faktisk storlek"
+
+#: ImageViewer.cpp:68
+msgid "Zoom to Fit"
+msgstr "Fyll sidan"
+
+#: main.cpp:32
+msgid "Skanlite"
+msgstr "Skanlite"
+
+#: main.cpp:33
+msgid "This is a scanning application for KDE based on libksane."
+msgstr "Det här är ett bildinläsningsprogram för KDE baserat på libksane."
+
+#: main.cpp:35
+msgid "(C) 2008 Kåre Särs"
+msgstr "© 2008 Kåre Särs"
+
+#: main.cpp:37
+msgid "Kåre Särs"
+msgstr "Kåre Särs"
+
+#: main.cpp:38
+msgid "developer"
+msgstr "utvecklare"
+
+#: main.cpp:41
+msgid "Arseniy Lartsev"
+msgstr "Arseniy Lartsev"
+
+#: main.cpp:42
+msgid "contributor"
+msgstr "bidragsgivare"
+
+#: main.cpp:45
+msgid "Gilles Caulier"
+msgstr "Gilles Caulier"
+
+#: main.cpp:46 main.cpp:54
+msgid "Importing libksane to extragear"
+msgstr "Import av libksane till extragear"
+
+#: main.cpp:49
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: main.cpp:50
+msgid "Writing the user manual"
+msgstr "Skrev handboken"
+
+#: main.cpp:53
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cpp:57
+msgid "Chusslove Illich"
+msgstr "Chusslove Illich"
+
+#: main.cpp:58 main.cpp:62
+msgid "Help with translations"
+msgstr "Hjälp med översättningar"
+
+#: main.cpp:61
+msgid "Albert Astals Cid"
+msgstr "Albert Astals Cid"
+
+#: main.cpp:70
+msgid "Sane scanner device name."
+msgstr "Sane-bildläsarenhetens namn."
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stefan Asserhäll"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stefan.asserhall@comhem.se"
+
+#. i18n: file: settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
+#: rc.cpp:5 skanlite.cpp:61
+msgid "Settings"
+msgstr "Inställningar"
+
+#. i18n: file: settings.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:8
+msgid "Image saving"
+msgstr "Spara bilder"
+
+#. i18n: file: settings.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:11
+msgid "Preview before saving:"
+msgstr "Förhandsgranska innan spara."
+
+#. i18n: file: settings.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:14
+msgid "Save mode:"
+msgstr "Metod att spara:"
+
+#. i18n: file: settings.ui:57
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:17
+msgid "Open the save dialog for every image"
+msgstr "Öppna dialogrutan för att spara efter varje inläsning"
+
+#. i18n: file: settings.ui:62
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:20
+msgid "Open the save dialog for the first image only"
+msgstr "Öppna dialogrutan för att spara bara för den första bilden"
+
+#. i18n: file: settings.ui:67
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:23
+msgid "Save without asking for a filename"
+msgstr "Spara utan att fråga efter ett filnamn"
+
+#. i18n: file: settings.ui:82
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: SaveLocation.ui:23
+#. i18n: ectx: property (text), widget (QLabel, locationLabel)
+#: rc.cpp:26 rc.cpp:76
+msgid "Save Location:"
+msgstr "Plats att spara på:"
+
+#. i18n: file: settings.ui:104
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#. i18n: file: SaveLocation.ui:44
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#: rc.cpp:29 rc.cpp:79
+msgid "..."
+msgstr "..."
+
+#. i18n: file: settings.ui:111
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: SaveLocation.ui:53
+#. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
+#: rc.cpp:32 rc.cpp:82
+msgid "Name & Format:"
+msgstr "Namn och format:"
+
+#. i18n: file: settings.ui:126
+#. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
+#: rc.cpp:35
+msgid "Image"
+msgstr "Bild"
+
+#. i18n: file: settings.ui:133
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: SaveLocation.ui:72
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#: rc.cpp:38 rc.cpp:85
+msgid "###."
+msgstr "###."
+
+#. i18n: file: settings.ui:145
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:41
+msgid "Specify save quality:"
+msgstr "Ange kvalitet att spara:"
+
+#. i18n: file: settings.ui:204
+#. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
+#: rc.cpp:45
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: file: settings.ui:232
+#. i18n: ectx: property (title), widget (QGroupBox, generalGB)
+#: rc.cpp:48
+msgid "General"
+msgstr "Allmänt"
+
+#. i18n: file: settings.ui:245
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:51
+msgid "50"
+msgstr "50"
+
+#. i18n: file: settings.ui:250
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:54
+msgid "75"
+msgstr "75"
+
+#. i18n: file: settings.ui:255
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:57
+msgid "100"
+msgstr "100"
+
+#. i18n: file: settings.ui:260
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:60
+msgid "150"
+msgstr "150"
+
+#. i18n: file: settings.ui:265
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:63
+msgid "300"
+msgstr "300"
+
+#. i18n: file: settings.ui:278
+#. i18n: ectx: property (toolTip), widget (QLabel, label_5)
+#: rc.cpp:67
+msgid "Use this option to specify the resolution for the preview scans."
+msgstr ""
+"Använd alternativet för att ange upplösningen för inläsningar att "
+"förhandsgranska."
+
+#. i18n: file: settings.ui:281
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:70
+msgid "Set preview resolution (DPI):"
+msgstr "Ange förhandsgranskningarnas upplösning (punkter per tum):"
+
+#. i18n: file: SaveLocation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SaveLocation)
+#: rc.cpp:73
+msgid "Save Location"
+msgstr "Plats att spara på"
+
+#. i18n: file: SaveLocation.ui:84
+#. i18n: ectx: property (text), widget (QLabel, resultValue)
+#: rc.cpp:88
+msgid "/home/joe/example.png"
+msgstr "/home/anna/exempel.png"
+
+#. i18n: file: SaveLocation.ui:91
+#. i18n: ectx: property (text), widget (QLabel, resultValue_2)
+#: rc.cpp:91
+msgid "Example:"
+msgstr "Exempel:"
+
+#: skanlite.cpp:63
+msgid "About"
+msgstr "Om"
+
+#: skanlite.cpp:114
+msgid "Skanlite Settings"
+msgstr "Inställningar av Skanlite"
+
+#: skanlite.cpp:137
+msgid "Opening the selected scanner failed."
+msgstr "Misslyckades öppna vald bildläsare."
+
+#: skanlite.cpp:148
+msgid "Save"
+msgstr "Spara"
+
+#: skanlite.cpp:159
+msgid "New Image File Name"
+msgstr "Nytt bildfilnamn"
+
+#: skanlite.cpp:345
+#, kde-format
+msgid "Do you want to overwrite \"%1\"?"
+msgstr "Vill du skriva över \"%1\"?"
+
+#: skanlite.cpp:347
+msgid "Overwrite"
+msgstr "Skriv över"
+
+#: skanlite.cpp:375
+msgid ""
+"The image will be saved in the PNG format, as Skanlite only supports saving "
+"16 bit color images in the PNG format."
+msgstr ""
+"Bilden sparas med PNG-format, eftersom Skanlite bara stöder att spara 16-"
+"bitars färgbilder med PNG-format."
+
+#: skanlite.cpp:383 skanlite.cpp:396
+msgid "Failed to save image"
+msgstr "Misslyckades spara bild"
