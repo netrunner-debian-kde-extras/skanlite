@@ -1,0 +1,314 @@
+# Translation of skanlite.po to Ukrainian
+# translation of skanlite.po to Ukrainian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010.
+# Ivan Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: skanlite\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"PO-Revision-Date: 2010-10-26 17:17+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <translation@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n%"
+"10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ImageViewer.cpp:59
+msgid "Zoom In"
+msgstr "Збільшити"
+
+#: ImageViewer.cpp:62
+msgid "Zoom Out"
+msgstr "Зменшити"
+
+#: ImageViewer.cpp:65
+msgid "Zoom to Actual size"
+msgstr "Фактичний розмір"
+
+#: ImageViewer.cpp:68
+msgid "Zoom to Fit"
+msgstr "Підібрати за розмірами"
+
+#: main.cpp:32
+msgid "Skanlite"
+msgstr "Skanlite"
+
+#: main.cpp:33
+msgid "This is a scanning application for KDE based on libksane."
+msgstr "Це програма для сканування в KDE, на основі бібліотеки libksane."
+
+#: main.cpp:35
+msgid "(C) 2008 Kåre Särs"
+msgstr "© Kåre Särs, 2008"
+
+#: main.cpp:37
+msgid "Kåre Särs"
+msgstr "Kåre Särs"
+
+#: main.cpp:38
+msgid "developer"
+msgstr "розробник"
+
+#: main.cpp:41
+msgid "Arseniy Lartsev"
+msgstr "Arseniy Lartsev"
+
+#: main.cpp:42
+msgid "contributor"
+msgstr "учасник розробки"
+
+#: main.cpp:45
+msgid "Gilles Caulier"
+msgstr "Gilles Caulier"
+
+#: main.cpp:46 main.cpp:54
+msgid "Importing libksane to extragear"
+msgstr "Імпорт libksane у extragear"
+
+#: main.cpp:49
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: main.cpp:50
+msgid "Writing the user manual"
+msgstr "Написання довідника користувача"
+
+#: main.cpp:53
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cpp:57
+msgid "Chusslove Illich"
+msgstr "Chusslove Illich"
+
+#: main.cpp:58 main.cpp:62
+msgid "Help with translations"
+msgstr "Допомога з перекладами"
+
+#: main.cpp:61
+msgid "Albert Astals Cid"
+msgstr "Albert Astals Cid"
+
+#: main.cpp:70
+msgid "Sane scanner device name."
+msgstr "Назва пристрою сканера з Sane."
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "о.Іван Петрущак,Юрій Чорноіван"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "fr.ivan@ukrainian-orthodox.org,yurchor@ukr.net"
+
+#. i18n: file: settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
+#: rc.cpp:5 skanlite.cpp:61
+msgid "Settings"
+msgstr "Параметри"
+
+#. i18n: file: settings.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:8
+msgid "Image saving"
+msgstr "Збереження зображення"
+
+#. i18n: file: settings.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:11
+msgid "Preview before saving:"
+msgstr "Переглянути перед збереженням:"
+
+#. i18n: file: settings.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:14
+msgid "Save mode:"
+msgstr "Режим збереження:"
+
+#. i18n: file: settings.ui:57
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:17
+msgid "Open the save dialog for every image"
+msgstr "Відкривати діалогове вікно збереження для кожного зображення"
+
+#. i18n: file: settings.ui:62
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:20
+msgid "Open the save dialog for the first image only"
+msgstr "Відкривати діалогове вікно збереження лише для першого зображення"
+
+#. i18n: file: settings.ui:67
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:23
+msgid "Save without asking for a filename"
+msgstr "Зберігати, не запитуючи про назву файла"
+
+#. i18n: file: settings.ui:82
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: SaveLocation.ui:23
+#. i18n: ectx: property (text), widget (QLabel, locationLabel)
+#: rc.cpp:26 rc.cpp:76
+msgid "Save Location:"
+msgstr "Адреса збереження:"
+
+#. i18n: file: settings.ui:104
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#. i18n: file: SaveLocation.ui:44
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#: rc.cpp:29 rc.cpp:79
+msgid "..."
+msgstr "..."
+
+#. i18n: file: settings.ui:111
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: SaveLocation.ui:53
+#. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
+#: rc.cpp:32 rc.cpp:82
+msgid "Name & Format:"
+msgstr "Назва і формат:"
+
+#. i18n: file: settings.ui:126
+#. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
+#: rc.cpp:35
+msgid "Image"
+msgstr "Зображення"
+
+#. i18n: file: settings.ui:133
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: SaveLocation.ui:72
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#: rc.cpp:38 rc.cpp:85
+msgid "###."
+msgstr "###."
+
+#. i18n: file: settings.ui:145
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:41
+msgid "Specify save quality:"
+msgstr "Якість збереженого зображення:"
+
+#. i18n: file: settings.ui:204
+#. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
+#: rc.cpp:45
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: file: settings.ui:232
+#. i18n: ectx: property (title), widget (QGroupBox, generalGB)
+#: rc.cpp:48
+msgid "General"
+msgstr "Загальне"
+
+#. i18n: file: settings.ui:245
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:51
+msgid "50"
+msgstr "50"
+
+#. i18n: file: settings.ui:250
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:54
+msgid "75"
+msgstr "75"
+
+#. i18n: file: settings.ui:255
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:57
+msgid "100"
+msgstr "100"
+
+#. i18n: file: settings.ui:260
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:60
+msgid "150"
+msgstr "150"
+
+#. i18n: file: settings.ui:265
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:63
+msgid "300"
+msgstr "300"
+
+#. i18n: file: settings.ui:278
+#. i18n: ectx: property (toolTip), widget (QLabel, label_5)
+#: rc.cpp:67
+msgid "Use this option to specify the resolution for the preview scans."
+msgstr ""
+"За допомогою цього пункту ви можете вказати роздільну здатність сканування "
+"для попереднього перегляду."
+
+#. i18n: file: settings.ui:281
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:70
+msgid "Set preview resolution (DPI):"
+msgstr "Роздільна здатність перегляду (точок/дюйм):"
+
+#. i18n: file: SaveLocation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SaveLocation)
+#: rc.cpp:73
+msgid "Save Location"
+msgstr "Адреса зберігання"
+
+#. i18n: file: SaveLocation.ui:84
+#. i18n: ectx: property (text), widget (QLabel, resultValue)
+#: rc.cpp:88
+msgid "/home/joe/example.png"
+msgstr "/home/joe/приклад.png"
+
+#. i18n: file: SaveLocation.ui:91
+#. i18n: ectx: property (text), widget (QLabel, resultValue_2)
+#: rc.cpp:91
+msgid "Example:"
+msgstr "Приклад:"
+
+#: skanlite.cpp:63
+msgid "About"
+msgstr "Про програму"
+
+#: skanlite.cpp:114
+msgid "Skanlite Settings"
+msgstr "Параметри Skanlite"
+
+#: skanlite.cpp:137
+msgid "Opening the selected scanner failed."
+msgstr "Спроба відкрити вибраний сканер зазнала невдачі."
+
+#: skanlite.cpp:148
+msgid "Save"
+msgstr "Зберегти"
+
+#: skanlite.cpp:159
+msgid "New Image File Name"
+msgstr "Назва файла нового зображення"
+
+#: skanlite.cpp:345
+#, kde-format
+msgid "Do you want to overwrite \"%1\"?"
+msgstr "Чи бажаєте ви перезаписати «%1»?"
+
+#: skanlite.cpp:347
+msgid "Overwrite"
+msgstr "Перезаписати"
+
+#: skanlite.cpp:375
+msgid ""
+"The image will be saved in the PNG format, as Skanlite only supports saving "
+"16 bit color images in the PNG format."
+msgstr ""
+"Дані зображення буде збережено у форматі PNG, оскільки зберігання кольорових "
+"зображень з глибиною кольору 16 бітів у Skanlite передбачено лише у форматі "
+"PNG."
+
+#: skanlite.cpp:383 skanlite.cpp:396
+msgid "Failed to save image"
+msgstr "Спроба збереження зображення була невдалою"

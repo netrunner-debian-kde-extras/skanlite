@@ -1,0 +1,315 @@
+# Translation of skanlite into Japanese.
+# This file is distributed under the same license as the kdegraphics package.
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: skanlite\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"PO-Revision-Date: 2008-12-24 01:14+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: ImageViewer.cpp:59
+msgid "Zoom In"
+msgstr ""
+
+#: ImageViewer.cpp:62
+msgid "Zoom Out"
+msgstr ""
+
+#: ImageViewer.cpp:65
+msgid "Zoom to Actual size"
+msgstr ""
+
+#: ImageViewer.cpp:68
+msgid "Zoom to Fit"
+msgstr ""
+
+#: main.cpp:32
+msgid "Skanlite"
+msgstr "Skanlite"
+
+#: main.cpp:33
+msgid "This is a scanning application for KDE based on libksane."
+msgstr "libksane をベースにした KDE のスキャンソフト"
+
+#: main.cpp:35
+msgid "(C) 2008 Kåre Särs"
+msgstr "(C) 2008 Kåre Särs"
+
+#: main.cpp:37
+msgid "Kåre Särs"
+msgstr "Kåre Särs"
+
+#: main.cpp:38
+msgid "developer"
+msgstr "開発者"
+
+#: main.cpp:41
+msgid "Arseniy Lartsev"
+msgstr "Arseniy Lartsev"
+
+#: main.cpp:42
+msgid "contributor"
+msgstr "協力者"
+
+#: main.cpp:45
+msgid "Gilles Caulier"
+msgstr "Gilles Caulier"
+
+#: main.cpp:46 main.cpp:54
+msgid "Importing libksane to extragear"
+msgstr "libksane を extragear にインポート"
+
+#: main.cpp:49
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: main.cpp:50
+msgid "Writing the user manual"
+msgstr "ユーザマニュアルを執筆"
+
+#: main.cpp:53
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cpp:57
+msgid "Chusslove Illich"
+msgstr "Chusslove Illich"
+
+#: main.cpp:58 main.cpp:62
+msgid "Help with translations"
+msgstr "ローカライゼーションのための手助け"
+
+#: main.cpp:61
+msgid "Albert Astals Cid"
+msgstr "Albert Astals Cid"
+
+# KCmdLineOptions
+#: main.cpp:70
+msgid "Sane scanner device name."
+msgstr "SANE のスキャナデバイスの名前"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Yukiko Bando"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#. i18n: file: settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
+#: rc.cpp:5 skanlite.cpp:61
+msgid "Settings"
+msgstr "設定"
+
+#. i18n: file: settings.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:8
+msgid "Image saving"
+msgstr ""
+
+#. i18n: file: settings.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:11
+#, fuzzy
+#| msgid "Preview the image before saving."
+msgid "Preview before saving:"
+msgstr "保存する前に画像のプレビューを見る"
+
+#. i18n: file: settings.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:14
+msgid "Save mode:"
+msgstr "保存モード:"
+
+#. i18n: file: settings.ui:57
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:17
+msgid "Open the save dialog for every image"
+msgstr "画像ごとに保存ダイアログを開く"
+
+#. i18n: file: settings.ui:62
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:20
+msgid "Open the save dialog for the first image only"
+msgstr "最初の画像にのみ保存ダイアログを開く"
+
+#. i18n: file: settings.ui:67
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:23
+msgid "Save without asking for a filename"
+msgstr "ファイル名を尋ねずに保存する"
+
+#. i18n: file: settings.ui:82
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: SaveLocation.ui:23
+#. i18n: ectx: property (text), widget (QLabel, locationLabel)
+#: rc.cpp:26 rc.cpp:76
+msgid "Save Location:"
+msgstr "保存場所:"
+
+#. i18n: file: settings.ui:104
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#. i18n: file: SaveLocation.ui:44
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#: rc.cpp:29 rc.cpp:79
+msgid "..."
+msgstr "..."
+
+#. i18n: file: settings.ui:111
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: SaveLocation.ui:53
+#. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
+#: rc.cpp:32 rc.cpp:82
+msgid "Name & Format:"
+msgstr "名前とフォーマット:"
+
+#. i18n: file: settings.ui:126
+#. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
+#: rc.cpp:35
+msgid "Image"
+msgstr "画像"
+
+#. i18n: file: settings.ui:133
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: SaveLocation.ui:72
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#: rc.cpp:38 rc.cpp:85
+msgid "###."
+msgstr "###."
+
+#. i18n: file: settings.ui:145
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:41
+#, fuzzy
+#| msgid "Specify quality:"
+msgid "Specify save quality:"
+msgstr "画質を指定する:"
+
+#. i18n: file: settings.ui:204
+#. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
+#: rc.cpp:45
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: file: settings.ui:232
+#. i18n: ectx: property (title), widget (QGroupBox, generalGB)
+#: rc.cpp:48
+msgid "General"
+msgstr ""
+
+#. i18n: file: settings.ui:245
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:51
+msgid "50"
+msgstr ""
+
+#. i18n: file: settings.ui:250
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:54
+msgid "75"
+msgstr ""
+
+#. i18n: file: settings.ui:255
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:57
+msgid "100"
+msgstr ""
+
+#. i18n: file: settings.ui:260
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:60
+msgid "150"
+msgstr ""
+
+#. i18n: file: settings.ui:265
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:63
+msgid "300"
+msgstr ""
+
+#. i18n: file: settings.ui:278
+#. i18n: ectx: property (toolTip), widget (QLabel, label_5)
+#: rc.cpp:67
+msgid "Use this option to specify the resolution for the preview scans."
+msgstr ""
+
+#. i18n: file: settings.ui:281
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:70
+msgid "Set preview resolution (DPI):"
+msgstr ""
+
+#. i18n: file: SaveLocation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SaveLocation)
+#: rc.cpp:73
+#, fuzzy
+#| msgid "Save Location:"
+msgid "Save Location"
+msgstr "保存場所:"
+
+#. i18n: file: SaveLocation.ui:84
+#. i18n: ectx: property (text), widget (QLabel, resultValue)
+#: rc.cpp:88
+msgid "/home/joe/example.png"
+msgstr ""
+
+#. i18n: file: SaveLocation.ui:91
+#. i18n: ectx: property (text), widget (QLabel, resultValue_2)
+#: rc.cpp:91
+msgid "Example:"
+msgstr ""
+
+#: skanlite.cpp:63
+msgid "About"
+msgstr "情報"
+
+#: skanlite.cpp:114
+msgid "Skanlite Settings"
+msgstr "Skanlite の設定"
+
+#: skanlite.cpp:137
+#, fuzzy
+#| msgid "Opening the selected scanner failed!"
+msgid "Opening the selected scanner failed."
+msgstr "選択されたスキャナを開けませんでした"
+
+#: skanlite.cpp:148
+msgid "Save"
+msgstr "保存"
+
+#: skanlite.cpp:159
+msgid "New Image File Name"
+msgstr ""
+
+#: skanlite.cpp:345
+#, kde-format
+msgid "Do you want to overwrite \"%1\"?"
+msgstr "<filename>%1</filename> を上書きしますか？"
+
+#: skanlite.cpp:347
+msgid "Overwrite"
+msgstr "上書き"
+
+#: skanlite.cpp:375
+msgid ""
+"The image will be saved in the PNG format, as Skanlite only supports saving "
+"16 bit color images in the PNG format."
+msgstr ""
+
+#: skanlite.cpp:383 skanlite.cpp:396
+msgid "Failed to save image"
+msgstr "画像を保存できませんでした"
