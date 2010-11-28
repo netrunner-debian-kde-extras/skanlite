@@ -8,8 +8,8 @@ Build-Depends: debhelper (>= 7.3.16), cmake, pkg-kde-tools (>= 0.9),
  libksane-dev, kdelibs5-dev (>= 4:4.2.0), libpng12-dev
 Standards-Version: 3.9.1
 Homepage: http://www.kde.org/applications/graphics/skanlite/
-Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/skanlite/trunk
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/skanlite/trunk?op=log
+Vcs-Git: git://git.debian.org/pkg-kde/kde-extras/skanlite.git
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/skanlite.git;a=summary
 
 Package: skanlite
 Architecture: any
