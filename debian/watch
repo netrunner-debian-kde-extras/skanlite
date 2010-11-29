@@ -5,5 +5,5 @@ version=3
 
 opts=filenamemangle=s/.*\/(.*)\/download/$1/,downloadurlmangle=s/http\:\/\/sourceforge\.net\/projects\/sanewidget\/files(.*)\/download/http\:\/\/downloads\.sourceforge\.net\/project\/sanewidget$1/ \
     http://sourceforge.net/projects/sanewidget/files/ \
-    (?:.*)/skanlite-([\d\.]+)\.tar.bz2/download \
+    (?:.*)/skanlite-([\d\.]+)\.tar\.bz2/download \
     debian git-import-orig
