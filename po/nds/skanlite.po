@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skanlite\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"POT-Creation-Date: 2010-11-26 06:38+0100\n"
 "PO-Revision-Date: 2010-10-23 09:35+0200\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-doc@kde.org>\n"
@@ -272,32 +272,32 @@ msgstr "Bispill:"
 msgid "About"
 msgstr "Över"
 
-#: skanlite.cpp:114
+#: skanlite.cpp:115
 msgid "Skanlite Settings"
 msgstr "Skanlite-Instellen"
 
-#: skanlite.cpp:137
+#: skanlite.cpp:138
 msgid "Opening the selected scanner failed."
 msgstr "Dat Opmaken vun den utsöchten Inleser is fehlslaan."
 
-#: skanlite.cpp:148
+#: skanlite.cpp:149
 msgid "Save"
 msgstr "Sekern"
 
-#: skanlite.cpp:159
+#: skanlite.cpp:160
 msgid "New Image File Name"
 msgstr "Nieg Bilddatei-Naam"
 
-#: skanlite.cpp:345
+#: skanlite.cpp:351
 #, kde-format
 msgid "Do you want to overwrite \"%1\"?"
 msgstr "Wullt Du \"%1\" överschrieven?"
 
-#: skanlite.cpp:347
+#: skanlite.cpp:353
 msgid "Overwrite"
 msgstr "Överschrieven"
 
-#: skanlite.cpp:375
+#: skanlite.cpp:381
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
@@ -305,7 +305,7 @@ msgstr ""
 "Dat Bild warrt as PNG sekert, wiel Skanlite 16-Bit-Klöörbiller bloots as PNG "
 "sekern kann."
 
-#: skanlite.cpp:383 skanlite.cpp:396
+#: skanlite.cpp:389 skanlite.cpp:402
 msgid "Failed to save image"
 msgstr "Bild lett sik nich sekern."
 

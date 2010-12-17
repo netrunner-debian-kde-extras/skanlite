@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: playground-graphics/glimpse.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"POT-Creation-Date: 2010-11-26 06:38+0100\n"
 "PO-Revision-Date: 2008-01-31 14:07-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -275,38 +275,38 @@ msgstr ""
 msgid "About"
 msgstr "Maidir Leis"
 
-#: skanlite.cpp:114
+#: skanlite.cpp:115
 msgid "Skanlite Settings"
 msgstr "Socruithe Skanlite"
 
-#: skanlite.cpp:137
+#: skanlite.cpp:138
 msgid "Opening the selected scanner failed."
 msgstr "Níorbh fhéidir an scanóir roghnaithe a oscailt."
 
-#: skanlite.cpp:148
+#: skanlite.cpp:149
 msgid "Save"
 msgstr "Sábháil"
 
-#: skanlite.cpp:159
+#: skanlite.cpp:160
 msgid "New Image File Name"
 msgstr ""
 
-#: skanlite.cpp:345
+#: skanlite.cpp:351
 #, kde-format
 msgid "Do you want to overwrite \"%1\"?"
 msgstr "An bhfuil fonn ort \"%1\" a fhorscríobh?"
 
-#: skanlite.cpp:347
+#: skanlite.cpp:353
 msgid "Overwrite"
 msgstr "Forscríobh"
 
-#: skanlite.cpp:375
+#: skanlite.cpp:381
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
 msgstr ""
 
-#: skanlite.cpp:383 skanlite.cpp:396
+#: skanlite.cpp:389 skanlite.cpp:402
 msgid "Failed to save image"
 msgstr "Theip ar íomhá a shábháil"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"POT-Creation-Date: 2010-11-26 06:38+0100\n"
 "PO-Revision-Date: 2010-09-26 12:52+0200\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Magyar <kde-l10n-hu@kde.org>\n"
@@ -270,37 +270,37 @@ msgstr "Példa:"
 msgid "About"
 msgstr "Névjegy"
 
-#: skanlite.cpp:114
+#: skanlite.cpp:115
 msgid "Skanlite Settings"
 msgstr "Beállítások: Skanlite"
 
-#: skanlite.cpp:137
+#: skanlite.cpp:138
 msgid "Opening the selected scanner failed."
 msgstr "Nem sikerült megnyitni a kiválasztott szkennert."
 
-#: skanlite.cpp:148
+#: skanlite.cpp:149
 msgid "Save"
 msgstr "Mentés"
 
-#: skanlite.cpp:159
+#: skanlite.cpp:160
 msgid "New Image File Name"
 msgstr "Új képfájl neve"
 
-#: skanlite.cpp:345
+#: skanlite.cpp:351
 #, kde-format
 msgid "Do you want to overwrite \"%1\"?"
 msgstr "Szeretné felülírni a(z) „%1” fájlt?"
 
-#: skanlite.cpp:347
+#: skanlite.cpp:353
 msgid "Overwrite"
 msgstr "Felülírás"
 
-#: skanlite.cpp:375
+#: skanlite.cpp:381
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
 msgstr ""
 
-#: skanlite.cpp:383 skanlite.cpp:396
+#: skanlite.cpp:389 skanlite.cpp:402
 msgid "Failed to save image"
 msgstr "A kép mentése nem sikerült"

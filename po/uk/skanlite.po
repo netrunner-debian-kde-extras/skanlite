@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skanlite\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"POT-Creation-Date: 2010-11-26 06:38+0100\n"
 "PO-Revision-Date: 2010-10-26 17:17+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
@@ -275,32 +275,32 @@ msgstr "Приклад:"
 msgid "About"
 msgstr "Про програму"
 
-#: skanlite.cpp:114
+#: skanlite.cpp:115
 msgid "Skanlite Settings"
 msgstr "Параметри Skanlite"
 
-#: skanlite.cpp:137
+#: skanlite.cpp:138
 msgid "Opening the selected scanner failed."
 msgstr "Спроба відкрити вибраний сканер зазнала невдачі."
 
-#: skanlite.cpp:148
+#: skanlite.cpp:149
 msgid "Save"
 msgstr "Зберегти"
 
-#: skanlite.cpp:159
+#: skanlite.cpp:160
 msgid "New Image File Name"
 msgstr "Назва файла нового зображення"
 
-#: skanlite.cpp:345
+#: skanlite.cpp:351
 #, kde-format
 msgid "Do you want to overwrite \"%1\"?"
 msgstr "Чи бажаєте ви перезаписати «%1»?"
 
-#: skanlite.cpp:347
+#: skanlite.cpp:353
 msgid "Overwrite"
 msgstr "Перезаписати"
 
-#: skanlite.cpp:375
+#: skanlite.cpp:381
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
@@ -309,6 +309,6 @@ msgstr ""
 "зображень з глибиною кольору 16 бітів у Skanlite передбачено лише у форматі "
 "PNG."
 
-#: skanlite.cpp:383 skanlite.cpp:396
+#: skanlite.cpp:389 skanlite.cpp:402
 msgid "Failed to save image"
 msgstr "Спроба збереження зображення була невдалою"
