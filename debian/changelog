@@ -1,7 +1,8 @@
-skanlite (0.6-2) UNRELEASED; urgency=low
+skanlite (0.7-1) UNRELEASED; urgency=low
 
   The "Blinding Light" release.
 
+  * New upstream release fixing a regression.
   * debian/rules:
     - Added --list-missing.
     - Added "--dbg-package=skanlite-dbg".
@@ -16,7 +17,7 @@ skanlite (0.6-2) UNRELEASED; urgency=low
     - Added a backslash for escaping.
   * debian/gbp.conf: Ensure pristine-tar is used.
 
- -- Kai Wasserbäch <debian@carbon-project.org>  Sat, 27 Nov 2010 17:15:52 +0100
+ -- Kai Wasserbäch <debian@carbon-project.org>  Fri, 17 Dec 2010 10:15:50 +0100
 
 skanlite (0.6-1) experimental; urgency=low
 
