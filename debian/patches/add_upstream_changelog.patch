@@ -3,17 +3,31 @@ Author: Kai Wasserbäch <debian@carbon-project.org>
 Last-Update: 2010-11-25
 Forwarded: no
 ---
- ChangeLog |  471 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 471 insertions(+)
+ ChangeLog |  477 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 477 insertions(+)
 
 --- /dev/null
 +++ b/ChangeLog
-@@ -0,0 +1,471 @@
+@@ -0,0 +1,477 @@
++2010-11-30  sars
++
++	* [r1202400] Fix save regression
++	  Fix SaveLocation.cpp/h copyright headers
++
++	  BUG:258370
++
++2010-11-25  sars
++
++	* [r1200802] Add missing find_package(PNG REQUIRED)
++	  Fix save window size bug
++	  Bump version
++
 +2010-10-21  dfaure
 +
 +	* [r1188173] Make executable the Type=Application .desktop files we
-+	  install, so that they can be used even from a KDE running in another
-+	  prefix (http://markmail.org/message/4p3krovtnzwx35zd)
++	  install,
++	  so that they can be used even from a KDE running in another prefix
++	  (http://markmail.org/message/4p3krovtnzwx35zd)
 +
 +2010-09-24  mlaurent
 +
@@ -37,8 +51,9 @@ Forwarded: no
 +
 +2010-07-07  sars
 +
-+	* [r1147285] Add support for saving 16 bit/color PNG files Simplify the
-+	  saving code and add a proper question box for "ask for first image"
++	* [r1147285] Add support for saving 16 bit/color PNG files
++	  Simplify the saving code and add a proper question box for "ask for
++	  first image"
 +
 +2010-07-05  scripty
 +
@@ -47,7 +62,6 @@ Forwarded: no
 +2010-06-29  scripty
 +
 +	* [r1144039] SVN_SILENT made messages (.desktop file)
-+
 +	* [r1143913] SVN_SILENT made messages (.desktop file)
 +
 +2010-06-16  scripty
@@ -89,7 +103,6 @@ Forwarded: no
 +
 +	  Thanks Pino for fixing the original bug (and for pointing out my
 +	  mistake)
-+
 +	* [r1074275] Thanks for the patch, patch applied.
 +
 +	  BUG:222542
@@ -130,8 +143,9 @@ Forwarded: no
 +2009-09-08  sars
 +
 +	* [r1021322] GUI: Reorganize the settings dialog and add the possibility
-+	  to specify a preview resolution. Make the "save preview" image
-+	  scalable. Use m_ prefix for class member variables.
++	  to specify a preview resolution.
++	  Make the "save preview" image scalable.
++	  Use m_ prefix for class member variables.
 +
 +2009-08-07  scripty
 +
@@ -160,7 +174,8 @@ Forwarded: no
 +2009-04-29  pino
 +
 +	* [r961040] set the icon name of a program in the correct way (changing
-+	  the internal app name is a bad idea) CCMAIL: kristof.bal@gmail.com
++	  the internal app name is a bad idea)
++	  CCMAIL: kristof.bal@gmail.com
 +
 +2009-04-29  kbal
 +
@@ -186,24 +201,27 @@ Forwarded: no
 +	  Thanks Arseniy Lartsev for the patch!
 +
 +	  BUG: 178457
-+
 +	* [r928068] Add a scan mode "Open the save dialog for the first image
-+	  only" Sync the settings on settings dialog exit to ensure that the
-+	  changes are saved. add copyright notice Arseniy Lartsev
++	  only"
++	  Sync the settings on settings dialog exit to ensure that the changes
++	  are saved.
++	  add copyright notice Arseniy Lartsev
 +
 +	  CCBUG: 177899
 +
 +2009-01-24  shaforo
 +
-+	* [r916207] set fine-grained categories for extragear apps. (in
-+	  compliance with
++	* [r916207] set fine-grained categories for extragear apps.
++	  (in compliance with
 +	  http://standards.freedesktop.org/menu-spec/menu-spec-1.0.html#category-registry)
 +
 +	  as the changes ain't controversial. I'm commiting them w/o
 +	  approvement.
 +
-+	  CCMAIL:tomalbers@kde.nl CCMAIL:digikam-devel@kde.org
-+	  CCMAIL:kile-devel@lists.sourceforge.net CCMAIL:kare.sars@iki.fi
++	  CCMAIL:tomalbers@kde.nl
++	  CCMAIL:digikam-devel@kde.org
++	  CCMAIL:kile-devel@lists.sourceforge.net
++	  CCMAIL:kare.sars@iki.fi
 +	  CCMAIL:jh@kolouch.net
 +
 +2009-01-21  scripty
@@ -254,7 +272,6 @@ Forwarded: no
 +
 +	* [r863892] Fix the license (these files are not part of the libksane
 +	  library...)
-+
 +	* [r863836] Fix the license (these files are not part of the libksane
 +	  library...)
 +
@@ -266,9 +283,9 @@ Forwarded: no
 +
 +	* [r836873] change the version, because we now need the FindKSane.cmake
 +	  installed from kdegraphics
-+
 +	* [r836872] libksane is not optional for Skanlite -> remove the
-+	  optional... remove the unused cmake dir
++	  optional...
++	  remove the unused cmake dir
 +
 +2008-07-01  mlaurent
 +
@@ -277,13 +294,12 @@ Forwarded: no
 +2008-06-06  pino
 +
 +	* [r817550] remove all the FindKSane copies all around, and optionally
-+	  use the FindKSane installed by kdegraphics >= 4.1 adapt to the syntax
-+	  of that FindKSane
++	  use the FindKSane installed by kdegraphics >= 4.1
++	  adapt to the syntax of that FindKSane
 +
 +2008-06-06  cgilles
 +
 +	* [r817534] this is more logic for the moment
-+
 +	* [r817515] compile
 +
 +2008-05-27  mlaurent
@@ -296,8 +312,8 @@ Forwarded: no
 +
 +2008-04-26  mlaurent
 +
-+	* [r801289] Move cmake file in specific project it's better when we want
-+	  to checkout just project
++	* [r801289] Move cmake file in specific project
++	  it's better when we want to checkout just project
 +
 +2008-04-25  mlaurent
 +
@@ -306,7 +322,6 @@ Forwarded: no
 +2008-04-13  sars
 +
 +	* [r796588] Update credits
-+
 +	* [r796571] Remove file name from currentDir -> fix auto file name for
 +	  the save dialog.
 +
@@ -317,13 +332,11 @@ Forwarded: no
 +2008-04-09  scripty
 +
 +	* [r795145] SVN_SILENT made messages (.desktop file)
-+
 +	* [r795067] SVN_SILENT made messages (.desktop file, second try)
 +
 +2008-04-07  scripty
 +
 +	* [r794381] SVN_SILENT made messages (.desktop file, second try)
-+
 +	* [r794320] SVN_SILENT made messages (.desktop file)
 +
 +2008-04-05  annma
@@ -332,9 +345,9 @@ Forwarded: no
 +
 +2008-04-05  sars
 +
-+	* [r793784] Do not show the settings dialog on startup. Default save
-+	  location is now $HOME. Rearange the settings dialog.
-+
++	* [r793784] Do not show the settings dialog on startup.
++	  Default save location is now $HOME.
++	  Rearange the settings dialog.
 +	* [r793776] Make it possible to build separately
 +
 +2008-04-05  scripty
@@ -352,7 +365,6 @@ Forwarded: no
 +2008-04-02  sars
 +
 +	* [r792988] catalog name not capitalized
-+
 +	* [r792986] Set proper window title on the settings dialog and the
 +	  scanner selection dialog.
 +
@@ -363,30 +375,27 @@ Forwarded: no
 +2008-04-02  pino
 +
 +	* [r792945] - Categories is a list, so it must end with the list
-+	  separator (';') - remove unuseful comment
++	  separator (';')
++	  - remove unuseful comment
 +
 +2008-04-02  sars
 +
 +	* [r792938] Glimpse is dead. Long live Skanlite.
-+
 +	* [r792930] rename Glimpse to Skanlite
 +
 +2008-04-01  scripty
 +
 +	* [r792449] SVN_SILENT made messages (.desktop file)
-+
 +	* [r792426] SVN_SILENT made messages (.desktop file)
 +
 +2008-03-30  scripty
 +
 +	* [r791741] SVN_SILENT made messages (.desktop file)
-+
 +	* [r791712] SVN_SILENT made messages (.desktop file)
 +
 +2008-03-27  scripty
 +
 +	* [r791011] SVN_SILENT made messages (.desktop file)
-+
 +	* [r790912] SVN_SILENT made messages (.desktop file)
 +
 +2008-03-27  annma
@@ -397,10 +406,8 @@ Forwarded: no
 +
 +	* [r790078] rename FindKsane.cmake to FindKSane.cmake and the
 +	  corresponding changes to the CMake files.
-+
 +	* [r790071] -Add glimpse to the CMakeLists.txt to enable compilation.
 +	  -Move the FindKsane.cmake module to cmake/modules/
-+
 +	* [r789928] move glimpse to kdereview
 +
 +2008-03-25  annma
@@ -413,8 +420,9 @@ Forwarded: no
 +2008-03-19  sars
 +
 +	* [r787752] Only one connection from the showImageDialog to one of the
-+	  save slots (canceling save produced one extra connect -> save dialog
-+	  opened twice the next time)
++	  save slots
++	  (canceling save produced one extra connect -> save dialog opened twice
++	  the next time)
 +
 +2008-03-17  sars
 +
@@ -422,7 +430,8 @@ Forwarded: no
 +
 +2008-03-16  mlaurent
 +
-+	* [r786303] SVN_SILENT: Minor fix
++	* [r786303] SVN_SILENT:
++	  Minor fix
 +
 +2008-03-12  sars
 +
@@ -431,27 +440,25 @@ Forwarded: no
 +2008-02-24  sars
 +
 +	* [r778915] add credit
-+
 +	* [r778891] If selectDevice() returns an empty string don't try to open
 +	  an empty device.
-+
 +	* [r778889] libksane does the insertCatalog() for translations
 +
 +2008-02-23  sars
 +
 +	* [r778514] Add a button to display the 'About' dialog.
-+
 +	* [r778494] Fix e-mail address
 +
 +2008-02-03  sars
 +
-+	* [r770309] Use KDialog in stead of QDialog for the settings show
-+	  settings dialog (if not disabled by config) before selecting scanner
++	* [r770309] Use KDialog in stead of QDialog for the settings
++	  show settings dialog (if not disabled by config) before selecting
++	  scanner
 +
 +2008-01-30  sars
 +
-+	* [r768848] Enable translated libksane Enable setting image quality also
-+	  for non-autosaved images
++	* [r768848] Enable translated libksane
++	  Enable setting image quality also for non-autosaved images
 +
 +	* [r768845] rename pot file to glimpse.pot
 +
@@ -471,9 +478,8 @@ Forwarded: no
 +2007-12-20  sars
 +
 +	* [r750951] Q_SLOTS in stead of "slot"
-+
-+	* [r750950] -Update About data -Start using KConfigGroup in stead of
-+	  QSettings
++	* [r750950] -Update About data
++	  -Start using KConfigGroup in stead of QSettings
 +
 +2007-12-15  sars
 +

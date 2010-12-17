@@ -16,8 +16,9 @@ skanlite (0.7-1) UNRELEASED; urgency=low
     - Added "debian git-import-orig".
     - Added a backslash for escaping.
   * debian/gbp.conf: Ensure pristine-tar is used.
-  * debian/source.lintian-overrides: updated. 
+  * debian/source.lintian-overrides: Updated. 
   * debian/skanlite.install: Added. 
+  * debian/patches/add_upstream_changelog.patch: Updated. 
 
  -- Kai Wasserbäch <debian@carbon-project.org>  Fri, 17 Dec 2010 10:15:50 +0100
 
