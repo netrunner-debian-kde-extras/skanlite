@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksanetest\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"POT-Creation-Date: 2010-11-26 06:38+0100\n"
 "PO-Revision-Date: 2008-01-06 22:23+0100\n"
 "Last-Translator: Marta Rybczyńska <kde-i18n@rybczynska.net>\n"
 "Language-Team:  <pl@li.org>\n"
@@ -293,27 +293,27 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: skanlite.cpp:114
+#: skanlite.cpp:115
 #, fuzzy
 #| msgid "Settings"
 msgid "Skanlite Settings"
 msgstr "Ustawienia"
 
-#: skanlite.cpp:137
+#: skanlite.cpp:138
 #, fuzzy
 #| msgid "Opening the selected scanner failed!"
 msgid "Opening the selected scanner failed."
 msgstr "Otwieranie wybranego skanera nie powiodło się!"
 
-#: skanlite.cpp:148
+#: skanlite.cpp:149
 msgid "Save"
 msgstr "Zapisz"
 
-#: skanlite.cpp:159
+#: skanlite.cpp:160
 msgid "New Image File Name"
 msgstr ""
 
-#: skanlite.cpp:345
+#: skanlite.cpp:351
 #, fuzzy, kde-format
 #| msgid ""
 #| "About to overwrite file \"%1\"\n"
@@ -323,17 +323,17 @@ msgstr ""
 "Plik \"%1\" zostanie zastąpiony\n"
 "Czy kontynuować?"
 
-#: skanlite.cpp:347
+#: skanlite.cpp:353
 msgid "Overwrite"
 msgstr "Zastąp"
 
-#: skanlite.cpp:375
+#: skanlite.cpp:381
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
 msgstr ""
 
-#: skanlite.cpp:383 skanlite.cpp:396
+#: skanlite.cpp:389 skanlite.cpp:402
 msgid "Failed to save image"
 msgstr ""
 

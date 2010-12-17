@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skanlite\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"POT-Creation-Date: 2010-11-26 06:38+0100\n"
 "PO-Revision-Date: 2010-07-15 08:38+0800\n"
 "Last-Translator: Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv "
 "dot tw>\n"
@@ -271,39 +271,39 @@ msgstr "範例："
 msgid "About"
 msgstr "關於"
 
-#: skanlite.cpp:114
+#: skanlite.cpp:115
 msgid "Skanlite Settings"
 msgstr "Skanlite 設定"
 
-#: skanlite.cpp:137
+#: skanlite.cpp:138
 msgid "Opening the selected scanner failed."
 msgstr "開啟選取的掃描器失敗。"
 
-#: skanlite.cpp:148
+#: skanlite.cpp:149
 msgid "Save"
 msgstr "儲存"
 
-#: skanlite.cpp:159
+#: skanlite.cpp:160
 msgid "New Image File Name"
 msgstr "新的影像檔名"
 
-#: skanlite.cpp:345
+#: skanlite.cpp:351
 #, kde-format
 msgid "Do you want to overwrite \"%1\"?"
 msgstr "您要覆寫 %1 嗎？"
 
-#: skanlite.cpp:347
+#: skanlite.cpp:353
 msgid "Overwrite"
 msgstr "覆寫"
 
-#: skanlite.cpp:375
+#: skanlite.cpp:381
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
 msgstr ""
 "影像將以 PNG 格式儲存，因為 Skanlite 只支援以 PNG 格式儲存 16 位元色彩影像。"
 
-#: skanlite.cpp:383 skanlite.cpp:396
+#: skanlite.cpp:389 skanlite.cpp:402
 msgid "Failed to save image"
 msgstr "儲存影像失敗"
 
