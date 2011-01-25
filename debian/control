@@ -2,7 +2,7 @@ Source: skanlite
 Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
-Uploaders: Mark Purcell <msp@debian.org>, Kai Wasserbäch <debian@carbon-project.org>
+Uploaders: Mark Purcell <msp@debian.org>, Kai Wasserbäch <curan@debian.org>
 Build-Depends: debhelper (>= 7.3.16), cmake, pkg-kde-tools (>= 0.9),
  libksane-dev, kdelibs5-dev (>= 4:4.2.0), libpng12-dev
 Standards-Version: 3.9.1
