@@ -8,9 +8,9 @@ override_dh_auto_configure:
 					-DCMAKE_EXE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed"
 
 override_dh_install:
-	        dh_install --parallel --list-missing
+	        dh_install --list-missing
 
 %:
-	dh --parallel --dbg-package=skanlite-dbg --with kde $@
+	dh $@ --parallel --dbg-package=skanlite-dbg --with kde
 
 .PHONY: override_dh_auto_configure override_dh_install
