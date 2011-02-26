@@ -1,6 +1,9 @@
 skanlite (0.7-3) UNRELEASED; urgency=low
 
-  * debian/{compat,control,rules}: Updated for debhelper 8 compatibility.
+  * debian/{compat,control}: Updated for debhelper 8 compatibility.
+  * debian/rules:
+    - Updated for debhelper 8 compatibility.
+    - Added "--parallel" to dh_auto_configure invocation.
 
  -- Kai Wasserbäch <curan@debian.org>  Sat, 19 Feb 2011 15:38:42 +0100
 

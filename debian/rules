@@ -3,12 +3,13 @@
 DH_ALWAYS_EXCLUDE:=CVS:.svn:.svnignore:.hg:.hgignore
 
 override_dh_auto_configure:
-	        dh_auto_configure -Skde -- -DCMAKE_SHARED_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed" \
-					-DCMAKE_MODULE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed" \
-					-DCMAKE_EXE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed"
+	dh_auto_configure --parallel -Skde -- \
+		-DCMAKE_SHARED_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed" \
+		-DCMAKE_MODULE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed" \
+		-DCMAKE_EXE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed"
 
 override_dh_install:
-	        dh_install --list-missing
+	dh_install --list-missing
 
 %:
 	dh $@ --parallel --dbg-package=skanlite-dbg --with kde
