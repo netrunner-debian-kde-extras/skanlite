@@ -1,6 +1,6 @@
 This package was debianized by:
 
-    Kai Wasserbäch <debian@carbon-project.org> on Thu, 28 May 2009 17:02:39 +0200
+    Kai Wasserbäch <curan@debian.org> on Thu, 28 May 2009 17:02:39 +0200
 
 It was downloaded from:
 
@@ -10,11 +10,15 @@ Upstream Authors:
 
     Kåre Särs <kare.sars@iki.fi>
     Arseniy Lartsev <receive-spam@yandex.ru>
+    Burkhard Lück <lueck@hube-lueck.de>
+    Script Kiddy <scripty@kde.org>
 
 Copyright:
 
-    Copyright (C) 2007-2008 Kåre Särs
-    Copyright (C) 2009 Arseniy Lartsev
+    Copyright (C) 2007-2011 Kåre Särs
+    Copyright (C) 2009      Arseniy Lartsev
+    Copyright (C) 2011      Burkhard Lück
+    Copyright (C) 2011-2012 Script Kiddy
 
 License:
 
@@ -54,6 +58,6 @@ can be found in `/usr/share/common-licenses/GFDL-1.2'.
 
 The Debian packaging is:
 
-    Copyright (C) 2009 Kai Wasserbäch <debian@carbon-project.org>
+    Copyright (C) 2009-2012 Kai Wasserbäch <curan@debian.org>
 
 and is licensed under the GPL version 2 or 3 or any later version, see above.
