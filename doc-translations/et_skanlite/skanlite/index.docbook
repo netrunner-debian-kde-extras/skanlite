@@ -73,9 +73,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->2008-04-12</date>
+>2010-10-23</date>
 <releaseinfo
->0.0.3</releaseinfo>
+>0.5</releaseinfo>
 
 <abstract>
 <para
@@ -196,29 +196,29 @@
 >Peaaknas on kasutaja päralt kaks skaneerimisvalikute komplekti: <guilabel
 >põhivalikud</guilabel
 > ja <guilabel
->muud valikud</guilabel
+>skanneri valikud</guilabel
 >. <guilabel
 >Põhivalikute</guilabel
 > kaart sisaldab peamisi parameetreid, mida pakuvad SANE skanneri taustaprogrammid, <guilabel
->muude valikute</guilabel
-> kaart aga kõiki muid valikuid. Nähaolevad valikud sõltuvad sellest, kuidas SANE sinu draiverit toetab: libksane, mida &skanlite; tarvitab, peaks suutma näidata kõiki peamisi parameetreid, mida SANE üldse pakub (praegu ei ole toetatud analooggammatabelid). </para>
+>skanneri valikute</guilabel
+> kaart aga kõiki taustaprogrammi valikuid. Nähaolevad valikud sõltuvad sellest, kuidas SANE sinu draiverit toetab: libksane, mida &skanlite; tarvitab, peaks suutma näidata kõiki peamisi parameetreid, mida SANE üldse pakub (praegu ei ole toetatud analooggammatabelid). </para>
 
 <screenshot>
      <screeninfo
->Muude valikute kaart</screeninfo>
+>Skanneri valikute kaart</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="other-options.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->Muude valikute kaart</phrase>
+>Skanneri valikute kaart</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
 <para
->Muud valikud sisaldavad taustaprogrammide üksikasjalikumaid valikuid. &skanlite; ehk täpsemalt libksane ei lisa neile midagi omalt poolt. </para>
+>Skanneri valikud sisaldavad taustaprogrammide üksikasjalikumaid valikuid. &skanlite; ehk täpsemalt libksane ei lisa neile midagi omalt poolt. </para>
 
 <sect1 id="scanning">
 <title
@@ -353,7 +353,7 @@
 <varlistentry>
 <term
 ><guilabel
->Pildi eelvaatlus enne salvestamist</guilabel
+>Eelvaatlus enne salvestamist</guilabel
 ></term>
 <listitem
 ><para
@@ -406,7 +406,7 @@
 <varlistentry>
 <term
 ><guilabel
->Pildi salvestamise kvaliteet</guilabel
+>Salvestamise kvaliteet</guilabel
 ></term>
 <listitem
 ><para
