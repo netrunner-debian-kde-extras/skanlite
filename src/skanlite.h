@@ -29,12 +29,10 @@
 #include "ui_settings.h"
 #include "ImageViewer.h"
 
-namespace KSaneIface
-{
-    class KSaneWidget;
-}
 class KFileDialog;
 class SaveLocation;
+
+using namespace KSaneIface;
 
 class Skanlite : public KDialog
 {
@@ -46,6 +44,7 @@ class Skanlite : public KDialog
     private:
         void readSettings();
         void doSaveImage(bool askFilename = true);
+        void loadScannerOptions();
 
     private Q_SLOTS:
         void showSettingsDialog();
@@ -55,30 +54,40 @@ class Skanlite : public KDialog
         void showAboutDialog();
         void saveWindowSize();
 
+        void saveScannerOptions();
+        void defaultScannerOptions();
+
+        void availableDevices(const QList<KSaneWidget::DeviceInfo> &deviceList);
+
+        void alertUser(int type, const QString &strStatus);
+        void buttonPressed(const QString &optionName, const QString &optionLabel, bool pressed);
+        
     protected:
         void closeEvent(QCloseEvent *event);
 
     private:
-        KSaneIface::KSaneWidget *m_ksanew;
+        KSaneWidget             *m_ksanew;
         Ui::SkanliteSettings     m_settingsUi;
         KDialog                 *m_settingsDialog;
         KDialog                 *m_showImgDialog;
         KFileDialog             *m_saveDialog;
         SaveLocation            *m_saveLocation;
+        QString                  m_deviceName;
+        QMap<QString,QString>    m_defaultScanOpts;
         QImage                   m_img;
         QByteArray               m_data;
         int                      m_width;
         int                      m_height;
         int                      m_bytesPerLine;
         int                      m_format;
-        
+
         ImageViewer              m_imageViewer;
         QStringList              m_filterList;
         QStringList              m_filter16BitList;
         QStringList              m_typeList;
         bool                     m_firstImage;
-
 };
+
 
 #endif
 

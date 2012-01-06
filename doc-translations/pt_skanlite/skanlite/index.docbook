@@ -81,7 +81,7 @@
 <para
 >O &skanlite; é uma aplicação de digitalização de imagens que não faz nada mais que digitalizar e gravar as imagens. </para>
 <para
->O &skanlite; baseia-se na 'libksane', uma interface do KDE para a biblioteca SANE, usada para controlar os dispositivos de digitalização.</para>
+>&skanlite; is based on libksane, a KDE interface for SANE library to control flat scanners.</para>
 </abstract>
 
 <keywordset>
@@ -101,9 +101,9 @@
 <title
 >Introdução</title>
 <para
->O &skanlite; é uma aplicação simples de digitalização de imagens, que não faz nada mais do que digitalizar e gravar imagens. O &skanlite; poderá abrir uma janela de gravação para todas as imagens digitalizadas ou gravar as imagens imediatamente, numa pasta indicada, com nomes e formatos determinados automaticamente. O utilizador poderá também mostrar a imagem digitalizada antes de gravar.</para>
+>&skanlite; is a simple image scanning application that does nothing more than scan and save images. &skanlite; can open a save dialog for every image scanned or save the images immediately in a specified directory with auto-generated names and format. The user can also choose to show the scanned image before saving.</para>
 <para
->O &skanlite; pode gravar imagens nos seguintes formatos: <itemizedlist>
+>&skanlite; can save images in the following formats: <itemizedlist>
 <listitem
 ><para
 >jpeg, jpg </para
@@ -353,7 +353,7 @@
 <varlistentry>
 <term
 ><guilabel
->Antever antes de gravar</guilabel
+>Preview before saving</guilabel
 ></term>
 <listitem
 ><para
@@ -369,10 +369,10 @@
 ></term>
 <listitem
 ><para
->Esta opção permite-lhe escolher a forma como o &skanlite; irá gravar as imagens. Se escolher a opção <guilabel
->Abrir a janela de gravação para todas as imagens</guilabel
->, a janela de gravação será aberta para todas as imagens digitalizadas. Se preferir que o &skanlite; grave automaticamente (gerando automaticamente um nome e gravando a imagem numa pasta predefinida), então poderá escolher a opção <guilabel
->Gravar sem perguntar um nome de ficheiro</guilabel
+>This setting allows you to choose how &skanlite; will save the images. If you choose <guilabel
+>Open the save dialog for every image</guilabel
+> then the save dialog will be opened for every scanned image. If you prefer &skanlite; to auto-save (by auto-generating a name and saving the image in a predefined directory) then you can choose <guilabel
+>Save without asking for a filename</guilabel
 >. </para
 ></listitem>
 </varlistentry>
@@ -383,18 +383,18 @@
 ></term>
 <listitem
 ><para
->Esta opção define onde as imagens serão gravadas, sempre que a opção <guilabel
->Gravar sem pedir um nome de ficheiro</guilabel
-> for escolhida na opção anterior. Se a janela de gravação necessitar ser aberta para todas as imagens, a localização de gravação predefinida para a janela será a mesma que para este parâmetro. O local de gravação por omissão é a sua pasta pessoal, pelo que poderá alterar esta localização se carregar no botão <guibutton
+>This setting defines where the images should be saved when <guilabel
+>Save without asking for a filename</guilabel
+> is chosen in the previous option. If the save dialog is to be opened for every image the default save location for the dialog will be the same as this parameter. The default save location is your home directory and you can change this location by clicking on the <guibutton
 >...</guibutton
->. </para
+> button. </para
 ></listitem>
 </varlistentry>
 
 <varlistentry>
 <term
 ><guilabel
->Nome &amp; Formato:</guilabel
+>Name &amp; Format:</guilabel
 ></term>
 <listitem
 ><para
@@ -406,13 +406,13 @@
 <varlistentry>
 <term
 ><guilabel
->Definir a qualidade de gravação</guilabel
+>Specify save quality</guilabel
 ></term>
 <listitem
 ><para
->O utilizador poderá optar por definir a qualidade da imagem a usar na gravação das imagens. A configuração da qualidade da imagem afecta o nível de compressão usado na gravação. Se não tiver a opção <guilabel
->Definir a qualidade de gravação</guilabel
-> assinalada, a qualidade será o valor por omissão estipulado pelo Qt. </para
+>The user can chose to specify the image quality to be used for saving the images. The image quality setting affects the compression level used for saving. If <guilabel
+>Specify save quality</guilabel
+> is not checked, the quality is the default value chosen by Qt. </para
 ></listitem>
 </varlistentry>
 </variablelist
@@ -448,15 +448,15 @@
 </screenshot>
 
 <para
->O botão de <guibutton
->Ajuda</guibutton
-> apresenta o Centro de Ajuda do KDE com o manual do &skanlite;. O botão <guibutton
->Acerca</guibutton
-> apresenta a janela 'Acerca do KDE' para o &skanlite;. O botão de <guibutton
->Configuração</guibutton
-> apresenta a janela de configuração e o botão para <guibutton
->Fechar</guibutton
-> é usado para sair do &skanlite;.</para>
+>The <guibutton
+>Help</guibutton
+> button brings up the KDE Help center with the &skanlite; manual. The <guibutton
+>About</guibutton
+> button brings up the KDE About dialog for &skanlite;. The <guibutton
+>Settings</guibutton
+> button displays the settings dialog and the <guibutton
+>Close</guibutton
+> button is used to exit &skanlite;.</para>
 </sect1>
 </chapter>
 

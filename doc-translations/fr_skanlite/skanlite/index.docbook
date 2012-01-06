@@ -41,7 +41,7 @@
 </author>
 </authorgroup>
 
-&traducteurAlviseCavallari;&relecteurLudovicGrossard; 
+&traducteurAlviseCavallari; &relecteurLudovicGrossard; 
 <copyright>
 <year
 >2008</year>
@@ -59,9 +59,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->2008-04-12</date>
+>2010-10-23</date>
 <releaseinfo
->0.0.3</releaseinfo>
+>0.5</releaseinfo>
 
 <abstract>
 <para
@@ -87,7 +87,7 @@
 <title
 >Introduction</title>
 <para
->&skanlite; est une application simple qui ne fait rien d'autre que de numériser des images et les enregistrer. &skanlite; peut ouvrir une boîte de dialogue pour enregistrer chaque image scannée, ou enregistrer immédiatement les images dans un dossier spécifié avec des noms et extensions générés automatiquement.L'utilisateur peut aussi choisir d'afficher l'image scannée avant son enregistrement.</para>
+>&skanlite; est une application simple qui ne fait rien d'autre que de numériser des images et les enregistrer. &skanlite; peut ouvrir une boîte de dialogue pour enregistrer chaque image scannée, ou enregistrer immédiatement les images dans un dossier spécifié avec des noms et extensions générés automatiquement. L'utilisateur peut aussi choisir d'afficher l'image scannée avant son enregistrement.</para>
 <para
 >&skanlite; peut enregistrer des images aux formats suivants : <itemizedlist>
 <listitem
@@ -182,29 +182,29 @@
 >Dans la fenêtre principale, l'utilisateur a deux ensembles d'options de scan : <guilabel
 >Options basiques</guilabel
 > et <guilabel
->Autres options</guilabel
+>Options spécifiques au scanner</guilabel
 >. L'onglet <guilabel
 >Options basiques</guilabel
 > contient les paramètres les plus courants fournis par le moteur de traitement des scanners SANE, alors que l'onglet <guilabel
->Autres options</guilabel
+>Options spécifiques au scanner</guilabel
 > contient toutes les autres options. Les options listées ici dépendent du niveau de prise en charge de votre scanner par SANE : libksane (que &skanlite; utilise) devrait être capable d'afficher tous les types de paramètres fournis par SANE (les tables gamma analogiques ne sont pas gérées à ce jour). </para>
 
 <screenshot>
      <screeninfo
->Onglet des autres options</screeninfo>
+>Onglet des options spécifiques au scanner</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="other-options.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->Onglet des autres options</phrase>
+>Onglet des options spécifiques au scanner</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
 <para
->Les autres options contiennent des options plus détaillées liées au moteur de traitement. &skanlite; (libksane) n'a pas de gestion particulière pour ces options. </para>
+>Les options spécifiques au scanner contiennent des options plus détaillées liées au moteur de traitement. &skanlite; (libksane) n'a pas de gestion particulière pour ces options. </para>
 
 <sect1 id="scanning">
 <title
@@ -245,14 +245,14 @@
 >Afin de sélectionner l'image avec plus de précision, l'utilisateur peut zoomer, dézoomer, zoomer vers la sélection ou zoomer pour que tout l'aperçu soit visible dans le cadre. </para>
 <screenshot>
      <screeninfo
->Le bouton « Zoomer pour que cela rentre »</screeninfo>
+>Le bouton « Zoomer pour que cela rentre » </screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="zoom-to-fit.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->Le bouton « Zoomer pour que cela rentre »</phrase>
+>Le bouton « Zoomer pour que cela rentre » </phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
@@ -291,7 +291,7 @@
 
 <para
 >Si <guilabel
->Avoir un aperçu de l'image avant de l'enregistrer</guilabel
+>Aperçu avant enregistrement</guilabel
 > est sélectionné dans les paramètres, l'image scannée est affichée dans une fenêtre, comme dans la capture d'écran ci-dessous. Si <guibutton
 >Enregistrer</guibutton
 > est cliqué, l'image est alors enregistrée et si <guibutton
@@ -396,9 +396,9 @@
 ></term>
 <listitem
 ><para
->L'utilisateur peut spécifier la qualité d'image à utiliser lors de leur enregistrement. Ce paramètre définit le taux de compression qui sera utilisé. Si <guilabel
+>L'utilisateur peut spécifier la qualité d'image à utiliser pour l'enregistrement. Ce paramètre définit le taux de compression qui sera utilisé. Si <guilabel
 >Indiquez la qualité d'enregistrement </guilabel
-> n'est pas sélectionné, la valeur par défaut est définie par Qt. </para
+> n'est pas sélectionné, la qualité correspondra à la valeur par défaut définie par Qt. </para
 ></listitem>
 </varlistentry>
 </variablelist

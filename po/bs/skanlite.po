@@ -1,0 +1,343 @@
+# translation of skanlite.po to bosanski
+# Bosnian translation for skanlite
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the skanlite package.
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# KDE 4 <megaribi@epn.ba>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: skanlite\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-12-13 03:18+0100\n"
+"PO-Revision-Date: 2011-05-08 12:17+0200\n"
+"Last-Translator: KDE 4 <megaribi@epn.ba>\n"
+"Language-Team: bosanski <bs@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-22 06:16+0000\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ImageViewer.cpp:59
+msgid "Zoom In"
+msgstr "Uvećaj"
+
+#: ImageViewer.cpp:62
+msgid "Zoom Out"
+msgstr "Umanji"
+
+#: ImageViewer.cpp:65
+msgid "Zoom to Actual size"
+msgstr "Uvećaj do stvarne veličine"
+
+#: ImageViewer.cpp:68
+msgid "Zoom to Fit"
+msgstr "Uveličaj do uklapanja"
+
+#: main.cpp:32
+msgid "Skanlite"
+msgstr "Skanlite"
+
+#: main.cpp:33
+msgid "This is a scanning application for KDE based on libksane."
+msgstr "Ovo je skeniranje aplikacija za KDE bazirana na temelju libksane."
+
+#: main.cpp:35
+msgid "(C) 2008 Kåre Särs"
+msgstr "(C) 2008 Kåre Särs"
+
+#: main.cpp:37
+msgid "Kåre Särs"
+msgstr "Kåre Särs"
+
+#: main.cpp:38
+msgid "developer"
+msgstr "programer"
+
+#: main.cpp:41
+msgid "Arseniy Lartsev"
+msgstr "Arseniy Lartsev"
+
+#: main.cpp:42
+msgid "contributor"
+msgstr "doprinosilac"
+
+#: main.cpp:45
+msgid "Gilles Caulier"
+msgstr "Gilles Caulier"
+
+#: main.cpp:46 main.cpp:54
+msgid "Importing libksane to extragear"
+msgstr "Uvoz libksane u extragear"
+
+#: main.cpp:49
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: main.cpp:50
+msgid "Writing the user manual"
+msgstr "Pisanje korisničkog priručnika"
+
+#: main.cpp:53
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cpp:57
+msgid "Chusslove Illich"
+msgstr "Časlav Ilić"
+
+#: main.cpp:58 main.cpp:62
+msgid "Help with translations"
+msgstr "Pomoć pri prevodu"
+
+#: main.cpp:61
+msgid "Albert Astals Cid"
+msgstr "Albert Astals Cid"
+
+#: main.cpp:70
+msgid "Sane scanner device name."
+msgstr "Ime skenera po SANE standardu."
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr " ,Launchpad Contributions:,Maida Curic,Samir Ribić"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ",,,"
+
+#. i18n: file: SaveLocation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SaveLocation)
+#: rc.cpp:5
+msgid "Save Location"
+msgstr "Sačuvaj lokaciju"
+
+#. i18n: file: SaveLocation.ui:23
+#. i18n: ectx: property (text), widget (QLabel, locationLabel)
+#. i18n: file: settings.ui:85
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:8 rc.cpp:47
+msgid "Save Location:"
+msgstr "Lokacija upisivanja:"
+
+#. i18n: file: SaveLocation.ui:44
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#. i18n: file: settings.ui:107
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#: rc.cpp:11 rc.cpp:50
+msgid "..."
+msgstr "..."
+
+#. i18n: file: SaveLocation.ui:53
+#. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
+#: rc.cpp:14
+msgid "Name & Format:"
+msgstr "Ime i format:"
+
+#. i18n: file: SaveLocation.ui:72
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#. i18n: file: settings.ui:136
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:17 rc.cpp:59
+msgid "###."
+msgstr "###."
+
+#. i18n: file: SaveLocation.ui:84
+#. i18n: ectx: property (text), widget (QLabel, resultValue)
+#: rc.cpp:20
+msgid "/home/joe/example.png"
+msgstr "/home/joe/example.png"
+
+#. i18n: file: SaveLocation.ui:91
+#. i18n: ectx: property (text), widget (QLabel, resultValue_2)
+#: rc.cpp:23
+msgid "Example:"
+msgstr "Primjer:"
+
+#. i18n: file: settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
+#: rc.cpp:26 skanlite.cpp:62
+msgid "Settings"
+msgstr "Postavke"
+
+#. i18n: file: settings.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:29
+msgid "Image saving"
+msgstr "Spašavanje slike"
+
+#. i18n: file: settings.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:32
+msgid "Preview before saving:"
+msgstr "Pregled prije spašavanja:"
+
+#. i18n: file: settings.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:35
+msgid "Save mode:"
+msgstr "Način rada za čuvanje:"
+
+#. i18n: file: settings.ui:60
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:38
+msgid "Open the save dialog for every image"
+msgstr "Otvori prozor za snimanje za svaku sliku"
+
+#. i18n: file: settings.ui:65
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:41
+msgid "Open the save dialog for the first image only"
+msgstr "Otvori prozor za snimanje samo za prvu sliku"
+
+#. i18n: file: settings.ui:70
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:44
+msgid "Save without asking for a filename"
+msgstr "Snimi bez pitanja za ime datoteke"
+
+#. i18n: file: settings.ui:114
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:53
+#, fuzzy
+#| msgid "Name & Format:"
+msgid "Name && Format:"
+msgstr "Ime i format:"
+
+#. i18n: file: settings.ui:129
+#. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
+#: rc.cpp:56
+msgid "Image"
+msgstr "Slika"
+
+#. i18n: file: settings.ui:148
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:62
+msgid "Specify save quality:"
+msgstr "Specificiraj kvalitet snimanja:"
+
+#. i18n: file: settings.ui:207
+#. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
+#: rc.cpp:66
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: file: settings.ui:235
+#. i18n: ectx: property (title), widget (QGroupBox, generalGB)
+#: rc.cpp:69
+msgid "General"
+msgstr "Opšte"
+
+#. i18n: file: settings.ui:241
+#. i18n: ectx: property (text), widget (QCheckBox, setPreviewDPI)
+#: rc.cpp:72
+#, fuzzy
+#| msgid "Set preview resolution (DPI):"
+msgid "Set preview resolution (DPI)"
+msgstr "Postavi rezoluciju pregleda (DPI):"
+
+#. i18n: file: settings.ui:255
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:75
+msgid "50"
+msgstr "50"
+
+#. i18n: file: settings.ui:260
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:78
+msgid "75"
+msgstr "75"
+
+#. i18n: file: settings.ui:265
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:81
+msgid "100"
+msgstr "100"
+
+#. i18n: file: settings.ui:270
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:84
+msgid "150"
+msgstr "150"
+
+#. i18n: file: settings.ui:275
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:87
+msgid "300"
+msgstr "300"
+
+#. i18n: file: settings.ui:288
+#. i18n: ectx: property (text), widget (QCheckBox, u_disableSelections)
+#: rc.cpp:90
+msgid "Disable automatic selections"
+msgstr ""
+
+#. i18n: file: settings.ui:321
+#. i18n: ectx: property (text), widget (QPushButton, revertOptions)
+#: rc.cpp:93
+#, fuzzy
+#| msgid "Revert scanner options to default values:"
+msgid "Revert scanner options to default values"
+msgstr "Vrati opcije skanera na podrazumijevane vrijednosti:"
+
+#: skanlite.cpp:64
+msgid "About"
+msgstr "O programu"
+
+#: skanlite.cpp:127
+msgid "Skanlite Settings"
+msgstr "Skanlite podešavanja"
+
+#: skanlite.cpp:148
+msgid "Opening the selected scanner failed."
+msgstr "Otvaranje odabranog skenera nije uspjelo."
+
+#: skanlite.cpp:166
+msgid "Save"
+msgstr "Snimi"
+
+#: skanlite.cpp:177
+msgid "New Image File Name"
+msgstr "Novo ime datoteke slike"
+
+#: skanlite.cpp:229
+#, fuzzy
+#| msgid "Image"
+msgctxt "prefix for auto naming"
+msgid "Image-"
+msgstr "Slika"
+
+#: skanlite.cpp:375
+#, kde-format
+msgid "Do you want to overwrite \"%1\"?"
+msgstr "Želite li prebrisati \"%1\"?"
+
+#: skanlite.cpp:377
+msgid "Overwrite"
+msgstr "Piši preko"
+
+#: skanlite.cpp:405
+msgid ""
+"The image will be saved in the PNG format, as Skanlite only supports saving "
+"16 bit color images in the PNG format."
+msgstr ""
+"Slika će biti sačuvana u PNG formatu, jer Skanlite podržava samo snimanje "
+"slike 16-bitne boja u PNG formatu."
+
+#: skanlite.cpp:413 skanlite.cpp:426
+msgid "Failed to save image"
+msgstr "Snimanje slike nije uspjelo"
+
+#~ msgid "Use this option to specify the resolution for the preview scans."
+#~ msgstr ""
+#~ "Koristite ovu opciju pri navođenju rezolucije za pregled skeniranja."
+
+#~ msgid "Revert"
+#~ msgstr "Vrati"

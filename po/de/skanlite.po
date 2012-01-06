@@ -5,21 +5,22 @@
 # Simon <simon_greuter@gmx.net>, 2008.
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2008.
 # Oliver Dörr <kde@doerr-privat.de>, 2008, 2009.
-# Burkhard Lück <lueck@hube-lueck.de>, 2009.
-# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
-# Frederik Schwarzer <schwarzerf@gmail.com>, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010, 2011.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: skanlite\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-26 06:38+0100\n"
-"PO-Revision-Date: 2010-10-23 10:14+0200\n"
-"Last-Translator: Frederik Schwarzer <schwarzerf@gmail.com>\n"
+"POT-Creation-Date: 2011-12-13 03:18+0100\n"
+"PO-Revision-Date: 2011-12-04 00:07+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ImageViewer.cpp:59
@@ -32,7 +33,7 @@ msgstr "Verkleinern"
 
 #: ImageViewer.cpp:65
 msgid "Zoom to Actual size"
-msgstr "Auf tatsächliche Größe zoomen"
+msgstr "Auf Originalgröße zoomen"
 
 #: ImageViewer.cpp:68
 msgid "Zoom to Fit"
@@ -112,195 +113,214 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "simon.greuter@gmx.net"
 
-#. i18n: file: settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
-#: rc.cpp:5 skanlite.cpp:61
-msgid "Settings"
-msgstr "Einstellungen"
-
-#. i18n: file: settings.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:8
-msgid "Image saving"
-msgstr "Bildspeicherung"
-
-#. i18n: file: settings.ui:26
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:11
-msgid "Preview before saving:"
-msgstr "Vorschau vor dem Speichern:"
-
-#. i18n: file: settings.ui:43
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:14
-msgid "Save mode:"
-msgstr "Speichermodus:"
-
-#. i18n: file: settings.ui:57
-#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:17
-msgid "Open the save dialog for every image"
-msgstr "Den Speicherdialog für jedes Bild öffnen"
-
-#. i18n: file: settings.ui:62
-#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:20
-msgid "Open the save dialog for the first image only"
-msgstr "Den Speicherdialog nur für das erste Bild öffnen"
-
-#. i18n: file: settings.ui:67
-#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:23
-msgid "Save without asking for a filename"
-msgstr "Speichern, ohne nach einem Dateinamen zu fragen"
-
-#. i18n: file: settings.ui:82
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: SaveLocation.ui:23
-#. i18n: ectx: property (text), widget (QLabel, locationLabel)
-#: rc.cpp:26 rc.cpp:76
-msgid "Save Location:"
-msgstr "Speicherort:"
-
-#. i18n: file: settings.ui:104
-#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
-#. i18n: file: SaveLocation.ui:44
-#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
-#: rc.cpp:29 rc.cpp:79
-msgid "..."
-msgstr "..."
-
-#. i18n: file: settings.ui:111
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: SaveLocation.ui:53
-#. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
-#: rc.cpp:32 rc.cpp:82
-msgid "Name & Format:"
-msgstr "Name & Format:"
-
-#. i18n: file: settings.ui:126
-#. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
-#: rc.cpp:35
-msgid "Image"
-msgstr "Bild"
-
-#. i18n: file: settings.ui:133
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: SaveLocation.ui:72
-#. i18n: ectx: property (text), widget (QLabel, numberLabel)
-#: rc.cpp:38 rc.cpp:85
-msgid "###."
-msgstr "###."
-
-#. i18n: file: settings.ui:145
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:41
-msgid "Specify save quality:"
-msgstr "Wählen Sie die Bildqualität zum Speichern:"
-
-#. i18n: file: settings.ui:204
-#. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
-#: rc.cpp:45
-#, no-c-format
-msgid "%"
-msgstr "%"
-
-#. i18n: file: settings.ui:232
-#. i18n: ectx: property (title), widget (QGroupBox, generalGB)
-#: rc.cpp:48
-msgid "General"
-msgstr "Allgemein"
-
-#. i18n: file: settings.ui:245
-#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:51
-msgid "50"
-msgstr "50"
-
-#. i18n: file: settings.ui:250
-#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:54
-msgid "75"
-msgstr "75"
-
-#. i18n: file: settings.ui:255
-#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:57
-msgid "100"
-msgstr "100"
-
-#. i18n: file: settings.ui:260
-#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:60
-msgid "150"
-msgstr "150"
-
-#. i18n: file: settings.ui:265
-#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:63
-msgid "300"
-msgstr "300"
-
-#. i18n: file: settings.ui:278
-#. i18n: ectx: property (toolTip), widget (QLabel, label_5)
-#: rc.cpp:67
-msgid "Use this option to specify the resolution for the preview scans."
-msgstr "Einstellung der Auflösung für die Scan-Vorschau."
-
-#. i18n: file: settings.ui:281
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:70
-msgid "Set preview resolution (DPI):"
-msgstr "Vorschau-Auflösung (DPI):"
-
 #. i18n: file: SaveLocation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, SaveLocation)
-#: rc.cpp:73
+#: rc.cpp:5
 msgid "Save Location"
 msgstr "Speicherort"
 
+#. i18n: file: SaveLocation.ui:23
+#. i18n: ectx: property (text), widget (QLabel, locationLabel)
+#. i18n: file: settings.ui:85
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:8 rc.cpp:47
+msgid "Save Location:"
+msgstr "Speicherort:"
+
+#. i18n: file: SaveLocation.ui:44
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#. i18n: file: settings.ui:107
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#: rc.cpp:11 rc.cpp:50
+msgid "..."
+msgstr "..."
+
+#. i18n: file: SaveLocation.ui:53
+#. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
+#: rc.cpp:14
+msgid "Name & Format:"
+msgstr "Name && Format:"
+
+#. i18n: file: SaveLocation.ui:72
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#. i18n: file: settings.ui:136
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:17 rc.cpp:59
+msgid "###."
+msgstr "###."
+
 #. i18n: file: SaveLocation.ui:84
 #. i18n: ectx: property (text), widget (QLabel, resultValue)
-#: rc.cpp:88
+#: rc.cpp:20
 msgid "/home/joe/example.png"
 msgstr "/home/joe/beispiel.png"
 
 #. i18n: file: SaveLocation.ui:91
 #. i18n: ectx: property (text), widget (QLabel, resultValue_2)
-#: rc.cpp:91
+#: rc.cpp:23
 msgid "Example:"
 msgstr "Beispiel:"
 
-#: skanlite.cpp:63
+#. i18n: file: settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
+#: rc.cpp:26 skanlite.cpp:62
+msgid "Settings"
+msgstr "Einstellungen"
+
+#. i18n: file: settings.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:29
+msgid "Image saving"
+msgstr "Bildspeicherung"
+
+#. i18n: file: settings.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:32
+msgid "Preview before saving:"
+msgstr "Vorschau vor dem Speichern:"
+
+#. i18n: file: settings.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:35
+msgid "Save mode:"
+msgstr "Speichermodus:"
+
+#. i18n: file: settings.ui:60
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:38
+msgid "Open the save dialog for every image"
+msgstr "Den Speicherdialog für jedes Bild öffnen"
+
+#. i18n: file: settings.ui:65
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:41
+msgid "Open the save dialog for the first image only"
+msgstr "Den Speicherdialog nur für das erste Bild öffnen"
+
+#. i18n: file: settings.ui:70
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: rc.cpp:44
+msgid "Save without asking for a filename"
+msgstr "Speichern, ohne nach einem Dateinamen zu fragen"
+
+#. i18n: file: settings.ui:114
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:53
+#, fuzzy
+#| msgid "Name & Format:"
+msgid "Name && Format:"
+msgstr "Name && Format:"
+
+#. i18n: file: settings.ui:129
+#. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
+#: rc.cpp:56
+msgid "Image"
+msgstr "Bild"
+
+#. i18n: file: settings.ui:148
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:62
+msgid "Specify save quality:"
+msgstr "Wählen Sie die Bildqualität zum Speichern:"
+
+#. i18n: file: settings.ui:207
+#. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
+#: rc.cpp:66
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: file: settings.ui:235
+#. i18n: ectx: property (title), widget (QGroupBox, generalGB)
+#: rc.cpp:69
+msgid "General"
+msgstr "Allgemein"
+
+#. i18n: file: settings.ui:241
+#. i18n: ectx: property (text), widget (QCheckBox, setPreviewDPI)
+#: rc.cpp:72
+msgid "Set preview resolution (DPI)"
+msgstr "Vorschau-Auflösung (DPI)"
+
+#. i18n: file: settings.ui:255
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:75
+msgid "50"
+msgstr "50"
+
+#. i18n: file: settings.ui:260
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:78
+msgid "75"
+msgstr "75"
+
+#. i18n: file: settings.ui:265
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:81
+msgid "100"
+msgstr "100"
+
+#. i18n: file: settings.ui:270
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:84
+msgid "150"
+msgstr "150"
+
+#. i18n: file: settings.ui:275
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: rc.cpp:87
+msgid "300"
+msgstr "300"
+
+#. i18n: file: settings.ui:288
+#. i18n: ectx: property (text), widget (QCheckBox, u_disableSelections)
+#: rc.cpp:90
+msgid "Disable automatic selections"
+msgstr "Automatische Auswahl deaktivieren"
+
+#. i18n: file: settings.ui:321
+#. i18n: ectx: property (text), widget (QPushButton, revertOptions)
+#: rc.cpp:93
+msgid "Revert scanner options to default values"
+msgstr "Scanner-Einstellungen auf die Standardwerte zurücksetzen"
+
+#: skanlite.cpp:64
 msgid "About"
 msgstr "Über"
 
-#: skanlite.cpp:115
+#: skanlite.cpp:127
 msgid "Skanlite Settings"
 msgstr "Skanlite-Einstellungen"
 
-#: skanlite.cpp:138
+#: skanlite.cpp:148
 msgid "Opening the selected scanner failed."
 msgstr "Das Öffnen des gewählten Scanners ist fehlgeschlagen."
 
-#: skanlite.cpp:149
+#: skanlite.cpp:166
 msgid "Save"
 msgstr "Speichern"
 
-#: skanlite.cpp:160
+#: skanlite.cpp:177
 msgid "New Image File Name"
 msgstr "Neuer Dateiname des Bildes"
 
-#: skanlite.cpp:351
+#: skanlite.cpp:229
+#, fuzzy
+#| msgid "Image"
+msgctxt "prefix for auto naming"
+msgid "Image-"
+msgstr "Bild"
+
+#: skanlite.cpp:375
 #, kde-format
 msgid "Do you want to overwrite \"%1\"?"
 msgstr "Möchten Sie „%1“ überschreiben?"
 
-#: skanlite.cpp:353
+#: skanlite.cpp:377
 msgid "Overwrite"
 msgstr "Überschreiben"
 
-#: skanlite.cpp:381
+#: skanlite.cpp:405
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
@@ -308,9 +328,15 @@ msgstr ""
 "Das Bild wird im PNG-Format gespeichert, da Skanlite Farbbilder mit 16 Bit "
 "nur im PNG-Format speichern kann."
 
-#: skanlite.cpp:389 skanlite.cpp:402
+#: skanlite.cpp:413 skanlite.cpp:426
 msgid "Failed to save image"
 msgstr "Fehler beim Speichern des Bildes"
+
+#~ msgid "Use this option to specify the resolution for the preview scans."
+#~ msgstr "Einstellung der Auflösung für die Scan-Vorschau."
+
+#~ msgid "Revert"
+#~ msgstr "Zurücksetzen"
 
 #~ msgid "Saving Failed!"
 #~ msgstr "Speichern fehlgeschlagen."

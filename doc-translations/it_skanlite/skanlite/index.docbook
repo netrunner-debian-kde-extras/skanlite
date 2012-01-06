@@ -39,8 +39,6 @@
 >&Anne-Marie.Mahfouf.mail;</address>
 </affiliation>
 </author>
-</authorgroup>
-
 <othercredit role="translator"
 ><firstname
 >Federico</firstname
@@ -56,6 +54,8 @@
 >Traduzione della documentazione</contrib
 ></othercredit
 > 
+</authorgroup>
+
 <copyright>
 <year
 >2008</year>
@@ -66,16 +66,16 @@
 <year
 >2008</year>
 <holder
->Anne-Marie Mahfouf</holder>
+>&Anne-Marie.Mahfouf;</holder>
 </copyright>
 
 <legalnotice
 >&FDLNotice;</legalnotice>
 
 <date
->2010-10-23</date>
+>2011-11-29</date>
 <releaseinfo
->0.5</releaseinfo>
+>0.8</releaseinfo>
 
 <abstract>
 <para
@@ -103,30 +103,18 @@
 <para
 >&skanlite; è una semplice applicazione per l'acquisizione di immagini che non fa niente più che scansionare e salvare immagini. &skanlite; può aprire una finestra di salvataggio per ogni immagine acquisita o salvare immediatamente le immagini in una certa cartella con nome e formato generati automaticamente. L'utente può anche scegliere di visualizzare l'immagine acquisita prima di salvarla.</para>
 <para
->&skanlite; può salvare immagini nei formati seguenti: <itemizedlist>
+>&skanlite; può salvare immagini in tutti i formati supportati da &kde;, per esempio nei seguenti: <itemizedlist>
 <listitem
 ><para
->jpeg, jpg </para
+>png (8 e 16 bit per colore) </para
 ></listitem>
 <listitem
 ><para
->png </para
+>jpeg, jpg, jpeg 2000 </para
 ></listitem>
 <listitem
 ><para
 >bmp </para
-></listitem>
-<listitem
-><para
->ppm </para
-></listitem>
-<listitem
-><para
->xbm </para
-></listitem>
-<listitem
-><para
->xpm </para
 ></listitem>
 </itemizedlist>
 </para>
@@ -178,6 +166,31 @@
 > per aprirlo. Premere <guibutton
 >Annulla</guibutton
 > chiuderà &skanlite;. </para>
+
+<screenshot>
+     <screeninfo
+>Nessuno scanner trovato</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="no-scanner-found.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Nessuno scanner trovato</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Se non sono stati trovati dispositivi, è forse perché lo scanner non è collegato o è spento; controlla. Potrai quindi usare il pulsante <guibutton
+>Ricarica elenco dei dispositivi</guibutton
+> per ricaricare l'elenco degli scanner.</para
+> 
+<note
+><para
+>Non tutti i driver e motori supportano questa funzionalità. In tal caso esci da &skanlite;, collega il tuo scanner e riavvia l'applicazione.</para>
+</note>
+
 </sect1>
 </chapter>
 
@@ -225,6 +238,10 @@
 
 <para
 >Le opzioni specifiche dello scanner contengono maggiori dettagli sull'interfaccia di programmazione. &skanlite; (libksane) non gestiscono queste opzioni in modo particolare. </para>
+
+<para
+>Se sei soddisfatto delle impostazioni, puoi usare la freccina in cima al divisore delle opzioni. Quando ci si fa clic, contrae o espande le opzioni. Il contrattore può sovrapporsi all'area di anteprima, ma sparisce quando il cursore del mouse esce dall'area del contrattore.</para
+>  
 
 <sect1 id="scanning">
 <title
@@ -278,6 +295,7 @@
 	  </textobject>
 	</mediaobject>
 </screenshot>
+
 <para
 >Quando l'immagine è selezionata, l'immagine finale può essere acquisita premendo il pulsante <guibutton
 >Scansiona l'immagine finale</guibutton
@@ -336,6 +354,40 @@
 </screenshot>
 </sect1>
 
+<sect1 id="scanning-multiple-selections">
+<title
+>Scansionare selezioni multiple</title>
+<para
+>A volte servono solo alcune parti di un'immagine. Invece di scansionare tutta l'immagine e poi usare un'applicazione grafica (per esempio &kolourpaint;) per salvare le varie parti dell'immagine in file diversi, usa la funzionalità di selezione multipla di &skanlite;. </para>
+<screenshot>
+     <screeninfo
+>Selezioni multiple</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="multiple-selections.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Selezioni multiple</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Scansiona un'anteprima e usa quindi il &LMB; per selezionare dentro di questa la prima parte dell'immagine. Passa il cursore del mouse sull'area selezionata e fai clic sull'icona <guiicon
+>+</guiicon
+> per selezionarla. Le aree selezionate sono bordate in rosso. Adesso seleziona le prossime parti dell'immagine allo stesso modo.</para>
+<para
+>Per rimuovere una singola selezione, passa il cursore del mouse sull'area e fai clic sul pulsante rosso <guiicon
+>-</guiicon
+>. Tutte le selezioni possono venire rimosse dal menu contestuale richiamato dal &RMB; selezionando <guilabel
+>Pulisci selezioni</guilabel
+>. </para>
+<para
+>Se hai messo due diverse immagini o foto sullo scanner e hai avviato un'anteprima, &skanlite; selezionerà automaticamente le due aree. Questo comportamento può essere disattivato nella finestra delle impostazioni. </para>
+<para
+>Se sei soddisfatto delle tue scelte, avvia la scansione in serie di tutte le selezioni. Le immagini vengono salvate con la funzionalità di rinomina in serie descritta nella finestra delle impostazioni. </para>
+</sect1>
+
 <sect1 id="settings">
 <title
 >Impostazioni di &skanlite;</title>
@@ -383,6 +435,8 @@
 >Apri la finestra di salvataggio per ciascuna immagine</guilabel
 >, la finestra di salvataggio sarà aperta per ogni immagine scansionata. Se preferisci che &skanlite; salvi automaticamente (generando un nome casuale e salvando l'immagine in una cartella predefinita), puoi scegliere <guilabel
 >Salva senza richiedere un nome per il file</guilabel
+> o <guilabel
+>Apri la finestra di salvataggio solo per prima immagine</guilabel
 >. </para
 ></listitem>
 </varlistentry>
@@ -425,6 +479,38 @@
 >L'utente può scegliere di specificare la qualità dell'immagine da usare per salvare le immagini. Le impostazioni della qualità dell'immagine influenzano il livello di compressione usato per il salvataggio. Se <guilabel
 >Specifica la qualità di salvataggio</guilabel
 > non è segnato, la qualità è il valore predefinito scelto da &Qt;. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Imposta risoluzione di anteprima (DPI)</guilabel
+></term>
+<listitem
+><para
+>&skanlite; usa un po' di buon senso per avere una risoluzione ragionevole, ma se non funziona e la risoluzione di anteprima è troppo alta o troppo bassa, la si può impostare manualmente con questa opzione. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Disattiva le selezioni automatiche</guilabel
+></term>
+<listitem
+><para
+>Normalmente le selezioni automatiche sono abilitate; dopo un'anteprima, libksane prova a selezionarne automaticamente le immagini, e dovrebbe scansionare in serie le aree selezionate. Per esempio, se metti due foto nello scanner ed effettui un'anteprima, &skanlite; aggiungerà automaticamente le selezioni alle foto.</para>
+<para
+>D'altro canto se scansioni spesso dei documenti potrebbe accadere che la selezione automatica selezioni molte delle diverse parti dei documenti, e dovresti rimuovere le selezioni manualmente. Per evitare spunta la casella e disattiva la selezione automatica. </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Riporta le opzioni dello scanner ai valori predefiniti</guilabel
+></term>
+<listitem
+><para
+>All'avvio vengono caricate le ultime impostazioni usate. Se hai rovinato le opzioni (per esempio se hai cambiato le impostazioni di correzione del colore, disponibili in alcuni motori, senza sapere cosa fossero), l'immagine potrebbe cominciare a sembrare strana. In questo caso questa opzione dà un modo di rimettere le impostazioni ai valori predefiniti, che sono una combinazione di valori predefiniti del motore e di libksane. </para
 ></listitem>
 </varlistentry>
 </variablelist
