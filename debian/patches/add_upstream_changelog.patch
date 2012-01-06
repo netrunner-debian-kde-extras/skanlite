@@ -3,486 +3,1192 @@ Author: Kai Wasserbäch <debian@carbon-project.org>
 Last-Update: 2010-11-25
 Forwarded: no
 ---
- ChangeLog |  477 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 477 insertions(+)
+ ChangeLog | 1183 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 1183 insertions(+)
 
 --- /dev/null
 +++ b/ChangeLog
-@@ -0,0 +1,477 @@
-+2010-11-30  sars
+@@ -0,0 +1,1183 @@
++commit 390a9825ae6779319278239a515d746549b9d8f2
++Author: Script Kiddy <scripty@kde.org>
++Date:   Wed Jan 4 09:24:15 2012 +0100
 +
-+	* [r1202400] Fix save regression
-+	  Fix SaveLocation.cpp/h copyright headers
++    SVN_SILENT made messages (.desktop file)
 +
-+	  BUG:258370
++commit 115cee716dbcc9bd497e1bac0c7a5afbb9afe03c
++Author: Burkhard Lück <lueck@hube-lueck.de>
++Date:   Mon Dec 12 09:58:29 2011 +0100
 +
-+2010-11-25  sars
++    extract string for translation
 +
-+	* [r1200802] Add missing find_package(PNG REQUIRED)
-+	  Fix save window size bug
-+	  Bump version
++commit 27c6e915e2debc16271e6cae590cdb840adb12c0
++Author: Burkhard Lück <lueck@hube-lueck.de>
++Date:   Mon Dec 12 09:57:58 2011 +0100
 +
-+2010-10-21  dfaure
++    fix alignment + make &amp; visible in GUI string
 +
-+	* [r1188173] Make executable the Type=Application .desktop files we
-+	  install,
-+	  so that they can be used even from a KDE running in another prefix
-+	  (http://markmail.org/message/4p3krovtnzwx35zd)
++commit 05f3ac9a27039a47ae7b1ac307ae69543ace111b
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Nov 29 22:16:55 2011 +0200
 +
-+2010-09-24  mlaurent
++    Fix byte swap (do not only duplicate most significant byte)
 +
-+	* [r1179258] Fix compile with gold
++commit 99812562183db8034624cbcd326d98924951d1b5
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Nov 29 00:20:44 2011 +0200
 +
-+2010-08-24  scripty
++    Fix main CMakeLists.txt + clarify the file format list in the doc
 +
-+	* [r1167291] SVN_SILENT made messages (.desktop file)
++commit 549b49ea81405479a92bfab2fb1caf0dbe71e302
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Mon Oct 10 22:19:24 2011 +0300
 +
-+2010-07-27  scripty
++    Fix button text
 +
-+	* [r1155400] SVN_SILENT made messages (.desktop file)
++commit b9659e240071498295b1b9aaa91bda7f93364a20
++Author: Yuri Chornoivan <yurchor@ukr.net>
++Date:   Mon Oct 17 08:06:39 2011 +0300
 +
-+2010-07-09  sars
++    Fix typo in docs
 +
-+	* [r1147921] Fix "Remember last saved image path/type" regression.
++commit 1607ec8f55826c0beb6185f77c8fc35aaaf945e7
++Author: Burkhard Lück <lueck@hube-lueck.de>
++Date:   Sun Oct 16 23:00:50 2011 +0200
 +
-+2010-07-08  sars
++    last part of doc update, ready to be shipped
 +
-+	* [r1147579] Save window size on close for next session
++commit 5f6974cd8184f2646441850a9de9af4c246e1220
++Author: Yuri Chornoivan <yurchor@ukr.net>
++Date:   Thu Oct 13 08:32:28 2011 +0300
 +
-+2010-07-07  sars
++    fix typos in docs
 +
-+	* [r1147285] Add support for saving 16 bit/color PNG files
-+	  Simplify the saving code and add a proper question box for "ask for
-+	  first image"
++commit 01b5d106e6a4de1090fb1d1ba02dd58646e54bce
++Author: Burkhard Lück <lueck@hube-lueck.de>
++Date:   Tue Oct 11 22:19:24 2011 +0200
 +
-+2010-07-05  scripty
++    doc update approved by Kåre, needs more love
 +
-+	* [r1146075] SVN_SILENT made messages (.desktop file)
++    CCMAIL:kare.sars@iki.fi
 +
-+2010-06-29  scripty
++commit 8a6cbc6b64e38c5192d6d3ffd8210ffca5fb9ffb
++Author: Burkhard Lück <lueck@hube-lueck.de>
++Date:   Sun Oct 9 22:24:35 2011 +0200
 +
-+	* [r1144039] SVN_SILENT made messages (.desktop file)
-+	* [r1143913] SVN_SILENT made messages (.desktop file)
++    new screenshots for upcomin documentation update
 +
-+2010-06-16  scripty
++commit 17e23540c73e530dade237cb8639703c03704766
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Oct 8 17:56:26 2011 +0300
 +
-+	* [r1138530] SVN_SILENT made messages (.desktop file)
++    Apply the disable automatic selection setting immediately!
 +
-+2010-05-20  scripty
++commit 3cc32ad955d2af9f55218150e3838cbfad5d750d
++Author: Michael Georg Hansen <mike@mghansen.de>
++Date:   Tue Sep 27 22:17:15 2011 +0200
 +
-+	* [r1128745] SVN_SILENT made messages (.desktop file)
++    Fix krazy2 issue: Check for postfix usage of ++ and -- [postfixop]
 +
-+2010-05-11  sars
++commit 4f86c859a00317c8e2943045f11f143edcf414cb
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Aug 6 10:37:35 2011 +0300
 +
-+	* [r1125574] Set a decent preview window size and zoom the image to fit
-+	  in that window.
++    Add an option to disable automatic selection
++    Add message handler to move the KMessageDialog out of libksane
++    Add stub for available devices signal
++    Add stub for button pressed signal (not available yet in 4.7 but it only gives a warning)
 +
-+2010-02-15  scripty
++commit 924dd6293b403480ac15c4d695969f04b349eefa
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue May 10 11:40:04 2011 +0200
 +
-+	* [r1090501] SVN_SILENT made messages (.desktop file)
++    SVN_SILENT made messages (.desktop file)
 +
-+2010-01-25  sars
++commit 631028d9067d1aa643afac9c97716a3743c6319f
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon May 9 09:13:01 2011 +0200
 +
-+	* [r1080192] Make sure to clean up on close.
++    SVN_SILENT made messages (.desktop file)
 +
-+	  BUG:190946
++commit 23898ca3243efefbc79e1eb73b8e7b68bcb7f043
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sun May 8 09:15:14 2011 +0200
 +
-+	  I'm quite confident that this commit fixes this bug.
++    SVN_SILENT made messages (.desktop file)
 +
-+2010-01-25  scripty
++commit e8a71148ac4eb71eab5eada4a7a47da2181fe91a
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Thu Mar 3 23:14:40 2011 +0200
 +
-+	* [r1079976] SVN_SILENT made messages (.desktop file)
++    Save scanner options on exit + add revert button to settings dialog
 +
-+2010-01-13  sars
++commit 965ffc7b62cc877aafc6d2281efe02bf8957d844
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Mon Feb 28 19:24:17 2011 +0200
 +
-+	* [r1074306] Revert unneeded fix
++    Add toplevel CMakeLists
 +
-+	  CCBUG:222542
++commit 2170a1545f5f42bf17ada8a7267ce3f3a6e1ba58
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sun Dec 26 07:34:35 2010 +0000
 +
-+	  Sorry, I did not check what the original error was, shame on me :)
++    SVN_SILENT made messages (.desktop file)
 +
-+	  Thanks Pino for fixing the original bug (and for pointing out my
-+	  mistake)
-+	* [r1074275] Thanks for the patch, patch applied.
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1209252
 +
-+	  BUG:222542
++commit 15f8c9d4a644fdeff113ad9f031421a23cfdcecf
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Nov 30 18:23:37 2010 +0000
 +
-+2010-01-11  pino
++    Fix save regression
++    Fix SaveLocation.cpp/h copyright headers
 +
-+	* [r1073188] simplify constructor call
++    BUG:258370
 +
-+2010-01-10  scripty
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1202400
 +
-+	* [r1072547] SVN_SILENT made messages (.desktop file)
++commit 8c58d243153de5100dbed63a321b6896edc529c0
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Thu Nov 25 21:09:59 2010 +0000
 +
-+2009-12-28  scripty
++    Add missing find_package(PNG REQUIRED)
++    Fix save window size bug
++    Bump version
 +
-+	* [r1066910] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1200802
 +
-+2009-11-26  sars
++commit c1bfb0190d1cd54866c52ad06872ea0b36fd8164
++Author: Burkhard Lück <lueck@hube-lueck.de>
++Date:   Mon Oct 25 06:13:06 2010 +0000
 +
-+	* [r1054793] Add #ifdefs for libksane features that will be in 4.4 bur
-+	  that are not in 4..3
++    doc update
++    CCMAIL:kare.sars@iki.fi
 +
-+2009-11-18  scripty
++    svn path=/trunk/extragear/graphics/doc/skanlite/; revision=1189428
 +
-+	* [r1050931] SVN_SILENT made messages (.desktop file)
++commit 390cfc8b8c18039152e8c6d8f8731691ef2c2d69
++Author: Burkhard Lück <lueck@hube-lueck.de>
++Date:   Sat Oct 23 18:35:13 2010 +0000
 +
-+2009-10-26  scripty
++    screenshot update
 +
-+	* [r1040514] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/doc/skanlite/; revision=1189019
 +
-+2009-10-08  aacid
++commit e61864ba471f641ade60fe4825bf48d99455a4f1
++Author: David Faure <faure@kde.org>
++Date:   Thu Oct 21 15:44:39 2010 +0000
 +
-+	* [r1032911] remove some executable bits
++    Make executable the Type=Application .desktop files we install,
++    so that they can be used even from a KDE running in another prefix (http://markmail.org/message/4p3krovtnzwx35zd)
 +
-+2009-09-17  scripty
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1188173
 +
-+	* [r1024802] SVN_SILENT made messages (.desktop file)
++commit db1f8ee90d1df4380f8809ee2cab33ae1c4514ba
++Author: Laurent Montel <montel@kde.org>
++Date:   Fri Sep 24 22:52:44 2010 +0000
 +
-+2009-09-08  sars
++    Fix compile with gold
 +
-+	* [r1021322] GUI: Reorganize the settings dialog and add the possibility
-+	  to specify a preview resolution.
-+	  Make the "save preview" image scalable.
-+	  Use m_ prefix for class member variables.
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1179258
 +
-+2009-08-07  scripty
++commit e8bdac44da479c52a7ef73aa02abcaf344e34d81
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Aug 24 09:00:35 2010 +0000
 +
-+	* [r1008348] SVN_SILENT made messages (.desktop file)
++    SVN_SILENT made messages (.desktop file)
 +
-+2009-08-04  scripty
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1167291
 +
-+	* [r1006734] SVN_SILENT made messages (.desktop file)
++commit c1c4db2f31b19a5a6f3269dfde43cd98b4dd8dae
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Jul 27 09:13:50 2010 +0000
 +
-+2009-08-03  sars
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r1006486] update TODO
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1155400
 +
-+2009-06-01  scripty
++commit f1b2196c101b64d4f9309ac944ec13231c6db5d1
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Fri Jul 9 11:41:09 2010 +0000
 +
-+	* [r976380] SVN_SILENT made messages (.desktop file)
++    Fix "Remember last saved image path/type" regression.
 +
-+2009-05-09  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1147921
 +
-+	* [r965811] Add a "todo" file
++commit af05562d008b8741a9dfed5b330b677010b7618c
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Thu Jul 8 18:55:57 2010 +0000
 +
-+2009-05-04  scripty
++    Save window size on close for next session
 +
-+	* [r963336] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1147579
 +
-+2009-04-29  pino
++commit 07a97486042afa59d4467d4f3f1883a33404697b
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Jul 7 19:55:49 2010 +0000
 +
-+	* [r961040] set the icon name of a program in the correct way (changing
-+	  the internal app name is a bad idea)
-+	  CCMAIL: kristof.bal@gmail.com
++    Add support for saving 16 bit/color PNG files
++    Simplify the saving code and add a proper question box for "ask for first image"
 +
-+2009-04-29  kbal
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1147285
 +
-+	* [r960960] use the nice 'scanner' icon
++commit f58c47c0132917378c779c2b046eec4a1064a55d
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Jul 5 07:05:07 2010 +0000
 +
-+2009-04-22  scripty
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r957607] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1146075
 +
-+2009-03-23  coles
++commit b8aacf4a2a8991c801456d96840dddf5c3672635
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Jun 29 10:29:55 2010 +0000
 +
-+	* [r943079] Exclamation point squishing.
++    SVN_SILENT made messages (.desktop file)
 +
-+2009-03-17  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1144039
 +
-+	* [r940426] Bump the version number to indicate the new features
++commit df643a3299efe2213020bddede12d6cd7e7a780f
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Jun 29 04:55:21 2010 +0000
 +
-+2009-02-18  sars
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r928077] Add "appending strerror(errno) to some error messages"
-+	  (there could be some problems with translation tho...)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1143913
 +
-+	  Thanks Arseniy Lartsev for the patch!
++commit 971278d343cdec5080401741cb19a7110f9a7493
++Author: Script Kiddy <scripty@kde.org>
++Date:   Wed Jun 16 06:37:26 2010 +0000
 +
-+	  BUG: 178457
-+	* [r928068] Add a scan mode "Open the save dialog for the first image
-+	  only"
-+	  Sync the settings on settings dialog exit to ensure that the changes
-+	  are saved.
-+	  add copyright notice Arseniy Lartsev
++    SVN_SILENT made messages (.desktop file)
 +
-+	  CCBUG: 177899
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1138530
 +
-+2009-01-24  shaforo
++commit 83db072cd93d11aa53533a5c3707d0e95fe758d2
++Author: Script Kiddy <scripty@kde.org>
++Date:   Thu May 20 06:57:03 2010 +0000
 +
-+	* [r916207] set fine-grained categories for extragear apps.
-+	  (in compliance with
-+	  http://standards.freedesktop.org/menu-spec/menu-spec-1.0.html#category-registry)
++    SVN_SILENT made messages (.desktop file)
 +
-+	  as the changes ain't controversial. I'm commiting them w/o
-+	  approvement.
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1128745
 +
-+	  CCMAIL:tomalbers@kde.nl
-+	  CCMAIL:digikam-devel@kde.org
-+	  CCMAIL:kile-devel@lists.sourceforge.net
-+	  CCMAIL:kare.sars@iki.fi
-+	  CCMAIL:jh@kolouch.net
++commit e35339ec20093604e599c8686f637574f3fb0f9f
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue May 11 19:12:42 2010 +0000
 +
-+2009-01-21  scripty
++    Set a decent preview window size and zoom the image to fit in that window.
 +
-+	* [r914654] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1125574
 +
-+2009-01-12  scripty
++commit f028f56925c9e089c23ee45480d13d709abbeedf
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Feb 15 11:38:23 2010 +0000
 +
-+	* [r910011] SVN_SILENT made messages (.desktop file)
++    SVN_SILENT made messages (.desktop file)
 +
-+2009-01-03  scripty
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1090501
 +
-+	* [r905063] SVN_SILENT made messages (.desktop file)
++commit 5c019e07da89689ee3dd15d8c066d4f5058804f9
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Mon Jan 25 20:45:21 2010 +0000
 +
-+2009-01-02  scripty
++    Make sure to clean up on close.
 +
-+	* [r904560] SVN_SILENT made messages (.desktop file)
++    BUG:190946
 +
-+2008-12-23  scripty
++    I'm quite confident that this commit fixes this bug.
 +
-+	* [r900712] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1080192
 +
-+2008-12-16  scripty
++commit dea7353ff38627276d60798e1425df34aa88b8db
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Jan 25 10:41:40 2010 +0000
 +
-+	* [r897636] SVN_SILENT made messages (.desktop file)
++    SVN_SILENT made messages (.desktop file)
 +
-+2008-12-12  scripty
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1079976
 +
-+	* [r896069] SVN_SILENT made messages (.desktop file, second try)
++commit e27c7c9fedb667619bf7c58ed430bf57bc5f8451
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Jan 13 20:49:01 2010 +0000
 +
-+2008-11-26  scripty
++    Revert unneeded fix
 +
-+	* [r889325] SVN_SILENT made messages (.desktop file)
++    CCBUG:222542
 +
-+2008-11-23  scripty
++    Sorry, I did not check what the original error was, shame on me :)
 +
-+	* [r888003] SVN_SILENT made messages (.desktop file)
++    Thanks Pino for fixing the original bug (and for pointing out my mistake)
 +
-+2008-10-26  scripty
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1074306
 +
-+	* [r876069] SVN_SILENT made messages (.desktop file)
++commit 22f8595a4ee8ddeb4f02bdaacf3ded8c6b594143
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Jan 13 19:23:38 2010 +0000
 +
-+2008-10-14  scripty
++    Thanks for the patch, patch applied.
 +
-+	* [r871270] SVN_SILENT made messages (.desktop file)
++    BUG:222542
 +
-+2008-09-23  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1074275
 +
-+	* [r863892] Fix the license (these files are not part of the libksane
-+	  library...)
-+	* [r863836] Fix the license (these files are not part of the libksane
-+	  library...)
++commit d7490fc83b23cdd2f0319bb66ee877aae74d650d
++Author: Pino Toscano <pino@kde.org>
++Date:   Mon Jan 11 20:01:45 2010 +0000
 +
-+2008-09-20  scripty
++    simplify constructor call
 +
-+	* [r862932] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1073188
 +
-+2008-07-23  sars
++commit 52eeefe72857d15a03849e8a3a8d9f8575fef68d
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sun Jan 10 10:54:14 2010 +0000
 +
-+	* [r836873] change the version, because we now need the FindKSane.cmake
-+	  installed from kdegraphics
-+	* [r836872] libksane is not optional for Skanlite -> remove the
-+	  optional...
-+	  remove the unused cmake dir
++    SVN_SILENT made messages (.desktop file)
 +
-+2008-07-01  mlaurent
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1072547
 +
-+	* [r826722] Remove temporary file
++commit 472e4d96ddbe7a76d8b6e174bf9ab09de4671d90
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Dec 28 10:31:24 2009 +0000
 +
-+2008-06-06  pino
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r817550] remove all the FindKSane copies all around, and optionally
-+	  use the FindKSane installed by kdegraphics >= 4.1
-+	  adapt to the syntax of that FindKSane
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1066910
 +
-+2008-06-06  cgilles
++commit e7b6feaee606b6c872a4efe293ca33a914fdbaa4
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Thu Nov 26 20:19:49 2009 +0000
 +
-+	* [r817534] this is more logic for the moment
-+	* [r817515] compile
++    Add #ifdefs for libksane features that will be in 4.4 bur that are not in 4..3
 +
-+2008-05-27  mlaurent
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1054793
 +
-+	* [r813302] Use INSTALL_TARGETS_DEFAULT_ARGS
++commit 711f3abe3e652eaf6cdb8c9bb937e633dcac595f
++Author: Script Kiddy <scripty@kde.org>
++Date:   Wed Nov 18 11:38:24 2009 +0000
 +
-+2008-05-02  cgilles
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r803184] check KSAne from local cmake sub-dir
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1050931
 +
-+2008-04-26  mlaurent
++commit d1833ab2b86a08d367c20d0f331f3a38fe480086
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Oct 26 11:04:03 2009 +0000
 +
-+	* [r801289] Move cmake file in specific project
-+	  it's better when we want to checkout just project
++    SVN_SILENT made messages (.desktop file)
 +
-+2008-04-25  mlaurent
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1040514
 +
-+	* [r800893] Remove not necessary cmake variable
++commit 8eb5be71e10bfa66b2f3a9b379c456916f34d88a
++Author: Albert Astals Cid <tsdgeos@terra.es>
++Date:   Thu Oct 8 21:06:25 2009 +0000
 +
-+2008-04-13  sars
++    remove some executable bits
 +
-+	* [r796588] Update credits
-+	* [r796571] Remove file name from currentDir -> fix auto file name for
-+	  the save dialog.
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1032911
 +
-+2008-04-09  sars
++commit e386256a143756aa72a16ace674297d553fc758a
++Author: Script Kiddy <scripty@kde.org>
++Date:   Thu Sep 17 09:38:01 2009 +0000
 +
-+	* [r795269] Move Skanlite to exrtagear/graphics/
++    SVN_SILENT made messages (.desktop file)
 +
-+2008-04-09  scripty
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1024802
 +
-+	* [r795145] SVN_SILENT made messages (.desktop file)
-+	* [r795067] SVN_SILENT made messages (.desktop file, second try)
++commit 7e8cd5f085b22497a202b4f96d78bfecb571c847
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Sep 8 20:47:59 2009 +0000
 +
-+2008-04-07  scripty
++    GUI: Reorganize the settings dialog and add the possibility to specify a preview resolution.
++    Make the "save preview" image scalable.
++    Use m_ prefix for class member variables.
 +
-+	* [r794381] SVN_SILENT made messages (.desktop file, second try)
-+	* [r794320] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1021322
 +
-+2008-04-05  annma
++commit 44982f0702e9bfd947d2572b1850d2dd31383758
++Author: Script Kiddy <scripty@kde.org>
++Date:   Fri Aug 7 09:30:20 2009 +0000
 +
-+	* [r793954] make Help button work
++    SVN_SILENT made messages (.desktop file)
 +
-+2008-04-05  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1008348
 +
-+	* [r793784] Do not show the settings dialog on startup.
-+	  Default save location is now $HOME.
-+	  Rearange the settings dialog.
-+	* [r793776] Make it possible to build separately
++commit 6273442774df24f202db8b05927ff38d1dbb3903
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Aug 4 09:00:22 2009 +0000
 +
-+2008-04-05  scripty
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r793768] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1006734
 +
-+2008-04-04  scripty
++commit 4256de37dfe66b205d9d4ad3a57ea450d3922237
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Mon Aug 3 20:09:34 2009 +0000
 +
-+	* [r793714] SVN_SILENT made messages (.desktop file)
++    update TODO
 +
-+2008-04-03  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=1006486
 +
-+	* [r793319] use toQImage() instead of makeQImage()
++commit 307cece5e0a31f6ac10558264d69356c72aeb50c
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Jun 1 14:36:14 2009 +0000
 +
-+2008-04-02  sars
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r792988] catalog name not capitalized
-+	* [r792986] Set proper window title on the settings dialog and the
-+	  scanner selection dialog.
++    svn path=/trunk/extragear/graphics/skanlite/; revision=976380
 +
-+2008-04-02  annma
++commit 063a1bd60f8616af285c8ef65f79b72b1a0160f1
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat May 9 20:46:14 2009 +0000
 +
-+	* [r792948] make description more useful, add copyright year
++    Add a "todo" file
 +
-+2008-04-02  pino
++    svn path=/trunk/extragear/graphics/skanlite/; revision=965811
 +
-+	* [r792945] - Categories is a list, so it must end with the list
-+	  separator (';')
-+	  - remove unuseful comment
++commit 6f886e427d175cb3a8cd0c03d28ba50cca9f78f9
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon May 4 14:39:09 2009 +0000
 +
-+2008-04-02  sars
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r792938] Glimpse is dead. Long live Skanlite.
-+	* [r792930] rename Glimpse to Skanlite
++    svn path=/trunk/extragear/graphics/skanlite/; revision=963336
 +
-+2008-04-01  scripty
++commit 962f5bc428cc8cdb800e74fe08304659ca3e8dbd
++Author: Pino Toscano <pino@kde.org>
++Date:   Wed Apr 29 13:39:48 2009 +0000
 +
-+	* [r792449] SVN_SILENT made messages (.desktop file)
-+	* [r792426] SVN_SILENT made messages (.desktop file)
++    set the icon name of a program in the correct way (changing the internal app name is a bad idea)
++    CCMAIL: kristof.bal@gmail.com
 +
-+2008-03-30  scripty
++    svn path=/trunk/extragear/graphics/skanlite/; revision=961040
 +
-+	* [r791741] SVN_SILENT made messages (.desktop file)
-+	* [r791712] SVN_SILENT made messages (.desktop file)
++commit 4ca7371e68f77a367b3419c06b607e318ec7338b
++Author: Kristof Bal <kristof.bal@gmail.com>
++Date:   Wed Apr 29 11:23:12 2009 +0000
 +
-+2008-03-27  scripty
++    use the nice 'scanner' icon
 +
-+	* [r791011] SVN_SILENT made messages (.desktop file)
-+	* [r790912] SVN_SILENT made messages (.desktop file)
++    svn path=/trunk/extragear/graphics/skanlite/; revision=960960
 +
-+2008-03-27  annma
++commit 190900a405b465d4657208eb1e56dd142636fd70
++Author: Script Kiddy <scripty@kde.org>
++Date:   Wed Apr 22 15:17:56 2009 +0000
 +
-+	* [r790893] improve doc a bit and fix a few typos
++    SVN_SILENT made messages (.desktop file)
 +
-+2008-03-25  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=957607
 +
-+	* [r790078] rename FindKsane.cmake to FindKSane.cmake and the
-+	  corresponding changes to the CMake files.
-+	* [r790071] -Add glimpse to the CMakeLists.txt to enable compilation.
-+	  -Move the FindKsane.cmake module to cmake/modules/
-+	* [r789928] move glimpse to kdereview
++commit 1000458d75d3f29f634f5308c500f6790823f9fb
++Author: Andrew Coles <andrew.i.coles@googlemail.com>
++Date:   Mon Mar 23 11:03:34 2009 +0000
 +
-+2008-03-25  annma
++    Exclamation point squishing.
 +
-+	* [r789800] add a .desktop file. Kare, please can you review the entries
-+	  I put there? If in doubt we'll ask people on IRC at some point! The
-+	  desktop file allows you to have Glimpse in the K menu and also to find
-+	  the doc.
 +
-+2008-03-19  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=943079
 +
-+	* [r787752] Only one connection from the showImageDialog to one of the
-+	  save slots
-+	  (canceling save produced one extra connect -> save dialog opened twice
-+	  the next time)
++commit 667003fb0ba8fd86f5466ece05b2e1f840f0777e
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Mar 17 13:39:02 2009 +0000
 +
-+2008-03-17  sars
++    Bump the version number to indicate the new features
 +
-+	* [r786742] Fix Krazy2 warnings
++    svn path=/trunk/extragear/graphics/skanlite/; revision=940426
 +
-+2008-03-16  mlaurent
++commit 9b570b71cd245325ec519e3054bd50248ced004c
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Feb 18 21:20:03 2009 +0000
 +
-+	* [r786303] SVN_SILENT:
-+	  Minor fix
++    Add "appending strerror(errno) to some error messages"
++    (there could be some problems with translation tho...)
 +
-+2008-03-12  sars
++    Thanks  Arseniy Lartsev for the patch!
 +
-+	* [r784886] Start using KDialog in stead of QDialog
++    BUG: 178457
 +
-+2008-02-24  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=928077
 +
-+	* [r778915] add credit
-+	* [r778891] If selectDevice() returns an empty string don't try to open
-+	  an empty device.
-+	* [r778889] libksane does the insertCatalog() for translations
++commit f1064808969fb4c03fa427b4986a0d81c851eee2
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Feb 18 20:58:31 2009 +0000
 +
-+2008-02-23  sars
++    Add a scan mode "Open the save dialog for the first image only"
++    Sync the settings on settings dialog exit to ensure that the changes are saved.
++    add copyright notice Arseniy Lartsev
 +
-+	* [r778514] Add a button to display the 'About' dialog.
-+	* [r778494] Fix e-mail address
++    CCBUG: 177899
 +
-+2008-02-03  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=928068
 +
-+	* [r770309] Use KDialog in stead of QDialog for the settings
-+	  show settings dialog (if not disabled by config) before selecting
-+	  scanner
++commit aa473fbb8471db8796537da7d685cdd11dba4814
++Author: Nick Shaforostoff <shafff@ukr.net>
++Date:   Sat Jan 24 20:39:33 2009 +0000
 +
-+2008-01-30  sars
++    set fine-grained categories for extragear apps.
++    (in compliance with http://standards.freedesktop.org/menu-spec/menu-spec-1.0.html#category-registry)
 +
-+	* [r768848] Enable translated libksane
-+	  Enable setting image quality also for non-autosaved images
++    as the changes ain't controversial. I'm commiting them w/o approvement.
 +
-+	* [r768845] rename pot file to glimpse.pot
++    CCMAIL:tomalbers@kde.nl
++    CCMAIL:digikam-devel@kde.org
++    CCMAIL:kile-devel@lists.sourceforge.net
++    CCMAIL:kare.sars@iki.fi
++    CCMAIL:jh@kolouch.net
 +
-+2008-01-16  ilic
 +
-+	* [r762329] Find .ui files too.
++    svn path=/trunk/extragear/graphics/skanlite/; revision=916207
 +
-+2007-12-28  sars
++commit f4f3ef521b21a6c22791de76b02bc0fe25d8ade4
++Author: Script Kiddy <scripty@kde.org>
++Date:   Wed Jan 21 13:43:51 2009 +0000
 +
-+	* [r753939] Change the window title to be the scanner name + Glimpse
++    SVN_SILENT made messages (.desktop file)
 +
-+2007-12-22  sars
++    svn path=/trunk/extragear/graphics/skanlite/; revision=914654
 +
-+	* [r751542] Add icons to buttons and add i18n to strings (needs to be
-+	  done for the .ui too somehow)
++commit 0661fc62931225d08f4385a8cf0f1282acb0a97a
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Jan 12 14:44:32 2009 +0000
 +
-+2007-12-20  sars
++    SVN_SILENT made messages (.desktop file)
 +
-+	* [r750951] Q_SLOTS in stead of "slot"
-+	* [r750950] -Update About data
-+	  -Start using KConfigGroup in stead of QSettings
++    svn path=/trunk/extragear/graphics/skanlite/; revision=910011
 +
-+2007-12-15  sars
++commit 73ac5758603986bd21fd28ff66738d110213a7f9
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sat Jan 3 16:34:41 2009 +0000
 +
-+	* [r748852] This is the first commit of Glimpse a scanning application
-+	  that uses libksane.
++    SVN_SILENT made messages (.desktop file)
 +
++    svn path=/trunk/extragear/graphics/skanlite/; revision=905063
++
++commit df128019a7efe0596032752eca447fe0efcbdafb
++Author: Script Kiddy <scripty@kde.org>
++Date:   Fri Jan 2 13:33:52 2009 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=904560
++
++commit a7c6d145ea2301db6c6453652941992d7c90560f
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Dec 23 13:01:05 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=900712
++
++commit 363b84de3e178cb23d5ebf64fcc9e24b783b9898
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Dec 16 12:58:32 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=897636
++
++commit e4466517b32536ba2e7f3c30c0c44799f95db5a1
++Author: Script Kiddy <scripty@kde.org>
++Date:   Fri Dec 12 12:38:32 2008 +0000
++
++    SVN_SILENT made messages (.desktop file, second try)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=896069
++
++commit fac2eff69e0c8f1d90f4ad56f87b58c09d6f3913
++Author: Script Kiddy <scripty@kde.org>
++Date:   Wed Nov 26 14:05:27 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=889325
++
++commit 212bc2579bc9ce67619f3ceab6998efb1648400c
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sun Nov 23 12:21:26 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=888003
++
++commit 4f51cdaeee33e876c86968d3bb9116a7740d62e7
++Author: Urs Wolfer <uwolfer@kde.org>
++Date:   Sun Oct 26 18:47:21 2008 +0000
++
++    optimizegraphics: Losslessly optimized PNG and SVGZ files with "optipng -o5" and "advdef -z -4".
++    Reduced disk space: 2468KB (2MB)
++
++    svn path=/trunk/extragear/graphics/doc/skanlite/; revision=876201
++
++commit c8ed151009f04961b8386e9319c14f7ad762e7a9
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sun Oct 26 12:39:49 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=876069
++
++commit 54fcdc1c71c400db43c1697a4491cf7e4d3c5b7e
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Oct 14 11:18:29 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=871270
++
++commit 10090830f297fad28d97eb9eda5f11f84b20be77
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Sep 23 11:32:53 2008 +0000
++
++    Fix the license (these files are not part of the libksane library...)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=863892
++
++commit 45203fd09411243d91729d45919829281238baba
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Sep 23 10:14:10 2008 +0000
++
++    Fix the license (these files are not part of the libksane library...)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=863836
++
++commit 8530b22c485deceea2b0dafc18d6199d326d361d
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sat Sep 20 12:08:53 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=862932
++
++commit 66f4b47d7a470b12d2093fdd1dcc2a55abaaf266
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Jul 23 08:03:06 2008 +0000
++
++    change the version, because we now need the FindKSane.cmake installed from kdegraphics
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=836873
++
++commit 4d3f9244b4729995f4385d0ac9e37caf95d4c4d2
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Jul 23 08:00:05 2008 +0000
++
++    libksane is not optional for Skanlite -> remove the optional...
++    remove the unused cmake dir
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=836872
++
++commit 5eed665cebbd1cb775b59155c97a45c53bfcf903
++Author: Laurent Montel <montel@kde.org>
++Date:   Tue Jul 1 07:04:32 2008 +0000
++
++    Remove temporary file
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=826722
++
++commit 8da74ef6ddd74e304d20295c16c696384d2f47a6
++Author: Pino Toscano <pino@kde.org>
++Date:   Fri Jun 6 09:14:47 2008 +0000
++
++    remove all the FindKSane copies all around, and optionally use the FindKSane installed by kdegraphics >= 4.1
++    adapt to the syntax of that FindKSane
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=817550
++
++commit 24e13d14c03dda2f7a1ccd31c871b0dba00499ff
++Author: Gilles Caulier <caulier.gilles@gmail.com>
++Date:   Fri Jun 6 08:40:02 2008 +0000
++
++    this is more logic for the moment
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=817534
++
++commit 754f2581a6458488382927cb87b99ebd29abf15e
++Author: Gilles Caulier <caulier.gilles@gmail.com>
++Date:   Fri Jun 6 07:51:51 2008 +0000
++
++    compile
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=817515
++
++commit 889599fd30d248d5dce3c94a846ec7f5598a6fca
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Thu Jun 5 09:55:42 2008 +0000
++
++    Add 'SUBDIR' to the document path.
++
++    svn path=/trunk/extragear/graphics/doc/skanlite/; revision=817121
++
++commit 338dd9cc4d2c44e4b9d813c5884b98620da46575
++Author: Laurent Montel <montel@kde.org>
++Date:   Tue May 27 11:31:11 2008 +0000
++
++    Use INSTALL_TARGETS_DEFAULT_ARGS
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=813302
++
++commit 86891f9be2d7986ff24ff6cc8db4c0811aac8052
++Author: Gilles Caulier <caulier.gilles@gmail.com>
++Date:   Fri May 2 08:07:32 2008 +0000
++
++    check KSAne from local cmake sub-dir
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=803184
++
++commit 9bc9319cb19fd45233e2a6da64091011760f698a
++Author: Laurent Montel <montel@kde.org>
++Date:   Sat Apr 26 09:22:19 2008 +0000
++
++    Move cmake file in specific project
++    it's better when we want to checkout just project
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=801289
++
++commit 05300e9c94219a198d4aedceec357a08a8843fd2
++Author: Laurent Montel <montel@kde.org>
++Date:   Fri Apr 25 06:38:03 2008 +0000
++
++    Remove not necessary cmake variable
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=800893
++
++commit fb6dc9bbfb64993311d4c9479eb238e68d766628
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sun Apr 13 20:21:11 2008 +0000
++
++    Update credits
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=796588
++
++commit e5a6a04fbe8eca51eb44e221989aca2471e30b73
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sun Apr 13 19:40:57 2008 +0000
++
++    Remove file name from currentDir -> fix auto file name for the save dialog.
++
++    svn path=/trunk/extragear/graphics/skanlite/; revision=796571
++
++commit b410721515437c8b6007f7e99701ff24b3c1f048
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Apr 12 07:29:15 2008 +0000
++
++    Forgot to update the date :)
++
++    svn path=/trunk/extragear/graphics/doc/skanlite/; revision=795976
++
++commit 8254b87b032a160154d7085d8d4a6c6bbadd432c
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Apr 12 07:25:55 2008 +0000
++
++    Update images (Glimpse -> Skanlite)
++
++    svn path=/trunk/extragear/graphics/doc/skanlite/; revision=795975
++
++commit a8322fb2d2d0bd77701f54f555971d52c9162e89
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Apr 9 18:41:43 2008 +0000
++
++    MovingSkanlite to extragear/graphics/
++
++    svn path=/trunk/kdereview/doc/skanlite/; revision=795302
++
++commit 13c5473863f1234fc5b86f1323606117dd63effc
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Apr 9 17:02:12 2008 +0000
++
++    Move Skanlite to exrtagear/graphics/
++
++    svn path=/trunk/kdereview/skanlite/; revision=795269
++
++commit c9b408c874f51166454e422b8dbbdd1aa9d77339
++Author: Script Kiddy <scripty@kde.org>
++Date:   Wed Apr 9 10:23:33 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/skanlite/; revision=795145
++
++commit 94e5045ac425b20241cc05b98c744b43e85df380
++Author: Script Kiddy <scripty@kde.org>
++Date:   Wed Apr 9 04:02:39 2008 +0000
++
++    SVN_SILENT made messages (.desktop file, second try)
++
++    svn path=/trunk/kdereview/skanlite/; revision=795067
++
++commit c75d75ba6b22ef442caa10e5a96806f1168649e8
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Apr 7 08:21:52 2008 +0000
++
++    SVN_SILENT made messages (.desktop file, second try)
++
++    svn path=/trunk/kdereview/skanlite/; revision=794381
++
++commit a44a3fa31ebce77f5932ebd4707bd1593aeb0bb9
++Author: Script Kiddy <scripty@kde.org>
++Date:   Mon Apr 7 02:23:19 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/skanlite/; revision=794320
++
++commit 7d9fd55a07096d27da9089215ee6854293080b86
++Author: Anne-Marie Mahfouf <annma@kde.org>
++Date:   Sat Apr 5 17:50:30 2008 +0000
++
++    update
++
++    svn path=/trunk/kdereview/doc/skanlite/; revision=793955
++
++commit 1f319a3f87a826aac9a1510e44843662d2045659
++Author: Anne-Marie Mahfouf <annma@kde.org>
++Date:   Sat Apr 5 17:50:02 2008 +0000
++
++    make Help button work
++
++    svn path=/trunk/kdereview/skanlite/; revision=793954
++
++commit 4fa4887a5ecd546310ec645f52c80d7679f29301
++Author: Anne-Marie Mahfouf <annma@kde.org>
++Date:   Sat Apr 5 15:48:27 2008 +0000
++
++    updtae following changes in the Settings dialog
++
++    svn path=/trunk/kdereview/doc/skanlite/; revision=793918
++
++commit 092c4d99ef7bfa094a3ff9ed7445fd8b02d496ea
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Apr 5 08:06:27 2008 +0000
++
++    Do not show the settings dialog on startup.
++    Default save location is now $HOME.
++    Rearange the settings dialog.
++
++    svn path=/trunk/kdereview/skanlite/; revision=793784
++
++commit ab74a22c75f6e65f444e09cd887c0b2b285e67f8
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Apr 5 06:14:26 2008 +0000
++
++    Make it possible to build separately
++
++    svn path=/trunk/kdereview/skanlite/; revision=793776
++
++commit 28abb5141d4293ea0b8b29175dc5f3878c98b01f
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sat Apr 5 03:53:31 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/skanlite/; revision=793768
++
++commit ee83e96f1d17ad22ddf058ee6965522a843ea8c1
++Author: Script Kiddy <scripty@kde.org>
++Date:   Fri Apr 4 21:38:35 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/skanlite/; revision=793714
++
++commit ab6872c4e92090e9043ef904cd823ae8e729b06a
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Thu Apr 3 16:41:36 2008 +0000
++
++    use toQImage() instead of makeQImage()
++
++    svn path=/trunk/kdereview/skanlite/; revision=793319
++
++commit a6740120eb84e07db6aaf7db68b9a4a114934e29
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Apr 2 19:09:37 2008 +0000
++
++    catalog name not capitalized
++
++    svn path=/trunk/kdereview/skanlite/; revision=792988
++
++commit eda80ee5ee479513aa001b61fbce0348ccce4d80
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Apr 2 19:00:31 2008 +0000
++
++    Set proper window title on the settings dialog and the scanner selection dialog.
++
++    svn path=/trunk/kdereview/skanlite/; revision=792986
++
++commit 22c51dd84bf77592f2f16d7a655dd3c5f343f99b
++Author: Anne-Marie Mahfouf <annma@kde.org>
++Date:   Wed Apr 2 18:06:20 2008 +0000
++
++    glimpse -> skanlite
++
++    svn path=/trunk/kdereview/doc/skanlite/; revision=792966
++
++commit c87379f3b1e557a5f706ea8e4eb47d2c69207109
++Author: Anne-Marie Mahfouf <annma@kde.org>
++Date:   Wed Apr 2 16:34:32 2008 +0000
++
++    make description more useful, add copyright year
++
++    svn path=/trunk/kdereview/skanlite/; revision=792948
++
++commit 35fc463fbc88f6e930cdc24ce2a39af76faee4e4
++Author: Pino Toscano <pino@kde.org>
++Date:   Wed Apr 2 16:11:12 2008 +0000
++
++    - Categories is a list, so it must end with the list separator (';')
++    - remove unuseful comment
++
++    svn path=/trunk/kdereview/skanlite/; revision=792945
++
++commit 4b9c453070184b0a530c84c97e69779bb1b20edc
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Apr 2 16:00:51 2008 +0000
++
++    Glimpse is dead. Long live Skanlite.
++
++    svn path=/trunk/kdereview/skanlite/; revision=792938
++
++commit 0a93621f4e51d5a8a24436879529fb0a603edc2d
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Apr 2 15:39:55 2008 +0000
++
++    rename Glimpse to Skanlite
++
++    svn path=/trunk/kdereview/skanlite/; revision=792930
++
++commit 1ca72111c5ad5c8c816e7599b04305f2db948e70
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Apr 1 05:46:06 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/glimpse/; revision=792449
++
++commit 5b04003a9dbde5f87c8cacc6fd00bcf80b877cb7
++Author: Script Kiddy <scripty@kde.org>
++Date:   Tue Apr 1 02:07:23 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/glimpse/; revision=792426
++
++commit 0accdd4dca0fa3834409ddec393698588853df9d
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sun Mar 30 07:39:22 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/glimpse/; revision=791741
++
++commit b8edd3965dee32518c53e6665f6a220f90570693
++Author: Script Kiddy <scripty@kde.org>
++Date:   Sun Mar 30 03:18:17 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/glimpse/; revision=791712
++
++commit 56c2eb9bc27e13adfc1429cadf16c150fc152562
++Author: Script Kiddy <scripty@kde.org>
++Date:   Thu Mar 27 23:52:40 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/glimpse/; revision=791011
++
++commit 83e236b9940c6ddb85dad2fc7828336e2dc76703
++Author: Script Kiddy <scripty@kde.org>
++Date:   Thu Mar 27 20:15:44 2008 +0000
++
++    SVN_SILENT made messages (.desktop file)
++
++    svn path=/trunk/kdereview/glimpse/; revision=790912
++
++commit 90e5e66d052b1146818c5189ade8412719caf834
++Author: Anne-Marie Mahfouf <annma@kde.org>
++Date:   Thu Mar 27 19:51:00 2008 +0000
++
++    improve doc a bit and fix a few typos
++
++    svn path=/trunk/kdereview/glimpse/; revision=790893
++
++commit 30cda11e2f9d209954699321f216b2a88d751764
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Mar 25 20:17:15 2008 +0000
++
++    rename FindKsane.cmake to FindKSane.cmake and the corresponding changes to the CMake files.
++
++    svn path=/trunk/kdereview/glimpse/; revision=790078
++
++commit 679e172bde549b812fbe2c296dccad7889512723
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Mar 25 20:10:21 2008 +0000
++
++    -Add glimpse to the CMakeLists.txt to enable compilation.
++    -Move the FindKsane.cmake module to cmake/modules/
++
++    svn path=/trunk/kdereview/glimpse/; revision=790071
++
++commit 294088d4613eaefa4a81da48f9f26720695af5c7
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Tue Mar 25 17:43:50 2008 +0000
++
++    move glimpse to kdereview
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=789928
++
++commit e6f6a234b42dc092fce4c3e8924d5e84de5ff444
++Author: Anne-Marie Mahfouf <annma@kde.org>
++Date:   Tue Mar 25 09:27:12 2008 +0000
++
++    add a .desktop file. Kare, please can you review the entries I put there? If in doubt we'll ask people on IRC at some point! The desktop file allows you to have Glimpse in the K menu and also to find the doc.
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=789800
++
++commit aecaab3a48cd809a17ddd74e958001726b700fc1
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Mar 19 20:30:41 2008 +0000
++
++    Only one connection from the showImageDialog to one of the save slots
++    (canceling save produced one extra connect -> save dialog opened twice the next time)
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=787752
++
++commit 656fb744c979d508a624ec1161d7ddf3e74b166c
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Mon Mar 17 20:56:12 2008 +0000
++
++    Fix Krazy2 warnings
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=786742
++
++commit 799d383d64a5a542acf7cff7eb7936a936b855dc
++Author: Laurent Montel <montel@kde.org>
++Date:   Sun Mar 16 16:53:00 2008 +0000
++
++    SVN_SILENT:
++    Minor fix
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=786303
++
++commit 3714a2aa79a51179f18e9c6835ed7dad293cbd10
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Mar 12 18:29:10 2008 +0000
++
++    Start using KDialog in stead of QDialog
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=784886
++
++commit 12dfc7e47b5a476e33b9cacc629aa82334fa44bb
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sun Feb 24 21:36:31 2008 +0000
++
++    add credit
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=778915
++
++commit 249a9c605df55d654c903dd4dc434d2ea4eae109
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sun Feb 24 20:28:16 2008 +0000
++
++    If selectDevice() returns an empty string don't try to open an empty device.
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=778891
++
++commit 97930a6a0cee68b6c84c44f32a61ce580acdd59a
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sun Feb 24 20:24:35 2008 +0000
++
++    libksane does the insertCatalog() for translations
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=778889
++
++commit 81afa55d2b047cee05ca5e0829501eee459abeec
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Feb 23 20:05:50 2008 +0000
++
++    Add a button to display the 'About' dialog.
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=778514
++
++commit 8ea8fb647cb8b797ddc342d91a8aa8628349aa55
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Feb 23 19:05:47 2008 +0000
++
++    Fix e-mail address
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=778494
++
++commit bff88fc43dfa071b6737a7e048b9705db37341e7
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sun Feb 3 12:12:40 2008 +0000
++
++    Use KDialog in stead of QDialog for the settings
++    show settings dialog (if not disabled by config) before selecting scanner
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=770309
++
++commit 2640eb5a1d8715d63f17e80f35df3db0fab9cac7
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Jan 30 19:24:42 2008 +0000
++
++    Enable translated libksane
++    Enable setting image quality also for non-autosaved images
++
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=768848
++
++commit 543d844ffc6aea7785d10ae00f23ab15381e7625
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Wed Jan 30 19:21:39 2008 +0000
++
++    rename pot file to glimpse.pot
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=768845
++
++commit efaab9cd6bbec4bf847f5b29a65e3cbffedbd4d7
++Author: Chusslove Illich <caslav.ilic@gmx.net>
++Date:   Wed Jan 16 20:25:41 2008 +0000
++
++    Find .ui files too.
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=762329
++
++commit e19c29a2ccfd320b90655eaa60d806f172c20550
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Fri Dec 28 19:39:59 2007 +0000
++
++    Change the window title to be the scanner name + Glimpse
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=753939
++
++commit bd1d602c08e14582f51be02bd61cf03ef2867cb9
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Dec 22 07:08:30 2007 +0000
++
++    Add icons to buttons and add i18n to strings (needs to be done for the .ui too somehow)
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=751542
++
++commit 8457b9d66bb05cfe4a3aad439903ec530f6993aa
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Thu Dec 20 17:44:04 2007 +0000
++
++    Q_SLOTS in stead of "slot"
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=750951
++
++commit 808d249caacc5e80f6b249dce78380c7472635d9
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Thu Dec 20 17:39:54 2007 +0000
++
++    -Update About data
++    -Start using  KConfigGroup in stead of QSettings
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=750950
++
++commit 8f6dbd96438a87c8e33293a77109bbd77b7e0a66
++Author: Kåre Särs <kare.sars@iki.fi>
++Date:   Sat Dec 15 18:16:12 2007 +0000
++
++    This is the first commit of Glimpse a scanning application that uses libksane.
++
++    svn path=/trunk/playground/graphics/glimpse/; revision=748852

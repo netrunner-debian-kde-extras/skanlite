@@ -12,6 +12,7 @@ skanlite (0.7-3) UNRELEASED; urgency=low
   * debian/source.lintian-overrides: Added (only temp. until dh v9 is
     released).
   * debian/gbp.conf: Ensure tag signing.
+  * debian/patches/add_upstream_changelog.patch: Updated.
 
  -- Kai Wasserbäch <curan@debian.org>  Sat, 19 Feb 2011 15:38:42 +0100
 
