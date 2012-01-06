@@ -3,8 +3,12 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>, Kai Wasserbäch <curan@debian.org>
-Build-Depends: debhelper (>= 8), cmake, pkg-kde-tools (>= 0.9),
- libksane-dev, kdelibs5-dev (>= 4:4.2.0), libpng12-dev
+Build-Depends: debhelper (>= 8.9.4),
+ cmake,
+ pkg-kde-tools (>= 0.9),
+ libksane-dev,
+ kdelibs5-dev (>= 4:4.2.0),
+ libpng12-dev
 Standards-Version: 3.9.1
 Homepage: http://www.kde.org/applications/graphics/skanlite/
 Vcs-Git: git://git.debian.org/pkg-kde/kde-extras/skanlite.git

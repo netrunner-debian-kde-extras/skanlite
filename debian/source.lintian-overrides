@@ -1,0 +1,2 @@
+# we're pre v9 but it works for us
+skanlite source: package-needs-versioned-debhelper-build-depends 9
