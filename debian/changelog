@@ -1,4 +1,4 @@
-skanlite (0.7-3) UNRELEASED; urgency=low
+skanlite (0.8-1) experimental; urgency=low
 
   The "Divine Light" release.
 
@@ -17,7 +17,7 @@ skanlite (0.7-3) UNRELEASED; urgency=low
   * debian/patches/add_upstream_changelog.patch: Updated.
   * debian/copyright: Updated.
 
- -- Kai Wasserbäch <curan@debian.org>  Sat, 19 Feb 2011 15:38:42 +0100
+ -- Kai Wasserbäch <curan@debian.org>  Fri, 06 Jan 2012 16:02:57 +0100
 
 skanlite (0.7-2) unstable; urgency=low
 
