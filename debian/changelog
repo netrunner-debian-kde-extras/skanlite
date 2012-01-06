@@ -2,10 +2,12 @@ skanlite (0.7-3) UNRELEASED; urgency=low
 
   The "Divine Light" release.
 
+  * New upstream release.
   * debian/compat: Updated for debhelper 9 compatibility.
   * debian/control:
     - Updated for debhelper 9 compatibility.
     - Bumped Standards-Version to 3.9.2, no further changes needed.
+    - Bumped B-D on libksane-dev, we need initGetDeviceList in KSaneWidget.
   * debian/rules:
     - Updated for debhelper 8+ compatibility.
     - Added "--parallel" to dh_auto_configure invocation.

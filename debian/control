@@ -6,7 +6,7 @@ Uploaders: Mark Purcell <msp@debian.org>, Kai Wasserbäch <curan@debian.org>
 Build-Depends: debhelper (>= 8.9.4),
  cmake,
  pkg-kde-tools (>= 0.9),
- libksane-dev,
+ libksane-dev (>= 4:4.7.0),
  kdelibs5-dev (>= 4:4.2.0),
  libpng12-dev
 Standards-Version: 3.9.2
