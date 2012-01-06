@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 8.9.4),
  libksane-dev,
  kdelibs5-dev (>= 4:4.2.0),
  libpng12-dev
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Homepage: http://www.kde.org/applications/graphics/skanlite/
 Vcs-Git: git://git.debian.org/pkg-kde/kde-extras/skanlite.git
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/skanlite.git;a=summary
