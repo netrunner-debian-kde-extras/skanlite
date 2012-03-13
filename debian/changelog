@@ -1,4 +1,4 @@
-skanlite (0.8-2) UNRELEASED; urgency=low
+skanlite (0.8-2) unstable; urgency=low
 
   The "Curtain of Light" release.
 
@@ -8,7 +8,7 @@ skanlite (0.8-2) UNRELEASED; urgency=low
     - Bump B-D on debhelper to >= 9, it's released now.
   * debian/source.lintian-overrides: Deleted (debhelper v9 is out).
 
- -- Kai Wasserbäch <curan@debian.org>  Tue, 13 Mar 2012 19:15:56 +0100
+ -- Kai Wasserbäch <curan@debian.org>  Tue, 13 Mar 2012 19:26:38 +0100
 
 skanlite (0.8-1) experimental; urgency=low
 
