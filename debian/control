@@ -3,7 +3,7 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>, Kai Wasserbäch <curan@debian.org>
-Build-Depends: debhelper (>= 8.9.4),
+Build-Depends: debhelper (>= 9),
  cmake,
  pkg-kde-tools (>= 0.9),
  libksane-dev (>= 4:4.7.0),
