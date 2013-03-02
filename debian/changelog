@@ -1,3 +1,12 @@
+skanlite (1.0-1) UNRELEASED; urgency=low
+
+  * New Upstream Release
+    - Fixes "Please update skanlite to 0.9" (Closes: #694467)
+    - Fixes "Version 0.7 according to About" (Closes: #668417)
+  * Fix "hardening flags" exported DEB_LDFLAGS_MAINT_APPEND (Closes: #669186)
+
+ -- Mark Purcell <msp@debian.org>  Sun, 03 Mar 2013 09:48:43 +1100
+
 skanlite (0.8-2) unstable; urgency=low
 
   The "Curtain of Light" release.
