@@ -10,7 +10,7 @@
 ><!-- change language only here -->
 ]>
 
-<book lang="&language;">
+<book id="skanlite" lang="&language;">
 
 <bookinfo>
 <title

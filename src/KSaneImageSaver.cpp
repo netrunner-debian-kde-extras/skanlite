@@ -2,7 +2,7 @@
 * Date        : 2010-07-02
 * Description : Image saver class for libksane image data.
 *
-* Copyright (C) 2010 by Kare Sars <kare dot sars at iki dot fi>
+* Copyright (C) 2010-2012 by Kåre Särs <kare.sars@iki .fi>
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public License as
@@ -29,14 +29,14 @@
 #include <KDebug>
 #include <QMutex>
 
-typedef enum {
-    ImageTypePNG,
-    ImageTypeTIFF
-} ImageType;
-    
 
 struct KSaneImageSaver::Private
 {
+    enum ImageType {
+        ImageTypePNG,
+        ImageTypeTIFF
+    };
+
     bool   m_savedOk;
     QMutex m_runMutex;
     KSaneImageSaver *q;
@@ -73,7 +73,7 @@ bool KSaneImageSaver::savePng(const QString &name, const QByteArray &data, int w
     d->m_width  = width;
     d->m_height = height;
     d->m_format = format;
-    d->m_type   = ImageTypePNG;
+    d->m_type   = Private::ImageTypePNG;
 
     start();
     return true;
@@ -98,7 +98,7 @@ bool KSaneImageSaver::saveTiff(const QString &name, const QByteArray &data, int 
     d->m_width  = width;
     d->m_height = height;
     d->m_format = format;
-    d->m_type   = ImageTypeTIFF;
+    d->m_type   = Private::ImageTypeTIFF;
 
     kDebug() << "saving Tiff images is not yet supported";
     d->m_runMutex.unlock();
@@ -116,7 +116,7 @@ bool KSaneImageSaver::saveTiffSync(const QString &name, const QByteArray &data, 
 
 void KSaneImageSaver::run()
 {
-    if (d->m_type == ImageTypeTIFF) {
+    if (d->m_type == Private::ImageTypeTIFF) {
         d->m_savedOk = d->saveTiff();
         emit imageSaved(d->m_savedOk);
     }
@@ -208,9 +208,12 @@ bool KSaneImageSaver::Private::savePng()
 
     png_set_compression_level(png_ptr, 9);
 
-    // this is not nice :( swap bytes in the 16 bit color....
+    // This is not nice :( swap bytes in the 16 bit color....
     char tmp;
-    for (int i=0; i<m_data.size(); i+=2) {
+    // Make sure we have a buffer size that is divisible by 2
+    int dataSize = m_data.size();
+    if ((dataSize % 2) > 0) dataSize--;
+    for (int i=0; i<dataSize; i+=2) {
         tmp = m_data[i];
         m_data[i] = m_data[i+1];
         m_data[i+1] = tmp;

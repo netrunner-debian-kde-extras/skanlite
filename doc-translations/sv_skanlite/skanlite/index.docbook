@@ -10,7 +10,7 @@
 ><!-- change language only here -->
 ]>
 
-<book lang="&language;">
+<book id="skanlite" lang="&language;">
 
 <bookinfo>
 <title
@@ -58,7 +58,7 @@
 
 <copyright>
 <year
->2008</year>
+>2008, 2013</year>
 <holder
 >Kåre Särs</holder>
 </copyright>
@@ -73,9 +73,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->2011-11-29</date>
+>2013-02-08</date>
 <releaseinfo
->0.8</releaseinfo>
+>1.0</releaseinfo>
 
 <abstract>
 <para
@@ -387,17 +387,17 @@
 >, visas inställningsdialogrutan över huvudfönstret. Här kan du välja de viktigaste inställningarna. </para>
 
 <screenshot>
-     <screeninfo
+    <screeninfo
 >Här är en skärmbild av inställningsdialogrutan i &skanlite;</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="settings.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase
+    <mediaobject>
+        <imageobject>
+            <imagedata fileref="settings.png" format="PNG"/>
+        </imageobject>
+        <textobject>
+            <phrase
 >Inställningsdialogrutan i &skanlite;</phrase>
-	  </textobject>
-	</mediaobject>
+        </textobject>
+    </mediaobject>
 </screenshot>
 
 <para
@@ -419,17 +419,31 @@
 ><guilabel
 >Metod att spara:</guilabel
 ></term>
-<listitem
-><para
+<listitem>
+<para
 >Inställningen låter dig välja hur &skanlite; sparar bilderna. Om du väljer <guilabel
->Öppna dialogrutan för att spara efter varje inläsning</guilabel
+>Öppna dialogrutan för att spara för varje bild</guilabel
 > öppnas dialogrutan för att spara bilder för varje inläst bild. Om du föredrar att &skanlite; sparar automatiskt (genom att skapa namnet automatiskt och spara bilden i en fördefinierad katalog) kan du välja <guilabel
->Spara utan att fråga efter ett filnamn</guilabel
-> eller <guilabel
 >Öppna dialogrutan för att spara bara för den första bilden</guilabel
->. </para
-></listitem>
+>. Alternativet öppnar följande dialogruta för "plats att spara" för den först inlästa bilden.</para>
+<para>
+    <screenshot>
+        <screeninfo
+>Här är en skärmbild av dialogrutan för plats att spara i &skanlite;</screeninfo>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="save-location.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+                <phrase
+>Dialogrutan för plats att spara i &skanlite;.</phrase>
+            </textobject>
+        </mediaobject>
+    </screenshot>
+</para>
+</listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -437,12 +451,10 @@
 ></term>
 <listitem
 ><para
->Inställningen definierar var bilderna ska sparas när <guilabel
->Spara utan att fråga efter ett filnamn</guilabel
-> väljes i föregående alternativ. Om dialogrutan för att spara ska öppnas för varje bild, är förvald plats att spara i dialogrutan samma som parametern. Förvald plats att spara är din hemkatalog, och platsen kan ändras genom att klicka på knappen <guibutton
+>Inställningen definierar platsen att spara och filernas namngivning. Förvald plats att spara är din hemkatalog, och platsen kan ändras genom att klicka på knappen <guibutton
 >...</guibutton
->. </para
-></listitem>
+>. </para>
+</listitem>
 </varlistentry>
 
 <varlistentry>
@@ -454,9 +466,10 @@
 ><para
 >Parametern definierar bildprefix för automatsparade bilder och är också namnet som föreslås för bilder i dialogrutan för att spara bilder. De automatsparade bilderna får numeriska suffix (### ersätts av siffror) som ökas varje gång en bild sparas. </para
 ><para
->Du kan också välja formatet som filen sparas med, där förvalt värde är png.</para
-></listitem>
+>Du kan också välja formatet som filen sparas med, där förvalt värde är png.</para>
+</listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -469,6 +482,7 @@
 > inte är markerat, blir kvaliteten det förvalda värde som väljes av &Qt;. </para
 ></listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel

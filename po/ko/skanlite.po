@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-13 03:18+0100\n"
+"POT-Creation-Date: 2012-11-28 02:00+0100\n"
 "PO-Revision-Date: 2010-10-24 01:13+0900\n"
 "Last-Translator: Park Shinjo <kde@peremen.name>\n"
 "Language-Team: Korean <cho.sungjae@gmail.com>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Park Shinjo"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde@peremen.name"
 
 #: ImageViewer.cpp:59
 msgid "Zoom In"
@@ -33,290 +41,271 @@ msgstr "실제 크기"
 msgid "Zoom to Fit"
 msgstr "맞추기"
 
-#: main.cpp:32
+#: main.cpp:33
 msgid "Skanlite"
 msgstr "Skanlite"
 
-#: main.cpp:33
+#: main.cpp:34
 msgid "This is a scanning application for KDE based on libksane."
 msgstr "libksane을 사용하는 KDE 스캔 프로그램입니다."
 
-#: main.cpp:35
-msgid "(C) 2008 Kåre Särs"
+#: main.cpp:36
+#, fuzzy
+#| msgid "(C) 2008 Kåre Särs"
+msgid "(C) 2008-2012 Kåre Särs"
 msgstr "(C) 2008 Kåre Särs"
 
-#: main.cpp:37
+#: main.cpp:38
 msgid "Kåre Särs"
 msgstr "Kåre Särs"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "developer"
 msgstr "개발자"
 
-#: main.cpp:41
+#: main.cpp:42
 msgid "Arseniy Lartsev"
 msgstr "Arseniy Lartsev"
 
-#: main.cpp:42
+#: main.cpp:43
 msgid "contributor"
 msgstr "기여자"
 
-#: main.cpp:45
+#: main.cpp:46
 msgid "Gilles Caulier"
 msgstr "Gilles Caulier"
 
-#: main.cpp:46 main.cpp:54
+#: main.cpp:47 main.cpp:55
 msgid "Importing libksane to extragear"
 msgstr "libksane을 extragear로 가져옴"
 
-#: main.cpp:49
+#: main.cpp:50
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: main.cpp:50
+#: main.cpp:51
 msgid "Writing the user manual"
 msgstr "사용자 설명서 작성"
 
-#: main.cpp:53
+#: main.cpp:54
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: main.cpp:57
+#: main.cpp:58
 msgid "Chusslove Illich"
 msgstr "Chusslove Illich"
 
-#: main.cpp:58 main.cpp:62
+#: main.cpp:59 main.cpp:63
 msgid "Help with translations"
 msgstr "번역 도움"
 
-#: main.cpp:61
+#: main.cpp:62
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
-#: main.cpp:70
+#: main.cpp:71
 msgid "Sane scanner device name."
 msgstr "SANE 스캐너 장치 이름."
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Park Shinjo"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde@peremen.name"
-
-#. i18n: file: SaveLocation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, SaveLocation)
-#: rc.cpp:5
+#: SaveLocation.ui:14
 msgid "Save Location"
 msgstr "저장 위치"
 
-#. i18n: file: SaveLocation.ui:23
-#. i18n: ectx: property (text), widget (QLabel, locationLabel)
-#. i18n: file: settings.ui:85
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:8 rc.cpp:47
+#. i18n: ectx: property (text), widget (QLabel, locationLabel)
+#: SaveLocation.ui:23 settings.ui:80
 msgid "Save Location:"
 msgstr "저장 위치:"
 
-#. i18n: file: SaveLocation.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, getDirButton)
-#. i18n: file: settings.ui:107
-#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
-#: rc.cpp:11 rc.cpp:50
+#. i18n: ectx: property (text), widget (QPushButton, u_getDirButton)
+#: SaveLocation.ui:44 settings.ui:102
 msgid "..."
 msgstr "..."
 
-#. i18n: file: SaveLocation.ui:53
 #. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
-#: rc.cpp:14
+#: SaveLocation.ui:53
 msgid "Name & Format:"
 msgstr "이름과 형식:"
 
-#. i18n: file: SaveLocation.ui:72
-#. i18n: ectx: property (text), widget (QLabel, numberLabel)
-#. i18n: file: settings.ui:136
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:17 rc.cpp:59
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#: SaveLocation.ui:72 settings.ui:131
 msgid "###."
 msgstr "###."
 
-#. i18n: file: SaveLocation.ui:84
-#. i18n: ectx: property (text), widget (QLabel, resultValue)
-#: rc.cpp:20
+#. i18n: ectx: property (text), widget (QLabel, u_resultValue)
+#: SaveLocation.ui:84
 msgid "/home/joe/example.png"
 msgstr "/home/joe/example.png"
 
-#. i18n: file: SaveLocation.ui:91
-#. i18n: ectx: property (text), widget (QLabel, resultValue_2)
-#: rc.cpp:23
+#. i18n: ectx: property (text), widget (QLabel, resultLabel)
+#: SaveLocation.ui:91
 msgid "Example:"
 msgstr "예제:"
 
-#. i18n: file: settings.ui:14
+#. i18n: ectx: property (text), widget (QLabel, numStartFromLabel)
+#: SaveLocation.ui:98
+msgid "Start numbering from:"
+msgstr ""
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
-#: rc.cpp:26 skanlite.cpp:62
+#: settings.ui:14 skanlite.cpp:55
 msgid "Settings"
 msgstr "설정"
 
-#. i18n: file: settings.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:29
+#: settings.ui:20
 msgid "Image saving"
 msgstr "그림 저장"
 
-#. i18n: file: settings.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:32
+#: settings.ui:26
 msgid "Preview before saving:"
 msgstr "저장하기 전에 미리 보기:"
 
-#. i18n: file: settings.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:35
+#: settings.ui:46
 msgid "Save mode:"
 msgstr "저장 모드:"
 
-#. i18n: file: settings.ui:60
 #. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:38
+#: settings.ui:60
 msgid "Open the save dialog for every image"
 msgstr "그림마다 저장 대화 상자 열기"
 
-#. i18n: file: settings.ui:65
 #. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:41
+#: settings.ui:65
 msgid "Open the save dialog for the first image only"
 msgstr "첫 그림만 저장 대화 상자 열기"
 
-#. i18n: file: settings.ui:70
-#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:44
-msgid "Save without asking for a filename"
-msgstr "파일 이름을 묻지 않고 저장하기"
-
-#. i18n: file: settings.ui:114
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:53
+#: settings.ui:109
 #, fuzzy
 #| msgid "Name & Format:"
 msgid "Name && Format:"
 msgstr "이름과 형식:"
 
-#. i18n: file: settings.ui:129
 #. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
-#: rc.cpp:56
+#: settings.ui:124
 msgid "Image"
 msgstr "그림"
 
-#. i18n: file: settings.ui:148
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:62
+#: settings.ui:143
 msgid "Specify save quality:"
 msgstr "품질:"
 
-#. i18n: file: settings.ui:207
 #. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
-#: rc.cpp:66
+#: settings.ui:202
 #, no-c-format
 msgid "%"
 msgstr "%"
 
-#. i18n: file: settings.ui:235
 #. i18n: ectx: property (title), widget (QGroupBox, generalGB)
-#: rc.cpp:69
+#: settings.ui:230
 msgid "General"
 msgstr "일반"
 
-#. i18n: file: settings.ui:241
 #. i18n: ectx: property (text), widget (QCheckBox, setPreviewDPI)
-#: rc.cpp:72
+#: settings.ui:236
 #, fuzzy
 #| msgid "Set preview resolution (DPI):"
 msgid "Set preview resolution (DPI)"
 msgstr "미리보기 해상도 지정 (DPI):"
 
-#. i18n: file: settings.ui:255
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:75
+#: settings.ui:250
 msgid "50"
 msgstr "50"
 
-#. i18n: file: settings.ui:260
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:78
+#: settings.ui:255
 msgid "75"
 msgstr "75"
 
-#. i18n: file: settings.ui:265
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:81
+#: settings.ui:260
 msgid "100"
 msgstr "100"
 
-#. i18n: file: settings.ui:270
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:84
+#: settings.ui:265
 msgid "150"
 msgstr "150"
 
-#. i18n: file: settings.ui:275
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:87
+#: settings.ui:270
 msgid "300"
 msgstr "300"
 
-#. i18n: file: settings.ui:288
 #. i18n: ectx: property (text), widget (QCheckBox, u_disableSelections)
-#: rc.cpp:90
+#: settings.ui:283
 msgid "Disable automatic selections"
 msgstr ""
 
-#. i18n: file: settings.ui:321
 #. i18n: ectx: property (text), widget (QPushButton, revertOptions)
-#: rc.cpp:93
+#: settings.ui:316
 msgid "Revert scanner options to default values"
 msgstr ""
 
-#: skanlite.cpp:64
+#: skanlite.cpp:57
 msgid "About"
 msgstr "정보"
 
-#: skanlite.cpp:127
+#: skanlite.cpp:120
 msgid "Skanlite Settings"
 msgstr "Skanlite 설정"
 
-#: skanlite.cpp:148
+#: skanlite.cpp:141
 msgid "Opening the selected scanner failed."
 msgstr "선택한 스캐너를 여는 데 실패했습니다."
 
-#: skanlite.cpp:166
+#: skanlite.cpp:145
+#, fuzzy, kde-format
+#| msgid "Skanlite"
+msgctxt "@title:window %1 = scanner maker, %2 = scanner model"
+msgid "%1 %2 - Skanlite"
+msgstr "Skanlite"
+
+#: skanlite.cpp:150
+#, fuzzy, kde-format
+#| msgid "Skanlite"
+msgctxt "@title:window %1 = scanner device"
+msgid "%1 - Skanlite"
+msgstr "Skanlite"
+
+#: skanlite.cpp:159
 msgid "Save"
 msgstr "저장"
 
-#: skanlite.cpp:177
+#: skanlite.cpp:170
 msgid "New Image File Name"
 msgstr "새 그림 파일 이름"
 
-#: skanlite.cpp:229
+#: skanlite.cpp:203
+#, kde-format
+msgid "%1: %2"
+msgstr ""
+
+#: skanlite.cpp:222
 #, fuzzy
 #| msgid "Image"
 msgctxt "prefix for auto naming"
 msgid "Image-"
 msgstr "그림"
 
-#: skanlite.cpp:375
+#: skanlite.cpp:364
 #, kde-format
 msgid "Do you want to overwrite \"%1\"?"
 msgstr "\"%1\"에 덮어쓰시겠습니까?"
 
-#: skanlite.cpp:377
+#: skanlite.cpp:366
 msgid "Overwrite"
 msgstr "덮어쓰기"
 
-#: skanlite.cpp:405
+#: skanlite.cpp:394
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
@@ -324,9 +313,6 @@ msgstr ""
 "Skanlite에서는 16비트 그림을 PNG로만 저장할 수 있으므로, 이 그림은 PNG로 저장"
 "됩니다."
 
-#: skanlite.cpp:413 skanlite.cpp:426
+#: skanlite.cpp:402 skanlite.cpp:415
 msgid "Failed to save image"
 msgstr "그림을 저장할 수 없습니다"
-
-#~ msgid "Use this option to specify the resolution for the preview scans."
-#~ msgstr "이 옵션을 사용하여 미리 보기 스캔의 해상도를 지정하십시오."
