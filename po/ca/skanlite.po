@@ -3,22 +3,31 @@
 # This file is distributed under the same license as the skanlite package.
 #
 # Manuel Tortosa <manutortosa@gmail.com>, 2009.
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2009, 2010, 2011.
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2009, 2010, 2011, 2012.
+# Antoni Bella Pérez <antonibella5@orange.es>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: skanlite\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-13 03:18+0100\n"
-"PO-Revision-Date: 2011-12-04 16:20+0100\n"
-"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
+"POT-Creation-Date: 2012-11-28 02:00+0100\n"
+"PO-Revision-Date: 2012-12-11 21:24+0100\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@orange.es>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Manuel Tortosa"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "manutortosa@gmail.com"
 
 #: ImageViewer.cpp:59
 msgid "Zoom In"
@@ -36,288 +45,261 @@ msgstr "Zoom a la mida real"
 msgid "Zoom to Fit"
 msgstr "Zoom per ajustar"
 
-#: main.cpp:32
+#: main.cpp:33
 msgid "Skanlite"
 msgstr "Skanlite"
 
-#: main.cpp:33
+#: main.cpp:34
 msgid "This is a scanning application for KDE based on libksane."
 msgstr "Aquesta és una aplicació d'escanejat pel KDE basada en libksane."
 
-#: main.cpp:35
-msgid "(C) 2008 Kåre Särs"
-msgstr "(C) 2008 Kåre Särs"
+#: main.cpp:36
+msgid "(C) 2008-2012 Kåre Särs"
+msgstr "(C) 2008-2012 Kåre Särs"
 
-#: main.cpp:37
+#: main.cpp:38
 msgid "Kåre Särs"
 msgstr "Kåre Särs"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "developer"
 msgstr "desenvolupador"
 
-#: main.cpp:41
+#: main.cpp:42
 msgid "Arseniy Lartsev"
 msgstr "Arseniy Lartsev"
 
-#: main.cpp:42
+#: main.cpp:43
 msgid "contributor"
 msgstr "col·laborador"
 
-#: main.cpp:45
+#: main.cpp:46
 msgid "Gilles Caulier"
 msgstr "Gilles Caulier"
 
-#: main.cpp:46 main.cpp:54
+#: main.cpp:47 main.cpp:55
 msgid "Importing libksane to extragear"
 msgstr "Importació de libksane a extragear"
 
-#: main.cpp:49
+#: main.cpp:50
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: main.cpp:50
+#: main.cpp:51
 msgid "Writing the user manual"
 msgstr "Escriptura del manual de l'usuari"
 
-#: main.cpp:53
+#: main.cpp:54
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: main.cpp:57
+#: main.cpp:58
 msgid "Chusslove Illich"
 msgstr "Chusslove Illich"
 
-#: main.cpp:58 main.cpp:62
+#: main.cpp:59 main.cpp:63
 msgid "Help with translations"
 msgstr "Ajuda amb les traduccions"
 
-#: main.cpp:61
+#: main.cpp:62
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
-#: main.cpp:70
+#: main.cpp:71
 msgid "Sane scanner device name."
 msgstr "Nom del dispositiu d'escaneig sane."
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Manuel Tortosa"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "manutortosa@gmail.com"
-
-#. i18n: file: SaveLocation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, SaveLocation)
-#: rc.cpp:5
+#: SaveLocation.ui:14
 msgid "Save Location"
 msgstr "Ubicació on desar"
 
-#. i18n: file: SaveLocation.ui:23
-#. i18n: ectx: property (text), widget (QLabel, locationLabel)
-#. i18n: file: settings.ui:85
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:8 rc.cpp:47
+#. i18n: ectx: property (text), widget (QLabel, locationLabel)
+#: SaveLocation.ui:23 settings.ui:80
 msgid "Save Location:"
 msgstr "Ubicació de desat:"
 
-#. i18n: file: SaveLocation.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, getDirButton)
-#. i18n: file: settings.ui:107
-#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
-#: rc.cpp:11 rc.cpp:50
+#. i18n: ectx: property (text), widget (QPushButton, u_getDirButton)
+#: SaveLocation.ui:44 settings.ui:102
 msgid "..."
 msgstr "..."
 
-#. i18n: file: SaveLocation.ui:53
 #. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
-#: rc.cpp:14
+#: SaveLocation.ui:53
 msgid "Name & Format:"
 msgstr "Nom i format:"
 
-#. i18n: file: SaveLocation.ui:72
-#. i18n: ectx: property (text), widget (QLabel, numberLabel)
-#. i18n: file: settings.ui:136
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:17 rc.cpp:59
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#: SaveLocation.ui:72 settings.ui:131
 msgid "###."
 msgstr "###."
 
-#. i18n: file: SaveLocation.ui:84
-#. i18n: ectx: property (text), widget (QLabel, resultValue)
-#: rc.cpp:20
+#. i18n: ectx: property (text), widget (QLabel, u_resultValue)
+#: SaveLocation.ui:84
 msgid "/home/joe/example.png"
 msgstr "/home/joe/exemple.png"
 
-#. i18n: file: SaveLocation.ui:91
-#. i18n: ectx: property (text), widget (QLabel, resultValue_2)
-#: rc.cpp:23
+#. i18n: ectx: property (text), widget (QLabel, resultLabel)
+#: SaveLocation.ui:91
 msgid "Example:"
 msgstr "Exemple:"
 
-#. i18n: file: settings.ui:14
+#. i18n: ectx: property (text), widget (QLabel, numStartFromLabel)
+#: SaveLocation.ui:98
+msgid "Start numbering from:"
+msgstr "Comença la numeració des de:"
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
-#: rc.cpp:26 skanlite.cpp:62
+#: settings.ui:14 skanlite.cpp:55
 msgid "Settings"
 msgstr "Arranjament"
 
-#. i18n: file: settings.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:29
+#: settings.ui:20
 msgid "Image saving"
 msgstr "En desar la imatge"
 
-#. i18n: file: settings.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:32
+#: settings.ui:26
 msgid "Preview before saving:"
 msgstr "Vista prèvia abans de desar:"
 
-#. i18n: file: settings.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:35
+#: settings.ui:46
 msgid "Save mode:"
 msgstr "Mode del desat:"
 
-#. i18n: file: settings.ui:60
 #. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:38
+#: settings.ui:60
 msgid "Open the save dialog for every image"
 msgstr "Obre el diàleg de desat per cada imatge"
 
-#. i18n: file: settings.ui:65
 #. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:41
+#: settings.ui:65
 msgid "Open the save dialog for the first image only"
 msgstr "Obre el diàleg de desat només per la primera imatge"
 
-#. i18n: file: settings.ui:70
-#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
-#: rc.cpp:44
-msgid "Save without asking for a filename"
-msgstr "Desa sense preguntar per un nom de fitxer"
-
-#. i18n: file: settings.ui:114
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:53
-#, fuzzy
-#| msgid "Name & Format:"
+#: settings.ui:109
 msgid "Name && Format:"
 msgstr "Nom i format:"
 
-#. i18n: file: settings.ui:129
 #. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
-#: rc.cpp:56
+#: settings.ui:124
 msgid "Image"
 msgstr "Imatge"
 
-#. i18n: file: settings.ui:148
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:62
+#: settings.ui:143
 msgid "Specify save quality:"
 msgstr "Indiqueu la qualitat per desar:"
 
-#. i18n: file: settings.ui:207
 #. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
-#: rc.cpp:66
+#: settings.ui:202
 #, no-c-format
 msgid "%"
 msgstr "%"
 
-#. i18n: file: settings.ui:235
 #. i18n: ectx: property (title), widget (QGroupBox, generalGB)
-#: rc.cpp:69
+#: settings.ui:230
 msgid "General"
 msgstr "General"
 
-#. i18n: file: settings.ui:241
 #. i18n: ectx: property (text), widget (QCheckBox, setPreviewDPI)
-#: rc.cpp:72
+#: settings.ui:236
 msgid "Set preview resolution (DPI)"
 msgstr "Indiqueu la resolució de la vista prèvia (DPI)"
 
-#. i18n: file: settings.ui:255
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:75
+#: settings.ui:250
 msgid "50"
 msgstr "50"
 
-#. i18n: file: settings.ui:260
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:78
+#: settings.ui:255
 msgid "75"
 msgstr "75"
 
-#. i18n: file: settings.ui:265
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:81
+#: settings.ui:260
 msgid "100"
 msgstr "100"
 
-#. i18n: file: settings.ui:270
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:84
+#: settings.ui:265
 msgid "150"
 msgstr "150"
 
-#. i18n: file: settings.ui:275
 #. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
-#: rc.cpp:87
+#: settings.ui:270
 msgid "300"
 msgstr "300"
 
-#. i18n: file: settings.ui:288
 #. i18n: ectx: property (text), widget (QCheckBox, u_disableSelections)
-#: rc.cpp:90
+#: settings.ui:283
 msgid "Disable automatic selections"
 msgstr "Deshabilita les seleccions automàtiques"
 
-#. i18n: file: settings.ui:321
 #. i18n: ectx: property (text), widget (QPushButton, revertOptions)
-#: rc.cpp:93
+#: settings.ui:316
 msgid "Revert scanner options to default values"
 msgstr "Restableix les opcions de l'escàner als valors per defecte"
 
-#: skanlite.cpp:64
+#: skanlite.cpp:57
 msgid "About"
 msgstr "Quant a"
 
-#: skanlite.cpp:127
+#: skanlite.cpp:120
 msgid "Skanlite Settings"
 msgstr "Arranjament de l'Skanlite"
 
-#: skanlite.cpp:148
+#: skanlite.cpp:141
 msgid "Opening the selected scanner failed."
 msgstr "Ha fallat en obrir l'escàner seleccionat."
 
-#: skanlite.cpp:166
+#: skanlite.cpp:145
+#, kde-format
+msgctxt "@title:window %1 = scanner maker, %2 = scanner model"
+msgid "%1 %2 - Skanlite"
+msgstr "%1 %2 - Skanlite"
+
+#: skanlite.cpp:150
+#, kde-format
+msgctxt "@title:window %1 = scanner device"
+msgid "%1 - Skanlite"
+msgstr "%1 - Skanlite"
+
+#: skanlite.cpp:159
 msgid "Save"
 msgstr "Desa"
 
-#: skanlite.cpp:177
+#: skanlite.cpp:170
 msgid "New Image File Name"
 msgstr "Nom nou de fitxer de la imatge"
 
-#: skanlite.cpp:229
-#, fuzzy
-#| msgid "Image"
+#: skanlite.cpp:203
+#, kde-format
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: skanlite.cpp:222
 msgctxt "prefix for auto naming"
 msgid "Image-"
-msgstr "Imatge"
+msgstr "Imatge-"
 
-#: skanlite.cpp:375
+#: skanlite.cpp:364
 #, kde-format
 msgid "Do you want to overwrite \"%1\"?"
 msgstr "Voleu sobreescriure «%1»?"
 
-#: skanlite.cpp:377
+#: skanlite.cpp:366
 msgid "Overwrite"
 msgstr "Sobreescriu"
 
-#: skanlite.cpp:405
+#: skanlite.cpp:394
 msgid ""
 "The image will be saved in the PNG format, as Skanlite only supports saving "
 "16 bit color images in the PNG format."
@@ -325,14 +307,6 @@ msgstr ""
 "La imatge es desarà en el format PNG, atès que l'Skanlite només permet desar "
 "les imatges de color de 16 bits en el format PNG."
 
-#: skanlite.cpp:413 skanlite.cpp:426
+#: skanlite.cpp:402 skanlite.cpp:415
 msgid "Failed to save image"
 msgstr "Ha fallat en desar la imatge"
-
-#~ msgid "Use this option to specify the resolution for the preview scans."
-#~ msgstr ""
-#~ "Utilitzeu aquesta opció per especificar la resolució de les "
-#~ "digitalitzacions de les vistes prèvies."
-
-#~ msgid "Revert"
-#~ msgstr "Reverteix"

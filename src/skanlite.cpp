@@ -1,6 +1,6 @@
 /* ============================================================
 *
-* Copyright (C) 2007-2008 by Kare Sars <kare dot sars at iki dot fi>
+* Copyright (C) 2007-2012 by Kåre Särs <kare.sars@iki .fi>
 * Copyright (C) 2009 by Arseniy Lartsev <receive-spam at yandex dot ru>
 *
 * This program is free software; you can redistribute it and/or
@@ -42,13 +42,6 @@
 #include <KStandardAction>
 #include <KImageIO>
 #include <kdeversion.h>
-
-// Order of items in save mode combo-box
-enum {
-    SAVE_MODE_MANUAL = 0,
-    SAVE_MODE_ASK_FIRST = 1,
-    SAVE_MODE_AUTO = 2
-};
 
 #include <errno.h>
 
@@ -121,7 +114,7 @@ Skanlite::Skanlite(const QString &device, QWidget *parent)
         }
     }
     m_settingsUi.imgFormat->addItems(m_typeList);
-    m_saveLocation->imgFormat->addItems(m_typeList);
+    m_saveLocation->u_imgFormat->addItems(m_typeList);
 
     m_settingsDialog->setMainWidget(settingsWidget);
     m_settingsDialog->setWindowTitle(i18n("Skanlite Settings"));
@@ -132,9 +125,9 @@ Skanlite::Skanlite(const QString &device, QWidget *parent)
     readSettings();
 
     // default directory for the save dialog
-    m_saveLocation->saveDirLEdit->setText(m_settingsUi.saveDirLEdit->text());
-    m_saveLocation->imgPrefix->setText(m_settingsUi.imgPrefix->text());
-    m_saveLocation->imgFormat->setCurrentItem(m_settingsUi.imgFormat->currentText());
+    m_saveLocation->u_saveDirLEdit->setText(m_settingsUi.saveDirLEdit->text());
+    m_saveLocation->u_imgPrefix->setText(m_settingsUi.imgPrefix->text());
+    m_saveLocation->u_imgFormat->setCurrentItem(m_settingsUi.imgFormat->currentText());
 
     // open the scan device
     if (m_ksanew->openDevice(device) == false) {
@@ -149,12 +142,12 @@ Skanlite::Skanlite(const QString &device, QWidget *parent)
             exit(1);
         }
         else {
-            setWindowTitle(m_ksanew->make()+ ' ' + m_ksanew->model() + " - Skanlite");
+            setWindowTitle(i18nc("@title:window %1 = scanner maker, %2 = scanner model", "%1 %2 - Skanlite", m_ksanew->make(), m_ksanew->model()));
             m_deviceName = QString("%1:%2").arg(m_ksanew->make()).arg(m_ksanew->model());
         }
     }
     else {
-        setWindowTitle(device + " - Skanlite");
+        setWindowTitle(i18nc("@title:window %1 = scanner device", "%1 - Skanlite", device));
         m_deviceName = device;
     }
 
@@ -183,7 +176,7 @@ Skanlite::Skanlite(const QString &device, QWidget *parent)
     loadScannerOptions();
 
     m_ksanew->initGetDeviceList();
-    
+
     m_firstImage = true;
 }
 
@@ -207,7 +200,7 @@ void Skanlite::saveWindowSize()
 static void perrorMessageBox(const QString &text)
 {
     if (errno != 0) {
-        KMessageBox::sorry(0, text + ": " + QString::fromLocal8Bit(strerror(errno)));
+        KMessageBox::sorry(0, i18n("%1: %2", text, QString::fromLocal8Bit(strerror(errno))));
     }
     else {
         KMessageBox::sorry(0, text);
@@ -223,8 +216,8 @@ void Skanlite::readSettings(void)
 
     // read the saved parameters
     KConfigGroup saving(KGlobal::config(), "Image Saving");
-    m_settingsUi.saveModeCB->setCurrentIndex(saving.readEntry("SaveMode", (int)SAVE_MODE_MANUAL));
-    if (m_settingsUi.saveModeCB->currentIndex() != SAVE_MODE_ASK_FIRST) m_firstImage = false;
+    m_settingsUi.saveModeCB->setCurrentIndex(saving.readEntry("SaveMode", (int)SaveModeManual));
+    if (m_settingsUi.saveModeCB->currentIndex() != SaveModeAskFirst) m_firstImage = false;
     m_settingsUi.saveDirLEdit->setText(saving.readEntry("Location", QDir::homePath()));
     m_settingsUi.imgPrefix->setText(saving.readEntry("NamePrefix", i18nc("prefix for auto naming", "Image-")));
     m_settingsUi.imgFormat->setCurrentItem(saving.readEntry("ImgFormat", "png"));
@@ -249,12 +242,10 @@ void Skanlite::readSettings(void)
 void Skanlite::showSettingsDialog(void)
 {
     readSettings();
-    m_firstImage = true;
 
     // show the dialog
     if (m_settingsDialog->exec()) {
-
-    // now save the settings
+        // save the settings
         KConfigGroup saving(KGlobal::config(), "Image Saving");
         saving.writeEntry("SaveMode", m_settingsUi.saveModeCB->currentIndex());
         saving.writeEntry("Location", m_settingsUi.saveDirLEdit->text());
@@ -282,9 +273,11 @@ void Skanlite::showSettingsDialog(void)
         m_ksanew->enableAutoSelect(!m_settingsUi.u_disableSelections->isChecked());
 
         // pressing OK in the settings dialog means use those settings.
-        m_saveLocation->saveDirLEdit->setText(m_settingsUi.saveDirLEdit->text());
-        m_saveLocation->imgPrefix->setText(m_settingsUi.imgPrefix->text());
-        m_saveLocation->imgFormat->setCurrentItem(m_settingsUi.imgFormat->currentText());
+        m_saveLocation->u_saveDirLEdit->setText(m_settingsUi.saveDirLEdit->text());
+        m_saveLocation->u_imgPrefix->setText(m_settingsUi.imgPrefix->text());
+        m_saveLocation->u_imgFormat->setCurrentItem(m_settingsUi.imgFormat->currentText());
+
+        m_firstImage = true;
     }
     else {
         //Forget Changes
@@ -320,27 +313,23 @@ void Skanlite::imageReady(QByteArray &data, int w, int h, int bpl, int f)
 //************************************************************
 void Skanlite::saveImage()
 {
-    QFileInfo fileInfo;
-    QString fname;
-    QString dir;
-    QString prefix;
-    QString type;
-    int i;
-
     // ask the first time if we are in "ask on first" mode
-    if ((m_settingsUi.saveModeCB->currentIndex() == SAVE_MODE_ASK_FIRST) && m_firstImage) {
+    if ((m_settingsUi.saveModeCB->currentIndex() == SaveModeAskFirst) && m_firstImage) {
         if (m_saveLocation->exec() != KFileDialog::Accepted) return;
         m_firstImage = false;
     }
 
-    dir = m_saveLocation->saveDirLEdit->text();
-    prefix = m_saveLocation->imgPrefix->text();
-    type = m_saveLocation->imgFormat->currentText().toLower();
+    QString dir = m_saveLocation->u_saveDirLEdit->text();
+    QString prefix = m_saveLocation->u_imgPrefix->text();
+    QString type = m_saveLocation->u_imgFormat->currentText().toLower();
+    int fileNumber = m_saveLocation->u_numStartFrom->value();
 
     // find next available file name for name suggestion
-    for (i=1; i<1000000; ++i) {
+    QFileInfo fileInfo;
+    QString fname;
+    for (int i=fileNumber; i<=m_saveLocation->u_numStartFrom->maximum(); ++i) {
         fname = QString("%1%2.%3")
-        .arg(m_settingsUi.imgPrefix->text())
+        .arg(prefix)
         .arg(i, 4, 10, QChar('0'))
         .arg(type);
 
@@ -350,7 +339,7 @@ void Skanlite::saveImage()
         }
     }
 
-    if (m_settingsUi.saveModeCB->currentIndex() == SAVE_MODE_MANUAL) {
+    if (m_settingsUi.saveModeCB->currentIndex() == SaveModeManual) {
         // ask for a filename if requested.
         m_saveDialog->setSelection(fileInfo.absoluteFilePath());
 
@@ -427,15 +416,26 @@ void Skanlite::saveImage()
         }
     }
 
-    // Save last used dir, name and siffix.
-    m_saveLocation->saveDirLEdit->setText(fileInfo.absolutePath());
+    // Save the file base name without number
     QString baseName = fileInfo.completeBaseName();
-    while(baseName[baseName.size()].isNumber()) {
-        kDebug() << baseName;
-        baseName.remove(baseName.size());
+    while ((baseName.size() > 1) && (baseName[baseName.size()-1].isNumber())) {
+        baseName.remove(baseName.size()-1, 1);
     }
-    m_saveLocation->imgPrefix->setText(baseName);
-    m_saveLocation->imgFormat->setCurrentItem(fileInfo.suffix());
+    m_saveLocation->u_imgPrefix->setText(baseName);
+
+    // Save the number
+    QString fileNumStr = fileInfo.completeBaseName();
+    fileNumStr.remove(baseName);
+    fileNumber = fileNumStr.toInt();
+    if (fileNumber) {
+        m_saveLocation->u_numStartFrom->setValue(fileNumber+1);
+    }
+
+    if (m_settingsUi.saveModeCB->currentIndex() == SaveModeManual) {
+        // Save last used dir, prefix and suffix.
+        m_saveLocation->u_saveDirLEdit->setText(fileInfo.absolutePath());
+        m_saveLocation->u_imgFormat->setCurrentItem(fileInfo.suffix());
+    }
 }
 
 
@@ -457,6 +457,9 @@ void Skanlite::showAboutDialog(void)
 //************************************************************
 void Skanlite::saveScannerOptions()
 {
+    KConfigGroup saving(KGlobal::config(), "Image Saving");
+    saving.writeEntry("NumberStartsFrom", m_saveLocation->u_numStartFrom->value());
+
     if (!m_ksanew) return;
 
     KConfigGroup options(KGlobal::config(), QString("Options For %1").arg(m_deviceName));
@@ -481,6 +484,9 @@ void Skanlite::defaultScannerOptions()
 //************************************************************
 void Skanlite::loadScannerOptions()
 {
+    KConfigGroup saving(KGlobal::config(), "Image Saving");
+    m_saveLocation->u_numStartFrom->setValue(saving.readEntry("NumberStartsFrom", 1));
+
     if (!m_ksanew) return;
 
     KConfigGroup scannerOptions(KGlobal::config(), QString("Options For %1").arg(m_deviceName));

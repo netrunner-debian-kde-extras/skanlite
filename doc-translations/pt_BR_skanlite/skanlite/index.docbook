@@ -10,7 +10,7 @@
 ><!-- change language only here -->
 ]>
 
-<book lang="&language;">
+<book id="skanlite" lang="&language;">
 
 <bookinfo>
 <title
@@ -58,7 +58,7 @@
 
 <copyright>
 <year
->2008</year>
+>2008, 2013</year>
 <holder
 >Kåre Särs</holder>
 </copyright>
@@ -73,9 +73,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->29/11/2011</date>
+>08/02/2013</date>
 <releaseinfo
->0.8</releaseinfo>
+>1.0</releaseinfo>
 
 <abstract>
 <para
@@ -182,7 +182,7 @@
 > 
 <note
 ><para
->Nem todas as infra-estruturas suportam este recurso. Caso este seja o caso, saia do &skanlite;, conecte o seu digitalizador e reinicie o aplicativo.</para>
+>Nem todas as infraestruturas suportam este recurso. Caso este seja o caso, saia do &skanlite;, conecte o seu digitalizador e reinicie o aplicativo.</para>
 </note>
 
 </sect1>
@@ -363,9 +363,9 @@
 	</mediaobject>
 </screenshot>
 <para
->Digitalize uma visualização e então use o &LMB; para selecionar a primeira parte da imagem na visualização. Coloque o ponteiro do mouse sobre a área selecionado e clique no ícone <guiicon
+>Digitalize uma visualização e então use o &LMB; para selecionar a primeira parte da imagem na visualização. Coloque o ponteiro do mouse sobre a área selecionada e clique no ícone <guiicon
 >+</guiicon
-> em verde para selecionar a área. As áreas selecionadas são indicadas por uma borda vermelha. Agora selecione as demais partes da imagem da mesma maneira.</para>
+> em verde para selecioná-la a área. As áreas selecionadas são indicadas por uma borda vermelha. Agora selecione as demais partes da imagem da mesma maneira.</para>
 <para
 >Para remover uma seleção única, posicione o ponteiro do mouse sobre a área e clique no ícone <guiicon
 >-</guiicon
@@ -387,17 +387,17 @@
 >, a janela de configuração irá aparecer antes da janela principal. Aí, poderá escolher as opções mais importantes. </para>
 
 <screenshot>
-     <screeninfo
+    <screeninfo
 >Aqui está uma imagem da janela de configuração na primeira execução do &skanlite;</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="settings.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase
+    <mediaobject>
+        <imageobject>
+            <imagedata fileref="settings.png" format="PNG"/>
+        </imageobject>
+        <textobject>
+            <phrase
 >Janela do configuração do &skanlite;</phrase>
-	  </textobject>
-	</mediaobject>
+        </textobject>
+    </mediaobject>
 </screenshot>
 
 <para
@@ -419,17 +419,31 @@
 ><guilabel
 >Modo de Salvamento:</guilabel
 ></term>
-<listitem
-><para
+<listitem>
+<para
 >Esta opção permite-lhe escolher a forma como o &skanlite; irá salvar as imagens. Se escolher a opção <guilabel
->Abrir a janela de salvamento para todas as imagens</guilabel
->, a janela de salvamento será aberta para todas as imagens digitalizadas. Se preferir que o &skanlite; salve automaticamente (gerando automaticamente um nome e salvando a imagem numa pasta predefinida), então poderá escolher a opção <guilabel
->Salvar sem perguntar um nome de arquivo</guilabel
-> ou <guilabel
->Abrir o diálogo de salvamento somente para a primeira imagem</guilabel
->. </para
-></listitem>
+>Abrir a janela de salvamento para cada imagem</guilabel
+>, a janela de salvamento será aberta para todas as imagens digitalizadas. Se preferir que o &skanlite; salve automaticamente (gerando automaticamente um nome e salvando a imagem numa pasta predefinida), você poderá escolher a opção <guilabel
+>Abrir a janela de salvamento apenas para a primeira imagem</guilabel
+>. Esta opção irá abrir a janela "Salvar no local" para a primeira imagem digitalizada.</para>
+<para>
+    <screenshot>
+        <screeninfo
+>Aqui está uma imagem da janela de localização do &skanlite;</screeninfo>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="save-location.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+                <phrase
+>Janela do localização do &skanlite;.</phrase>
+            </textobject>
+        </mediaobject>
+    </screenshot>
+</para>
+</listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -437,12 +451,10 @@
 ></term>
 <listitem
 ><para
->Esta opção define onde as imagens serão salvas, sempre que a opção <guilabel
->Salvar sem pedir um nome de arquivo</guilabel
-> for escolhida na opção anterior. Se a janela de salvamento necessitar ser aberta para todas as imagens, a localização de salvamento predefinida para a janela será a mesma indicada neste parâmetro. O local de salvamento padrão é a sua pasta pessoal, assim você poderá alterar esta localização se clicar no botão <guibutton
+>Esta opção define o local de salvamento padrão e a nomenclatura dos arquivos. O local de salvamento padrão é a sua pasta pessoal, mas você pode alterar este local se clicar no botão <guibutton
 >...</guibutton
->. </para
-></listitem>
+>. </para>
+</listitem>
 </varlistentry>
 
 <varlistentry>
@@ -454,9 +466,10 @@
 ><para
 >Este parâmetro define o prefixo do arquivo para as imagens salvas automaticamente, sendo também o nome sugerido para a imagem na janela de salvamento. A imagem salva automaticamente terá um sufixo numérico (o ### será substituído por números) que vai aumentando sempre que uma imagem é salva. </para
 ><para
->Você poderá também escolher o formato de salvamento do arquivo, sendo por padrão o PNG.</para
-></listitem>
+>Você poderá também escolher o formato de salvamento do arquivo, sendo por padrão o PNG.</para>
+</listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -469,6 +482,7 @@
 > assinalada, a qualidade será o valor padrão estipulado pelo &Qt;. </para
 ></listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -498,7 +512,7 @@
 ></term>
 <listitem
 ><para
->As últimas configurações usadas são recarregadas na inicialização. Se você alterou as configurações de uma maneira indesejada (por exemplo, se você mudou as configurações de correção de cores, disponíveis em algumas infra-estruturas, sem saber o que elas significam), a imagem pode começar a ficar ruim. Para este cenário, esta opção fornece uma maneira de reverter as configurações para seus valores padrão, que são uma combinação dos padrões da infra-estrutura do do libksane. </para
+>As últimas configurações usadas são recarregadas na inicialização. Se você alterou as configurações de uma maneira indesejada (por exemplo, se você mudou as configurações de correção de cores, disponíveis em algumas infraestruturas, sem saber o que elas significam), a imagem pode começar a ficar ruim. Para este cenário, esta opção fornece uma maneira de reverter as configurações para seus valores padrão, que são uma combinação dos padrões da infraestrutura do libksane. </para
 ></listitem>
 </varlistentry>
 </variablelist
@@ -539,7 +553,7 @@
 > apresenta o Centro de Ajuda do &kde; com o manual do &skanlite;. O botão <guibutton
 >Sobre</guibutton
 > apresenta a janela 'Sobre o &kde;' para o &skanlite;. O botão de <guibutton
->Configuração</guibutton
+>Configurações</guibutton
 > apresenta a janela de configuração e o botão para <guibutton
 >Fechar</guibutton
 > é usado para sair do &skanlite;.</para>
@@ -568,7 +582,7 @@
 </para>
 
 <para
->Tradução de Marcus Gama<email
+>Tradução de Marcus Gama <email
 >marcus.gama@gmail.com</email
 ></para
 > 

@@ -10,7 +10,7 @@
 ><!-- change language only here -->
 ]>
 
-<book lang="&language;">
+<book id="skanlite" lang="&language;">
 
 <bookinfo>
 <title
@@ -39,8 +39,6 @@
 >&Anne-Marie.Mahfouf.mail;</address>
 </affiliation>
 </author>
-</authorgroup>
-
 <othercredit role="translator"
 > <firstname
 >Marek</firstname
@@ -56,6 +54,8 @@
 >Tõlge eesti keelde</contrib
 ></othercredit
 > 
+</authorgroup>
+
 <copyright>
 <year
 >2008</year>
@@ -66,22 +66,22 @@
 <year
 >2008</year>
 <holder
->Anne-Marie Mahfouf</holder>
+>&Anne-Marie.Mahfouf;</holder>
 </copyright>
 
 <legalnotice
 >&FDLNotice;</legalnotice>
 
 <date
->2010-10-23</date>
+>2011-11-29</date>
 <releaseinfo
->0.5</releaseinfo>
+>0.8</releaseinfo>
 
 <abstract>
 <para
->&skanlite; on piltide skaneerimise rakendus, mis ei teegi muud kui vaid skaneerib ja salvestab pilte. </para>
+>&skanlite; on piltide skaneerimise rakendus, mis ei teegi muud kui vaid skannib ja salvestab pilte. </para>
 <para
->&skanlite; tugineb SANE lameskannerite juhtimise teegi KDE liidesele libksane.</para>
+>&skanlite; tugineb SANE lameskannerite juhtimise teegi &kde; liidesele libksane.</para>
 </abstract>
 
 <keywordset>
@@ -101,32 +101,20 @@
 <title
 >Sissejuhatus</title>
 <para
->&skanlite; on lihtne piltide skaneerimise rakendus, mis ei teegi muud kui vaid skaneerib ja salvestab pilte. &skanlite; võib avada iga skaneeritud pildi jaoks salvestamisdialoogi või salvestada pildid automaatselt määratud kataloogi automaatselt genereeritud nime ja vorminguga. Samuti saab kasutaja soovi korral enne salvestamist skaneeritud pilti vaadata.</para>
+>&skanlite; on lihtne piltide skannimise rakendus, mis ei teegi muud kui vaid skannib ja salvestab pilte. &skanlite; võib avada iga skannitud pildi jaoks salvestamisdialoogi või salvestada pildid automaatselt määratud kataloogi automaatselt genereeritud nime ja vorminguga. Samuti saab kasutaja soovi korral enne salvestamist skannitud pilti vaadata.</para>
 <para
->&skanlite; võib salvestada pilte järgmistes vormingutes: <itemizedlist>
+>&skanlite; võib pilte salvestada kõigisse vormingutesse, mida &kde; toetab, näiteks: <itemizedlist>
 <listitem
 ><para
->jpeg, jpg </para
+>PNG (8- ja 16-bitise värvisügavusega) </para
 ></listitem>
 <listitem
 ><para
->png </para
+>JPEG, JPG, JPEG 2000 </para
 ></listitem>
 <listitem
 ><para
->bmp </para
-></listitem>
-<listitem
-><para
->ppm </para
-></listitem>
-<listitem
-><para
->xbm </para
-></listitem>
-<listitem
-><para
->xpm </para
+>BMP </para
 ></listitem>
 </itemizedlist>
 </para>
@@ -150,7 +138,7 @@
 <para
 >Vaikimisi skanneri saab määrata &skanlite; käsureal, andes terminalis käsu <userinput
 >skanlite -d [seadme nimi]</userinput
->. Kui valitud skannerit ei saa avada kui vaikeskannerit ei ole antud, avatakse skanneri valimise dialoog. </para>
+>. Kui valitud skannerit ei saa avada või kui vaikeskannerit ei ole antud, avatakse skanneri valimise dialoog. </para>
 
 <screenshot>
      <screeninfo
@@ -172,6 +160,31 @@
 > selle avamiseks. Kui klõpsata <guibutton
 >Loobu</guibutton
 >, lõpetab &skanlite; töö. </para>
+
+<screenshot>
+     <screeninfo
+>Skannerit ei leitud</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="no-scanner-found.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Skannerit ei leitud</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Kui seadmeid ei leita, võib põhjus olla selles, et skanner ei ole ühendatud või on välja lülitatud. See viga tuleb parandada. Seejärel saab skannerite nimekirja taaslaadimiseks kasutada nuppu <guibutton
+>Laadi seadmete nimekiri uuesti</guibutton
+>.</para
+> 
+<note
+><para
+>Seda võimalust ei toeta kõik draiverid/taustaprogrammid. Sellisel juhul lõpeta &skanlite; töö, ühenda skanner ja käivita rakendus uuesti.</para>
+</note>
+
 </sect1>
 </chapter>
 
@@ -193,7 +206,7 @@
 </screenshot>
 
 <para
->Peaaknas on kasutaja päralt kaks skaneerimisvalikute komplekti: <guilabel
+>Peaaknas on kasutaja päralt kaks skannimisvalikute komplekti: <guilabel
 >põhivalikud</guilabel
 > ja <guilabel
 >skanneri valikud</guilabel
@@ -220,9 +233,13 @@
 <para
 >Skanneri valikud sisaldavad taustaprogrammide üksikasjalikumaid valikuid. &skanlite; ehk täpsemalt libksane ei lisa neile midagi omalt poolt. </para>
 
+<para
+>Kui oled seadistustega rahul, võid kasutada väikest noolekest valikute eraldaja kohal. Sellele klõpsates keritakse valikud kokku või lahti. Kokkukerimisel võib see katta eelvaatluse ala, kuid kaob nähtavalt, kui viia hiir selle kohalt minema.</para
+>  
+
 <sect1 id="scanning">
 <title
->Skaneerimine</title>
+>Skannimine</title>
 <para
 >Pildi skannimiseks tuleb alustada eelvaatluse skannimisega ja seejärel valida osa, mis lõplikult skannida. Eelvaatluse skannimiseks tuleb klõpsata eelvaatluse nupule. </para>
 
@@ -270,6 +287,7 @@
 	  </textobject>
 	</mediaobject>
 </screenshot>
+
 <para
 >Kui pildiala on välja valitud, saab lõpliku pildi valmistada klõpsuga lõpliku pildi skannimise nupule. </para>
 
@@ -291,14 +309,14 @@
 >Kasutajale näidatakse skannimise edenemist. </para>
 <screenshot>
      <screeninfo
->Skaneerimise edenemine</screeninfo>
+>Skannimise edenemine</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="scanning.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->Skaneerimise edenemine</phrase>
+>Skannimise edenemine</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
@@ -324,6 +342,40 @@
 	  </textobject>
 	</mediaobject>
 </screenshot>
+</sect1>
+
+<sect1 id="scanning-multiple-selections">
+<title
+>Skannimine mitme valikuga</title>
+<para
+>Mõnikord võib vaja minna ainult kindlat osa pildist. Selmet skannida kogu pilt ja kasutada seejärel mõnda graafikarakendust (nt. &kolourpaint;) pildi eri osade salvestamiseks eri failidesse, võib kasutada &skanlite; mitme valiku võimalust.  </para>
+<screenshot>
+     <screeninfo
+>Mitu valikut</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="multiple-selections.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Mitu valikut</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Skanni eelvaatlus ning vali &HVNga; eelvaatluses pildi esimene osa. Hiirekursoriga valitud ala kohal viibides klõpsa rohelisele ikoonile <guiicon
+>+</guiicon
+>, millega ala valitakse. Valitud ala näitab punane piire. Nüüd võid samamoodi valida pildi ülejäänud osad.</para>
+<para
+>Konkreetse valiku eemaldamiseks vii hiirekursor ala kohale ja klõpsa punasele ikoonile <guiicon
+>-</guiicon
+>. Kui avada &HPNga; kontekstimenüü, saab sealse käsuga <guilabel
+>Puhasta valikud</guilabel
+> eemaldada kõik eelvaatluses tehtud valikud. </para>
+<para
+>Kui asetasid skannerisse kaks eraldi pilti või fotot ja käivitasid eelvaatluse, valib &skanlite; automaatselt eri alad. Sellist käitumist saab välja lülitada seadistustedialoogis. </para>
+<para
+>Kui oled valikuga rahul, alusta kõigi valikute lõpliku hulgiskannimisega. Pildid salvestatakse hulgi-ümbernimetamise võimalust kasutades, mida kirjeldatakse seadistustedialoogi juures. </para>
 </sect1>
 
 <sect1 id="settings">
@@ -353,7 +405,7 @@
 <varlistentry>
 <term
 ><guilabel
->Eelvaatlus enne salvestamist</guilabel
+>Eelvaatlus enne salvestamist:</guilabel
 ></term>
 <listitem
 ><para
@@ -373,6 +425,8 @@
 >Salvestamisdialoogi avamine iga pildi puhul</guilabel
 >, avataksegi iga skannitud pildi puhul salvestamisdialoog. Kui aga eelistad, et &skanlite; salvestaks automaatselt sinu eest (luues ise nime ja salvestades pildid eelnevalt määratud kataloogi), vali <guilabel
 >Salvestamine failinime pärimata</guilabel
+> või <guilabel
+>Salvestamisdialoogi avamine ainult esimese pildi puhul</guilabel
 >. </para
 ></listitem>
 </varlistentry>
@@ -394,7 +448,7 @@
 <varlistentry>
 <term
 ><guilabel
->Nimi &amp; vorming:</guilabel
+>Nimi ja vorming:</guilabel
 ></term>
 <listitem
 ><para
@@ -406,13 +460,45 @@
 <varlistentry>
 <term
 ><guilabel
->Salvestamise kvaliteet</guilabel
+>Salvestamise kvaliteet:</guilabel
 ></term>
 <listitem
 ><para
 >Kasutaja saab määrata, millise kvaliteediga pildid salvestatakse. See mõjutab salvestamisel kasutatavat tihendustaset. Kui kastike <guilabel
 >Salvestamise kvaliteet</guilabel
-> märkimata jätta, valitakse kvaliteet Qt vaikimisi väärtuse põhjal. </para
+> märkimata jätta, valitakse kvaliteet &Qt; vaikimisi väärtuse põhjal. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Eelvaatluse eraldusvõime (DPI)</guilabel
+></term>
+<listitem
+><para
+>&skanlite; kasutab heuristikat SANE eraldusvõime hankimiseks, aga kui see nurjub ning eraldusvõime on liiga suur või väike, saab selle valikuga määrata eelvaatluse eraldusvõime käsitsi. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Automaatse valimise keelamine</guilabel
+></term>
+<listitem
+><para
+>Vaikimisi on automaatsed valikud lubatud ning pärast eelvaatlust üritab libksane automaatselt valida eelvaatluses pildid ja hulgiskannida valitud alad. Kui näiteks asetad skannerisse kaks fotot, siis nende eelvaatluse puhul valib &skanlite; automaatselt  fotod.</para>
+<para
+>Kui aga sa tavaliselt skannid lihtsalt dokumente, siis võib automaatse valiku korral valituks osutada hulk dokumendi eri osasid, mispuhul tuleb hakata valikuid käsitsi eemaldama. Selle vältimiseks eemalda märkekastist linnuke. </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Skanneri valikute lähtestamine vaikeväärtustele</guilabel
+></term>
+<listitem
+><para
+>Käivitamisel laaditakse uuesti viimati kasutatud seadistused. Kui oled nendega määda pannud (näitkes muutnud mõne taustaprogrammi puhul saadaolevaid värviparanduse seadistusi ilma täpsemalt teadmata, mida need teevad), võib pilt päris veider välja näha. Sel juhul on selle valikuga võimalik kehtestada seadistustele vaikimisi väärtused, mis koosnevad taustaprogrammi ja libksane vaikeväärtustest. </para
 ></listitem>
 </varlistentry>
 </variablelist
@@ -450,9 +536,9 @@
 <para
 ><guibutton
 >Abi</guibutton
-> avab KDE abikeskuse &skanlite; käsiraamatuga. <guibutton
+> avab &kde; abikeskuse &skanlite; käsiraamatuga. <guibutton
 >Info</guibutton
-> avab KDE info dialoogi &skanlite; teabega. <guibutton
+> avab &kde; info dialoogi &skanlite; teabega. <guibutton
 >Seadistused</guibutton
 > avab seadistustedialoogi ja <guibutton
 >Sulge</guibutton

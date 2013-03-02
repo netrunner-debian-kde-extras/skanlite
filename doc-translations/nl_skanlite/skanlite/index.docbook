@@ -10,7 +10,7 @@
 ><!-- change language only here -->
 ]>
 
-<book lang="&language;">
+<book id="skanlite" lang="&language;">
 
 <bookinfo>
 <title
@@ -44,7 +44,7 @@
 
 <copyright>
 <year
->2008</year>
+>2008, 2013</year>
 <holder
 >Kåre Särs</holder>
 </copyright>
@@ -59,9 +59,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->2011-11-29</date>
+>2013-02-08</date>
 <releaseinfo
->0.8</releaseinfo>
+>1.0</releaseinfo>
 
 <abstract>
 <para
@@ -87,9 +87,9 @@
 <title
 >Inleiding</title>
 <para
->&skanlite; is a simple image scanning application that does nothing more than scan and save images. &skanlite; can open a save dialog for every image scanned or save the images immediately in a specified folder with auto-generated names and format. The user can also choose to show the scanned image before saving.</para>
+>&skanlite; is een eenvoudige toepassing voor het scannen van afbeeldingen die niets meer doet dan scannen en opslaan van afbeeldingen. &skanlite; kan een opgeslagen dialoog voor elke gescande afbeelding opslaan of de afbeelding onmiddellijk in een gespecificeerde map opslaan met automatisch gegenereerde namen en formaten. De gebruiker kan ook kiezen om de gescande afbeelding te tonen voor het opslaan.</para>
 <para
->&skanlite; can save images in all the formats supported by KDE. For example the following formats: <itemizedlist>
+>&skanlite; kan afbeeldingen in alle formaten ondersteund door KDE opslaan. Bijvoorbeeld de volgende formaten: <itemizedlist>
 <listitem
 ><para
 >png (8 en 16 bits per kleur) </para
@@ -107,7 +107,7 @@
 
 <note
 ><para
->You can check the status of your scanner support from the SANE project website by entering the information on this search page: <ulink url="http://www.sane-project.org/cgi-bin/driver.pl"
+>U kunt de status van de ondersteuning van uw scanner controleren op de website van het SANE-project door de informatie in te voeren op deze zoekpagina: <ulink url="http://www.sane-project.org/cgi-bin/driver.pl"
 >http://www.sane-project.org/cgi-bin/driver.pl</ulink
 >.</para
 ></note>
@@ -122,9 +122,9 @@
 <title
 >Selectie van scanner</title>
 <para
->A default scanner can be specified on the command line of &skanlite; using <userinput
->skanlite -d [device name]</userinput
-> in a terminal. If the selected scanner cannot be opened or if no default scanner is provided, a scanner selection dialog is opened. </para>
+>Een standaard scanner kan gespecificeerd worden op de opdrachtregel van &skanlite; met gebruik van <userinput
+>skanlite -d [apparaatnaam]</userinput
+> in een terminal. Als de geselecteerde scanner niet geopend kan worden of als er geen standaard scanner is aangegeven, dan wordt er een selectiedialoog voor de scanner geopend. </para>
 
 <screenshot>
      <screeninfo
@@ -141,11 +141,11 @@
 </screenshot>
 
 <para
->The user can choose the scanner to be used and press <guibutton
+>De gebruiker kan de te gebruiken scanner kiezen en op <guibutton
 >OK</guibutton
-> to open the scanner. Pressing <guibutton
->Cancel</guibutton
-> will cause &skanlite; to exit. </para>
+> drukken om de scanner te openen. Drukken op <guibutton
+>Annuleren</guibutton
+> zal zorgen dat &skanlite; wordt geëindigd. </para>
 
 <screenshot>
      <screeninfo
@@ -192,15 +192,15 @@
 </screenshot>
 
 <para
->In the main window, the user has two sets of scan options: <guilabel
->Basic Options</guilabel
-> and <guilabel
->Scanner Specific Options</guilabel
->. The <guilabel
->Basic Options</guilabel
-> tab contains the most common parameters that the SANE scanner backends provide, while the <guilabel
->Scanner Specific Options</guilabel
-> tab contains all the options of the backend. The options listed here depend on SANE support for your driver: libksane (which &skanlite; uses) should be able to display most of the types of parameters that SANE provides (analog gamma tables are not supported at this time). </para>
+>In het hoofdvenster heeft de gebruiker twee sets scanopties: <guilabel
+>Basis opties</guilabel
+> en <guilabel
+>Scanner specifieke opties</guilabel
+>. Het tabblad <guilabel
+>Basis options</guilabel
+> bevat de meest algemene parameters die de backends van de SANE-scanner bieden, terwijl het tabblad <guilabel
+>Scanner specifieke opties</guilabel
+> alle opties van de backend bevat. De hier weergegeven opties hangen af van wat uw apparaatstuurprogramma voor SANE ondersteunt: libksane (die &skanlite; gebruikt) zou in staat moeten zijn om de meeste typen parameters die SANE biedt weer te geven (analoge gamma-tabellen worden op dit moment niet ondersteund). </para>
 
 <screenshot>
      <screeninfo
@@ -217,114 +217,114 @@
 </screenshot>
 
 <para
->The scanner specific options contains more detailed options of the backends. &skanlite; (libksane) does not have any special handling for these options. </para>
+>De scanner specifieke opties bevatten meer gedetailleerde opties van de backends. &skanlite; (libksane) heeft geen enkele speciale behandeling voor deze opties. </para>
 
 <para
->If you are satisfied with your settings, you can use the little arrow on the top of the options splitter. When clicked it collapses or expands the options. The collapser can overlap the preview area, but fades away when the mouse cursor moves out of the collapser.</para
+>Als u tevreden bent met uw instellingen kunt u de kleine pijl bovenaan de splitsing van de opties gebruiken. bij klikken vouwt het de opties in of uit. De vouwer kan het voorbeeldgebied overlappen, maar vervaagt wanneer de muiscursor uit de vouwer beweegt.</para
 >  
 
 <sect1 id="scanning">
 <title
 >Scannen</title>
 <para
->To scan an image, the user can start with a preview scan and then select the part of the scan area to do the final scan on. The preview scan is started by pressing the preview button. </para>
+>Om een afbeelding te scannen kan de gebruiker starten met een voorbeeldscan en dan het deel van het scangebied selecteren om de uiteindelijke scan te doen. De voorbeeldscan wordt gestart door op de knop Voorbeeld te drukken. </para>
 
 <screenshot>
      <screeninfo
->The Preview Button</screeninfo>
+>De knop Voorbeeld</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="preview-button.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->The Preview Button</phrase>
+>De knop Voorbeeld</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
 <para
->When the preview is scanned the area for the final image can be selected. </para>
+>Wanneer het voorbeeld is gescand kan het gebied van de uiteindelijke afbeelding worden geselecteerd. </para>
 <screenshot>
      <screeninfo
->Selection and zoom</screeninfo>
+>Selectie en zoom</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="zoom-in.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->Selection and zoom</phrase>
+>Selectie en zoom</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 <para
->To better select the image the user can zoom in, out, to the current selection or zoom to fit the whole preview to the window. </para>
+>Om de afbeelding beter te kunnen selecteren kan de gebruiker in- en uitzoomen naar de huidige selectie of zoomen om het gehele voorbeeld in het venster te laten passen. </para>
 <screenshot>
      <screeninfo
->The "zoom to fit" button</screeninfo>
+>De knop "Passend maken"</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="zoom-to-fit.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->The "zoom to fit" button</phrase>
+>De knop "Passend maken"</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
 <para
->When the image is selected the final image can be acquired by pressing the final scan button. </para>
+>Wanneer de afbeelding is geselecteerd kan de uiteindelijke afbeelding worden verkregen door op de knop Uiteindelijke scan te drukken. </para>
 
 <screenshot>
      <screeninfo
->The final scan button</screeninfo>
+>De knop Uiteindelijke scan</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="final-button.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->The final scan button</phrase>
+>De knop Uiteindelijke scan</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
 <para
->You will see the progress of the scan. </para>
+>U zult de voortgang van de scan zien. </para>
 <screenshot>
      <screeninfo
->Scanning in progress</screeninfo>
+>Voortgang van de scan</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="scanning.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->Scanning in progress</phrase>
+>Voortgang van de scan</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
 <para
->If <guilabel
->Preview before saving</guilabel
-> is selected in the settings, the scanned image is displayed in a preview window as you can see below on the screenshot. If <guibutton
->Save</guibutton
-> is pressed, the image is saved and if <guibutton
->Close</guibutton
-> is pressed the preview is discarded and you return to the main window. </para>
+>Als <guilabel
+>Voorbeeld voor opslaan</guilabel
+> is geselecteerd in de instellingen, zal de gescande afbeelding worden getoond in een voorbeeldvenster zoals u kunt onderstaand kunt zien in de schermafdruk. Als <guibutton
+>Opslaan</guibutton
+> wordt ingedrukt, wordt de afbeelding opgeslagen en als <guibutton
+>Sluiten</guibutton
+> wordt ingedrukt zal het voorbeeld worden weggegooid en keert u terug naar het hoofdvenster. </para>
 <screenshot>
      <screeninfo
->The Preview Window</screeninfo>
+>Het Voorbeeldvenster</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="preview.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
 	    <phrase
->The Preview Window</phrase>
+>Het Voorbeeldvenster</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
@@ -332,9 +332,9 @@
 
 <sect1 id="scanning-multiple-selections">
 <title
->Scanning Multiple Selections</title>
+>Meerdere selecties scannen</title>
 <para
->Sometimes you need only certain parts of an image. Instead of scanning the whole picture and then using a graphics application (&eg; &kolourpaint;) to save the different image parts into separate files, use &skanlite;'s multiple selection feature. </para>
+>Soms hebt u alleen bepaalde delen van een afbeelding nodig. In plaats van het gehele plaatje te scannen en daarna een grafische toepassing te gebruiken (&eg; &kolourpaint;) om de verschillende delen van de afbeelding in aparte bestanden op te slaan, kunt u de functie Meerdere selecties van &skanlite; gebruiken. </para>
 <screenshot>
      <screeninfo
 >Meerdere selecties</screeninfo>
@@ -349,41 +349,41 @@
 	</mediaobject>
 </screenshot>
 <para
->Scan a preview and then use the &LMB; to select the first part of the image in the preview. Hover the selected area with mouse cursor and click on the green <guiicon
+>Scan een voorbeeld en gebruik dan de &LMB; om het eerste deel van de afbeelding in het voorbeeld te selecteren. Beweeg over het geselecteerde gebied met de muiscursor en klik op het groene pictogram <guiicon
 >+</guiicon
-> icon to select the area. Selected areas are indicated by a red border. Now select the next parts of the image in the same way.</para>
+> om het gebied te selecteren. Geselecteerde gebieden worden aangegeven door een rode rand. Selecteer daarna de volgende gedeelten van de afbeelding op dezelfde manier.</para>
 <para
->To remove a single selection hover the area with the mouse cursor and click on the red <guiicon
+>Om een enkele selectie te verwijderen beweeg over het gebied met de muiscursor en klik op de rode pictogram <guiicon
 >-</guiicon
-> icon. With <guilabel
->Clear Selections</guilabel
-> from the context menu launched with the &RMB; all selections in a preview can be removed. </para>
+>. Met <guilabel
+>Selecties wissen</guilabel
+> uit het contextmenu gestart met de &RMB; kunnen alle selecties in een voorbeeld worden verwijderd. </para>
 <para
->If you placed two separate images or photos on you scanner and started a preview &skanlite; automatically preselect the different areas. This behaviour can be switched off in the settings dialog. </para>
+>Als u twee separate afbeeldingen of foto's op uw scanner hebt geplaatst en een voorbeeld hebt gestart zal &skanlite; automatisch de verschillende gebieden selecteren. Dit gedrag kan worden uitgeschakeld in de instellingendialoog. </para>
 <para
->If you are satisfied with your choice starting the final batch scan of all selections. The images are saved using the batch renaming feature described in the settings dialog. </para>
+>Als u tevreden bent met uw keuze, kan de scan van de bulk van alle selecties beginnen. De afbeeldingen worden opgeslagen met de functie van in bulk hernoemen beschreven in de instellingendialoog. </para>
 </sect1>
 
 <sect1 id="settings">
 <title
->&skanlite; settings</title>
+>Instellingnen van &skanlite;</title>
 <para
->By clicking the <guibutton
->Settings</guibutton
-> button, the settings dialog is brought up before the main window. You can choose the most important settings here. </para>
+>Door te klikken op de knop <guibutton
+>Instellingen</guibutton
+> zal de instellingendialoog verschijnen voor het hoofdvenster. U kunt de meest belangrijke instellingen hier instellen. </para>
 
 <screenshot>
-     <screeninfo
->Here's a screenshot of &skanlite; settings dialog</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="settings.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase
->&skanlite; settings dialog</phrase>
-	  </textobject>
-	</mediaobject>
+    <screeninfo
+>Hier is een schermafdruk van de instellingendialoog van &skanlite;</screeninfo>
+    <mediaobject>
+        <imageobject>
+            <imagedata fileref="settings.png" format="PNG"/>
+        </imageobject>
+        <textobject>
+            <phrase
+>Instellingendialoog van &skanlite;</phrase>
+        </textobject>
+    </mediaobject>
 </screenshot>
 
 <para
@@ -395,9 +395,9 @@
 ></term>
 <listitem
 ><para
->The user can chose to preview the image before saving. In this case the <guilabel
->Preview before saving</guilabel
-> option can be left checked. If the user does not want to preview the image this option should then be unchecked. </para
+>De gebruiker kan kiezen om de afbeelding te bekijken voor het opslaan. In dat geval kan de optie <guilabel
+>Voorbeeld voor opslaan</guilabel
+> geactiveerd blijven. Als de gebruiker geen voorbeeld van de afbeelding wil zien dan moet deze optie niet geactiveerd worden. </para
 ></listitem>
 </varlistentry>
 <varlistentry>
@@ -405,17 +405,31 @@
 ><guilabel
 >Opslagmodus:</guilabel
 ></term>
-<listitem
-><para
->This setting allows you to choose how &skanlite; will save the images. If you choose <guilabel
->Open the save dialog for every image</guilabel
-> then the save dialog will be opened for every scanned image. If you prefer &skanlite; to auto-save (by auto-generating a name and saving the image in a predefined folder) then you can choose <guilabel
->Save without asking for a filename</guilabel
-> or <guilabel
->Open the save dialog for the first image only</guilabel
->. </para
-></listitem>
+<listitem>
+<para
+>Deze instelling staat toe om te kiezen hoe &skanlite; de afbeeldingen zal opslaan. Als u <guilabel
+>Open de opslagdialoog voor elke afbeelding</guilabel
+> kiest zal de opslagdialoog geopend worden voor elke gescande afbeelding. Als u de voorkeur geeft aan het automatisch opslaan van &skanlite; (door automatisch een naam te genereren en de afbeelding in een voorgedefinieerde map op te slaan) dan kunt u <guilabel
+>Open de opslagdialoog alleen voor de eerste afbeelding</guilabel
+> kiezen. Deze optie de volgende dialoog "Locatie voor opslaan" voor de eerst gescande afbeelding.</para>
+<para>
+    <screenshot>
+        <screeninfo
+>Hier is een schermafdruk van de opslagdialoog van &skanlite;</screeninfo>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="save-location.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+                <phrase
+>Opslagdialoog van &skanlite;</phrase>
+            </textobject>
+        </mediaobject>
+    </screenshot>
+</para>
+</listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -423,12 +437,10 @@
 ></term>
 <listitem
 ><para
->This setting defines where the images should be saved when <guilabel
->Save without asking for a filename</guilabel
-> is chosen in the previous option. If the save dialog is to be opened for every image the default save location for the dialog will be the same as this parameter. The default save location is your home folder and you can change this location by clicking on the <guibutton
+>Deze instelling definieert de standaard opslaglocatie en de hoe naam van het bestand moet worden. De standaard opslaglocatie is uw persoonlijke map en u kunt deze locatie wijzigen door te klikken op de knop <guibutton
 >...</guibutton
-> button. </para
-></listitem>
+>. </para>
+</listitem>
 </varlistentry>
 
 <varlistentry>
@@ -440,9 +452,10 @@
 ><para
 >Deze parameter definieert het voorvoegsel van de afbeelding voor automatisch opgeslagen afbeeldingen en is ook de gesuggereerde naam voor de afbeelding in de dialoog Opslaan. De automatisch opgeslagen afbeelding zal een numeriek achtervoegsel krijgen (de ### zullen vervangen worden door cijfers) die elke keer verhoogd worden wanneer er een afbeelding wordt opgeslagen. </para
 ><para
->U kunt ook het formaat van het bestand kiezen voor het opslaan, standaard is png.</para
-></listitem>
+>U kunt ook het formaat van het bestand kiezen voor het opslaan, standaard is png.</para>
+</listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -450,11 +463,12 @@
 ></term>
 <listitem
 ><para
->The user can chose to specify the image quality to be used for saving the images. The image quality setting affects the compression level used for saving. If <guilabel
->Specify save quality</guilabel
-> is not checked, the quality is the default value chosen by &Qt;. </para
+>De gebruiker kan de te gebruiken kwaliteit voor het opslaan van de afbeeldingen kiezen. De instelling van de afbeeldingskwaliteit beïnvloedt het gebruikte compressieniveau voor opslaan. Als <guilabel
+>Specificeer de opslagkwaliteit</guilabel
+> niet is geactiveerd, zal de kwaliteit de standaardwaarde zijn gekozen door &Qt;. </para
 ></listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -462,7 +476,7 @@
 ></term>
 <listitem
 ><para
->&skanlite; is using heuristics to try to get a sane resolution, but if that fails and the resolution is too high or low, then the preview resolution can be manually set with this option. </para
+>&skanlite; gebruikt heuristics om te proberen een gezonde resolutie te verkrijgen, maar als dat mislukt en de resolutie is te hoog of te laag, dan kan de resolutie van het voorbeeld handmatig worden ingesteld met deze optie. </para
 ></listitem>
 </varlistentry>
 <varlistentry>
@@ -472,9 +486,9 @@
 ></term>
 <listitem
 ><para
->By default automatic selections are enabled; and after a preview, libksane does try to automatically select the images in the preview and should batch scan the selected areas. &eg; if you place two photos on the scanner and do a preview, &skanlite; will automatically add selections of the photos.</para>
+>Standaard zijn automatische selecties ingeschakeld; en na een voorbeeld, zal libksane proberen om automatisch de afbeeldingen in het voorbeeld te selecteren en een bulkscan doen van de geselecteerde gebieden. &eg; als u twee foto's op de scanner plaatst en een voorbeeld doet, zal &skanlite; automatisch selecties van de foto's toevoegen.</para>
 <para
->If on the other hand you are usually scanning documents it might be that the automatic selection will select a lot of different parts in the documents and you have to manually remove the selections. To avoid that tick the checkbox and disable automatic selection. </para>
+>Aan de andere kant bent u gewoonlijk documenten aan het scannen waarbij de automatische selectie heel wat verschillende delen in de documenten zal selecteren en moet u de selecties handmatig verwijderen. Om dat te vermijden activeert u het keuzevakje en schakelt u automatische selectie uit. </para>
 </listitem>
 </varlistentry>
 <varlistentry>

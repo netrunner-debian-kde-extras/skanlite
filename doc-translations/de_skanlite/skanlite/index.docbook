@@ -10,7 +10,7 @@
 ><!-- change language only here -->
 ]>
 
-<book lang="&language;">
+<book id="skanlite" lang="&language;">
 
 <bookinfo>
 <title
@@ -58,7 +58,7 @@
 
 <copyright>
 <year
->2008</year>
+>2008, 2013</year>
 <holder
 >Kåre Särs</holder>
 </copyright>
@@ -73,9 +73,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->2011-11-29</date>
+>2013-02-08</date>
 <releaseinfo
->0.8</releaseinfo>
+>1.0</releaseinfo>
 
 <abstract>
 <para
@@ -367,9 +367,9 @@
 	</mediaobject>
 </screenshot>
 <para
->Scannen Sie eine Vorschau. Dann wählen Sie mit dem Mauszeiger den ersten Teil des Bilds in der Vorschau. Fahren Sie mit dem Mauszeiger über den ausgewählten Bereich und klicken Sie auf das grüne <guiicon
+>Scannen Sie eine Vorschau. Dann wählen Sie mit dem Mauszeiger den ersten Teil des Bildes in der Vorschau. Fahren Sie mit dem Mauszeiger über den ausgewählten Bereich und klicken Sie auf das grüne <guiicon
 >+</guiicon
->, um diesen Bereich zu markieren. Ausgewählte Bereiche des Bilds werden mit einem roten Rand angezeigt. Wählen Sie dann auf gleiche Weise die nächsten Teile des Bilds.</para>
+>, um diesen Bereich zu markieren. Ausgewählte Bereiche des Bildes werden mit einem roten Rand angezeigt. Wählen Sie dann auf gleiche Weise die nächsten Teile des Bildes.</para>
 <para
 >Um einen einzelnen ausgewählten Bereich wieder zu entfernen, verschieben Sie den Mauszeiger in diesen Bereich und klicken auf das rote <guiicon
 >-</guiicon
@@ -391,17 +391,17 @@
 > wird der gleichnamige Dialog  vor dem Hauptfenster geöffnet. Sie können hier die wichtigsten Einstellungen ändern. </para>
 
 <screenshot>
-     <screeninfo
+    <screeninfo
 >Bildschirmfoto des Einrichtungsdialog von &skanlite;</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="settings.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase
+    <mediaobject>
+        <imageobject>
+            <imagedata fileref="settings.png" format="PNG"/>
+        </imageobject>
+        <textobject>
+            <phrase
 >Einrichtungsdialog von &skanlite;</phrase>
-	  </textobject>
-	</mediaobject>
+        </textobject>
+    </mediaobject>
 </screenshot>
 
 <para
@@ -423,17 +423,31 @@
 ><guilabel
 >Speichermodus:</guilabel
 ></term>
-<listitem
-><para
->Diese Einstellung erlaubt es ihnen die Art wie &skanlite; Bilder speichert auszuwählen. <guilabel
+<listitem>
+<para
+>Diese Einstellung erlaubt es ihnen, die Art wie &skanlite; Bilder speichert auszuwählen. <guilabel
 >Dialog zum Speichern für jedes Bild öffnen</guilabel
-> öffnet den Dialog vor jedem eingescannten Bild. Wenn &skanlite; diese automatisch mit einem generierten Namen in einem vorher definierten Ordner speichern soll, dann müssen Sie <guilabel
->Speichern ohne nach einem Dateinamen zu fragen</guilabel
-> oder <guilabel
->Den Speicherdialog für jedes Bild öffnen</guilabel
-> auswählen. </para
-></listitem>
+> öffnet den Dialog für jedes eingescannte Bild. Wenn &skanlite; diese automatisch mit einem generierten Namen in einem vorher definierten Ordner speichern soll, dann müssen Sie <guilabel
+>Dialog zum Speichern nur für das erste Bild öffnen</guilabel
+> auswählen. Mit dieser Einstellung wird folgender Dialog „Speicherort“ für das erste eingescannte Bild geöffnet:</para>
+<para>
+    <screenshot>
+        <screeninfo
+>Bildschirmfoto des Dialogs „Speicherort“ von &skanlite;</screeninfo>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="save-location.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+                <phrase
+>Dialog „Speicherort“ von &skanlite;</phrase>
+            </textobject>
+        </mediaobject>
+    </screenshot>
+</para>
+</listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -441,12 +455,10 @@
 ></term>
 <listitem
 ><para
->Diese Einstellung definiert wo die Bilder bei der Option <guilabel
->Speichern ohne nach einem Dateinamen zu fragen</guilabel
-> gespeichert werden.  Wenn die Bilder nach jedem Scan gespeichert werden, dann wird dieser Ordner als Standard für den Dialog zum Speichern benutzt. Der Standardwert ist Ihr Heimatverzeichnis und Sie können dies mit dem Knopf <guibutton
+>Diese Einstellung definiert, wo die Bilder als Voreinstellung und mit welchen Namensschema sie gespeichert werden.  Der Standardwert ist Ihr persönlicher Ordner und Sie können dies mit dem Knopf <guibutton
 >...</guibutton
-> ändern. </para
-></listitem>
+> ändern. </para>
+</listitem>
 </varlistentry>
 
 <varlistentry>
@@ -458,9 +470,10 @@
 ><para
 >Dieser Parameter definiert ein Bildpräfix für die automatisch zu speichernden Bilder und ist darüber hinaus der vorgeschlagene Name für das Bild im Dialog zum Speichern. Das automatisch gespeicherte Bild bekommt einen numerischen Suffix der jedesmal hochgezählt wird, wenn ein Bild gespeichert wird. Die Zeichenkette ### wird durch die Zahlen ersetzt. </para
 ><para
->Sie können ebenfalls das Dateiformat auswählen, als Standard ist PNG eingestellt.</para
-></listitem>
+>Sie können ebenfalls das Dateiformat auswählen, als Standard ist PNG eingestellt.</para>
+</listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
@@ -473,6 +486,7 @@
 > nicht ausgewählt ist, dann wird der Standardwert von &Qt; benutzt. </para
 ></listitem>
 </varlistentry>
+
 <varlistentry>
 <term
 ><guilabel
