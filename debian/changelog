@@ -1,3 +1,9 @@
+skanlite (1.0-2) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- Mark Purcell <msp@debian.org>  Mon, 13 May 2013 21:25:28 +1000
+
 skanlite (1.0-1) experimental; urgency=low
 
   * New Upstream Release
