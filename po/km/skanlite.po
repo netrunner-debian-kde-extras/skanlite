@@ -1,0 +1,314 @@
+# translation of skanlite.po to Khmer
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2008, 2010, 2012.
+# Auk Piseth <piseth_dv@khmeros.info>, 2008.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+msgid ""
+msgstr ""
+"Project-Id-Version: skanlite\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-11-28 02:00+0100\n"
+"PO-Revision-Date: 2012-07-09 14:16+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Language: km-CM\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, អេង វណ្ណៈ, អោក ពិសិដ្ឋ"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info, \n"
+"evannak@khmeros.info,piseth_dv@khmeros.info"
+
+#: ImageViewer.cpp:59
+msgid "Zoom In"
+msgstr "ពង្រីក"
+
+#: ImageViewer.cpp:62
+msgid "Zoom Out"
+msgstr "បង្រួម"
+
+#: ImageViewer.cpp:65
+msgid "Zoom to Actual size"
+msgstr "ពង្រីក​ឲ្យ​ដល់​ទំហំ​ជាក់​ស្តែង"
+
+#: ImageViewer.cpp:68
+msgid "Zoom to Fit"
+msgstr "ពង្រីក​ឲ្យ​សម"
+
+#: main.cpp:33
+msgid "Skanlite"
+msgstr "Skanlite"
+
+#: main.cpp:34
+msgid "This is a scanning application for KDE based on libksane."
+msgstr "នេះ​ជា​ការវិភាគ​កម្មវិធី​រក KDE ដែល​មាន​មូលដ្ឋាន​លើ libksane ។"
+
+#: main.cpp:36
+msgid "(C) 2008-2012 Kåre Särs"
+msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៨-២០១២ ដោយ Kåre Särs"
+
+#: main.cpp:38
+msgid "Kåre Särs"
+msgstr "Kåre Särs"
+
+#: main.cpp:39
+msgid "developer"
+msgstr "អ្នក​អភិវឌ្ឍន៍"
+
+#: main.cpp:42
+msgid "Arseniy Lartsev"
+msgstr "Arseniy Lartsev"
+
+#: main.cpp:43
+msgid "contributor"
+msgstr "អ្នក​ចូល​រួម"
+
+#: main.cpp:46
+msgid "Gilles Caulier"
+msgstr "Gilles Caulier"
+
+#: main.cpp:47 main.cpp:55
+msgid "Importing libksane to extragear"
+msgstr "នាំចូល libksane ទៅ extragear"
+
+#: main.cpp:50
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: main.cpp:51
+msgid "Writing the user manual"
+msgstr "បង្កើត​សៀវភៅ​ដៃ​អ្នកប្រើ"
+
+#: main.cpp:54
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: main.cpp:58
+msgid "Chusslove Illich"
+msgstr "Chusslove Illich"
+
+#: main.cpp:59 main.cpp:63
+msgid "Help with translations"
+msgstr "ជួយ​បកប្រែ"
+
+#: main.cpp:62
+msgid "Albert Astals Cid"
+msgstr "Albert Astals Cid"
+
+#: main.cpp:71
+msgid "Sane scanner device name."
+msgstr "ឈ្មោះ​ឧបករណ៍​កម្មវិធី​ស្កេន​ធម្មតា ។"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, SaveLocation)
+#: SaveLocation.ui:14
+msgid "Save Location"
+msgstr "រក្សាទុក​ទីតាំង"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, locationLabel)
+#: SaveLocation.ui:23 settings.ui:80
+msgid "Save Location:"
+msgstr "ទីតាំង​រក្សាទុក ៖"
+
+#. i18n: ectx: property (text), widget (QPushButton, getDirButton)
+#. i18n: ectx: property (text), widget (QPushButton, u_getDirButton)
+#: SaveLocation.ui:44 settings.ui:102
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QLabel, namePrefixLabel)
+#: SaveLocation.ui:53
+msgid "Name & Format:"
+msgstr "ឈ្មោះ និង​ទ្រង់ទ្រាយ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#: SaveLocation.ui:72 settings.ui:131
+msgid "###."
+msgstr "###."
+
+#. i18n: ectx: property (text), widget (QLabel, u_resultValue)
+#: SaveLocation.ui:84
+msgid "/home/joe/example.png"
+msgstr "/home/joe/example.png"
+
+#. i18n: ectx: property (text), widget (QLabel, resultLabel)
+#: SaveLocation.ui:91
+msgid "Example:"
+msgstr "ឧទាហរណ៍ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, numStartFromLabel)
+#: SaveLocation.ui:98
+msgid "Start numbering from:"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, SkanliteSettings)
+#: settings.ui:14 skanlite.cpp:55
+msgid "Settings"
+msgstr "ការ​កំណត់"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: settings.ui:20
+msgid "Image saving"
+msgstr "ការ​រក្សា​ទុក​រូបភាព"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: settings.ui:26
+msgid "Preview before saving:"
+msgstr "មើល​​​រូបភាព​ជា​​មុន មុន​ពេល​រក្សា​ទុក ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: settings.ui:46
+msgid "Save mode:"
+msgstr "របៀប​រក្សាទុក ៖"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: settings.ui:60
+msgid "Open the save dialog for every image"
+msgstr "បើក​ប្រអប់​រក្សាទុក​សម្រាប់​គ្រប់រូបភាព"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, saveModeCB)
+#: settings.ui:65
+msgid "Open the save dialog for the first image only"
+msgstr "បើក​ប្រអប់​រក្សា​ទុក​សម្រាប់​រូបភាព​ដំបូង​តែ​ប៉ុណ្ណោះ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: settings.ui:109
+msgid "Name && Format:"
+msgstr "ឈ្មោះ និង​ទ្រង់ទ្រាយ ៖"
+
+#. i18n: ectx: property (text), widget (QLineEdit, imgPrefix)
+#: settings.ui:124
+msgid "Image"
+msgstr "រូបភាព"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: settings.ui:143
+msgid "Specify save quality:"
+msgstr "បញ្ជាក់​គុណភាព​រក្សា​ទុក ៖"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, imgQuality)
+#: settings.ui:202
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (title), widget (QGroupBox, generalGB)
+#: settings.ui:230
+msgid "General"
+msgstr "ទូទៅ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, setPreviewDPI)
+#: settings.ui:236
+msgid "Set preview resolution (DPI)"
+msgstr "កំណត់​ការ​មើល​គុណភាព​បង្ហាញ​ជា​មុន (DPI) ៖"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: settings.ui:250
+msgid "50"
+msgstr "៥០"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: settings.ui:255
+msgid "75"
+msgstr "៧៥"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: settings.ui:260
+msgid "100"
+msgstr "១០០"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: settings.ui:265
+msgid "150"
+msgstr "១៥០"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, previewDPI)
+#: settings.ui:270
+msgid "300"
+msgstr "៣០០"
+
+#. i18n: ectx: property (text), widget (QCheckBox, u_disableSelections)
+#: settings.ui:283
+msgid "Disable automatic selections"
+msgstr "បិទ​ការ​ជ្រើស​ដោយ​ស្វ័យប្រវត្តិ"
+
+#. i18n: ectx: property (text), widget (QPushButton, revertOptions)
+#: settings.ui:316
+msgid "Revert scanner options to default values"
+msgstr "ត្រឡប់​ជម្រើស​ម៉ាស៊ីន​ស្កេន​ទៅ​​​តម្លៃ​លំនាំដើម​វិញ"
+
+#: skanlite.cpp:57
+msgid "About"
+msgstr "អំពី"
+
+#: skanlite.cpp:120
+msgid "Skanlite Settings"
+msgstr "ការ​កំណត់ Skanlite"
+
+#: skanlite.cpp:141
+msgid "Opening the selected scanner failed."
+msgstr "បាន​បរាជ័យ​ក្នុង​កា​របើក​ម៉ាស៊ីន​ស្កេន​ដែល​បាន​ជ្រើស ។"
+
+#: skanlite.cpp:145
+#, fuzzy, kde-format
+#| msgid "Skanlite"
+msgctxt "@title:window %1 = scanner maker, %2 = scanner model"
+msgid "%1 %2 - Skanlite"
+msgstr "Skanlite"
+
+#: skanlite.cpp:150
+#, fuzzy, kde-format
+#| msgid "Skanlite"
+msgctxt "@title:window %1 = scanner device"
+msgid "%1 - Skanlite"
+msgstr "Skanlite"
+
+#: skanlite.cpp:159
+msgid "Save"
+msgstr "រក្សា​​ទុក​​"
+
+#: skanlite.cpp:170
+msgid "New Image File Name"
+msgstr "ឈ្មោះ​ឯកសារ​រូបភាព​ថ្មី"
+
+#: skanlite.cpp:203
+#, kde-format
+msgid "%1: %2"
+msgstr ""
+
+#: skanlite.cpp:222
+msgctxt "prefix for auto naming"
+msgid "Image-"
+msgstr "រូបភាព"
+
+#: skanlite.cpp:364
+#, kde-format
+msgid "Do you want to overwrite \"%1\"?"
+msgstr "តើ​អ្នក​​ចង់​សរសេរ​ជាន់​លើ \"%1\" មែនទេ ?"
+
+#: skanlite.cpp:366
+msgid "Overwrite"
+msgstr "សរសេរ​ជាន់​លើ"
+
+#: skanlite.cpp:394
+msgid ""
+"The image will be saved in the PNG format, as Skanlite only supports saving "
+"16 bit color images in the PNG format."
+msgstr ""
+"រូបភាព​នឹង​ត្រូវ​បាន​រក្សា​ទុក​នៅ​ក្នុង​ទ្រង់​ទ្រាយ​ PNG  ដោយ​សារ​តែ​ Skanlite គាំទ្រ​តែ​ការ​រក្សា​ទុក​​រូបភាព​"
+"ពណ៌​ ១​៦ ប៊ីត​នៅ​ក្នុង​ទ្រង់​ទ្រាយ​ PNG ប៉ុណ្ណោះ ។"
+
+#: skanlite.cpp:402 skanlite.cpp:415
+msgid "Failed to save image"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រក្សា​ទុក​រូបភាព"
